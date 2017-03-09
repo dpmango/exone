@@ -1,0 +1,309 @@
+// HEADER
+
+.header
+  padding-top: 25px
+  padding-bottom: 20px
+  background: white
+  padding-left: 60px
+  @media($desktop)
+    padding-left: 0
+  &__metrics
+    padding-left: 24px
+    display: inline-block
+    margin-top: -5px
+  &__metric
+    color: #515974
+    font-size: 12px
+    font-weight: 600
+    span
+      font-weight: 400
+  &__buttons
+    display: flex
+    align-items: center
+  &__help-link
+    color: #1a74d4
+    padding-left: 40px
+  &__profile
+    display: inline-block
+    cursor: pointer
+    &__avatar
+      display: inline-block
+      size: 40px
+      border-radius: 50%
+      overflow: hidden
+      position: relative
+      margin-right: 20px
+      img
+        max-width: 100%
+    &__counter
+      position: absolute
+      right: 30px
+      top: -5px
+      background: #e56049
+      font-size: 12px
+      text-align: center
+      color: white
+      size: 20px
+      border-radius: 50%
+      overflow: hidden
+    .ico-dropdown
+      position: absolute
+      top: 50%
+      right: 15px
+      transform: translateY(-50%)
+
+.subheader
+  background: #fbfbfd
+  border-top: 1px solid #dfe6f0
+  padding-left: 60px
+  padding-top: 10px
+  padding-bottom: 10px
+  @media($desktop)
+    padding-left: 0
+  &__support
+    color: #657384
+    padding-top: 5px
+    font-style: italic
+
+// footer
+.footer
+  margin-top: 80px
+  margin-bottom: 40px
+  padding-left: 60px
+  padding-right: 60px
+  font-size: 14px
+  font-weight: 600
+  @media($desktop)
+    padding-left: 0
+    padding-right: 0
+  &__copy
+    margin-bottom: 25px
+  &__contact
+    display: flex
+    align-items: center
+    .fa
+      flex: 0 0 15px
+      margin-right: 5px
+      font-size: 12px
+      vertical-align: middle
+      &-mobile
+        font-size: 18px
+      &-location-arrow
+        font-size: 16px
+  &__developer
+    text-align: right
+  a
+    color: $colorBlue
+    text-decoration: underline
+
+
+
+// crumbs in  subheader
+.crumbs
+  color: #657384
+  a
+    display: inline-block
+    padding: 5px 10px
+    text-decoration: underline
+    padding-right: 12px
+    &:first-child
+      border: 1px solid #b2bece
+      text-decoration: none
+      border-radius: 6px
+      &::after
+        display: none
+    &:nth-child(2)
+      &::before
+        display: inline-block
+        content: '»'
+        padding-right: 12px
+    &::after
+      display: inline-block
+      content: '»'
+      padding-left: 12px
+
+// COUNTER
+.counter
+  margin-top: 25px
+  &__block
+    background: white
+    border-radius: 8px
+    padding: 30px 50px
+    margin-bottom: 20px
+
+    &__heading
+      font-family: 'Droid Serif', serif
+      font-size: 30px
+      margin-bottom: 20px
+  &__help-text
+    font-size: 11px
+    color: #888c98
+
+
+.reserves
+  margin-top: 80px
+  &__item
+    background: white
+    border-radius: 14px
+    padding: 15px 20px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 15px
+    .ico-currency
+      size: 60px
+    &__content
+      flex: 1
+      padding-left: 10px
+      font-size: 18px
+    &__name
+      font-weight: 600
+      color: $colorBlue
+      text-decoration: underline
+    &__left
+      margin-top: 0px
+      color: #303031
+
+// NEWS
+.news
+  margin-top: 20px
+  &__wrapper
+    background: white
+    padding-left: 20px
+    padding-right: 20px
+    border-top-left-radius: 14px
+    border-top-right-radius: 14px
+    display: flex
+  &__item
+    padding: 45px 20px
+    flex: 1 1 33%
+    &__name
+      color: $colorBlue
+      font-size: 24px
+      font-weight: 600
+    &__short
+      font-family: 'Droid Serif', serif
+      font-size: 16px
+      margin-top: 15px
+      margin-bottom: 30px
+    &__date
+      font-size: 16px
+      font-weight: 600
+
+.testimonials
+  margin-top: 60px
+  &__wrapper
+    padding: 45px 80px
+    background: white
+    border-top-left-radius: 14px
+    border-top-right-radius: 14px
+    position: relative
+  &__item
+    &__head
+      margin-bottom: 20px
+      display: flex
+      align-items: center
+
+    &__avatar
+      size: 50px
+      border-radius: 20px
+      overflow: hidden
+      margin-right: 20px
+    &__name
+      font-size: 18px
+      font-weight: 600
+      span
+        display: block
+        font-size: 16px
+        font-weight: 400
+
+    &__content
+      font-family: 'Droid Serif', serif
+      font-size: 16px
+      display: flex
+      &__icons
+        flex: 0 0 50px
+        display: inline-block
+        margin-right: 10px
+        display: flex
+        justify-content: center
+        .ico
+          margin-left: 4px
+          margin-right: 4px
+          transition: all .3s ease
+          &:hover
+            opacity: .7
+
+      &__text
+        flex: 1
+        display: inline-block
+
+
+
+.ui-input
+  display: flex
+  justify-content: space-between
+  align-items: center
+  span
+    font-size: 15px
+    padding-right: 15px
+
+.form-group
+  label
+    font-size: 15px
+
+.form-control
+  font-size: 15px
+  padding: 16px 25px
+  background: #f0f4f3
+  border-radius: 8px
+  border: 1px solid transparent
+  &.bold
+    font-size: 18px
+    font-weight: 600
+  &:focus
+    background: #f0f4f3
+    border-color: #657384
+    box-shadow: 0 2px 6px color(#b2bece a(60%))
+
+
+.ui-select
+  position: relative
+  &__visible
+    padding: 6px 25px
+    background: #f0f4f3
+    border-radius: 8px
+    cursor: pointer
+    display: flex
+    align-items: center
+    transition: all .4s ease
+    .ico-select
+      position: absolute
+      top: 50%
+      right: 25px
+      transform: translateY(-50%)
+    &:hover
+      box-shadow: 0 2px 6px color(#b2bece a(60%))
+  &__dropdown
+    display: none
+    position: absolute
+    top: 50px
+    left: 0
+    width: 100%
+    background: white
+    border-radius: 8px
+    border-top-left-radius: 0
+    border-top-right-radius: 0
+    z-index: 5
+    max-height: 200px
+    overflow-y: scroll
+    box-shadow: 0 2px 6px color(#b2bece a(60%))
+    &.active
+      display: block
+    &__item
+      transition: all .4s
+      padding: 8px 25px
+      cursor: pointer
+      display: flex
+      &:hover
+        background: color(#f0f4f3 a(50%))

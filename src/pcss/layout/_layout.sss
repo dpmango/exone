@@ -1,0 +1,49 @@
+// LAYOUT
+
+$mobile: width <= 568px
+$mobile-from: width >= 568px
+$tablet: width <= 768px
+$tablet-from: width <= 768px
+$desktop: width <= 1000px
+$desktop-from: width >= 1000px
+$wide: width <= 1200px
+$wide-from: width >= 1200px
+$hd: width <= 1680px
+$hd-from: width >= 1680px
+
+// variables
+$fontColor: #3d3c42
+$colorBlue: #1b8ede
+
+$colorGreen: #4ab68f
+$colorRed: #f45b63
+$colorYellow: #fda737
+$colorOrange: #f46d36
+$darkColor: #101226
+
+*
+  box-sizing: border-box
+
+a
+  color: inherit
+  &:hover, &:focus, &:visited
+    text-decoration: none
+
+ul
+  list-style: none
+  li
+    display: inline-block
+
+
+body, html
+  background: #e7ebf0
+  color: $fontColor
+  font-family: 'Open Sans', sans-serif
+  font-size: 14px
+  max-width: 100%
+  min-width: 320px
+  overflow-x: hidden
+
+.container
+  max-width: 1310px
+  width: 100%

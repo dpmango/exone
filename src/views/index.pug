@@ -1,0 +1,267 @@
+doctype html
+html
+  include shared/head.pug
+
+  body
+    include shared/header.pug
+
+    // COUNTER::START
+    .counter
+      .conainer
+        .row
+          .col-md-10.offset-md-1.col-xl-6.offset-xl-3
+            // block
+            .counter__block
+              .counter__block__heading Отдаёте ↓
+              .row
+                .col-sm-8
+                  .ui-select
+                    .ui-select__visible
+                      i.ico.ico-select
+                      i.ico.ico-currency.ico-currency--qiwi
+                      span.currency__name QIWI <span>RUB</span>
+                    .ui-select__dropdown
+                      .ui-select__dropdown__item(data-id="item")
+                        i.ico.ico-currency.ico-currency--qiwi
+                        span.currency__name QIWI <span>RUB</span>
+                      .ui-select__dropdown__item(data-id="item")
+                        i.ico.ico-currency.ico-currency--qiwi
+                        span.currency__name QIWI <span>RUB</span>
+
+                .col-sm-4
+                  .ui-input
+                    span Сумма:
+                    input(type="text" value="5000").form-control
+
+              // row
+              .row.mt15
+                .col-sm-8
+                  .counter__help-text С учетом комиссии платежной системы QIWI RUB (0.15 %) к списания с вашего счета
+                .col-sm-4
+                  .ui-input
+                    span Сумма:
+                    input(type="text" value="5126,00" disabled).form-control
+              // row
+              .row
+                .col-sm-8
+                  .form-group
+                    label Со счета:
+                    input(type="text" placeholder="введите счет").form-control.bold
+                .col-sm-4
+
+            // BLOCK
+            .counter__block
+              .counter__block__heading Получаете ↓
+              .row
+                .col-sm-8
+                  .ui-select
+                    .ui-select__visible
+                      i.ico.ico-select
+                      i.ico.ico-currency.ico-currency--qiwi
+                      span.currency__name QIWI <span>RUB</span>
+                    .ui-select__dropdown
+                      .ui-select__dropdown__item(data-id="item")
+                        i.ico.ico-currency.ico-currency--qiwi
+                        span.currency__name QIWI <span>RUB</span>
+                      .ui-select__dropdown__item(data-id="item")
+                        i.ico.ico-currency.ico-currency--qiwi
+                        span.currency__name QIWI <span>RUB</span>
+
+                .col-sm-4
+                  .ui-input
+                    span Сумма:
+                    input(type="text" value="5000").form-control
+
+              // row
+              .row.mt15
+                .col-sm-8
+                  .counter__help-text С учетом комиссии платежной системы QIWI RUB (0.15 %) к списания с вашего счета
+                .col-sm-4
+                  .ui-input
+                    span Сумма:
+                    input(type="text" value="5126,00" disabled).form-control
+              // row
+              .row
+                .col-sm-8
+                  .form-group
+                    label На счет:
+                    input(type="text" placeholder="введите счет").form-control.bold
+                .col-sm-4.mt35
+                  a(href="#").btn.btn-primary.btn-block Дальше
+
+    // РЕЗЕРВЫ
+    .reserves
+      .container
+        .row
+          .col-sm-12
+            .block-heading резерв валюты
+        .row
+          // item
+          .col-sm-4.col-xl-3
+            .reserves__item
+              i.ico.ico-currency.ico-currency--yandex
+              .reserves__item__content
+                .reserves__item__name Яндекс.Деньги RUR
+                .reserves__item__left 1 895.9
+
+          // item
+          .col-sm-4.col-xl-3
+            .reserves__item
+              i.ico.ico-currency.ico-currency--bitcoin
+              .reserves__item__content
+                .reserves__item__name BTCE USD
+                .reserves__item__left 15.9
+          // item
+          .col-sm-4.col-xl-3
+            .reserves__item
+              i.ico.ico-currency.ico-currency--yandex
+              .reserves__item__content
+                .reserves__item__name Яндекс.Деньги RUR
+                .reserves__item__left 1 895.9
+
+          // item
+          .col-sm-4.col-xl-3
+            .reserves__item
+              i.ico.ico-currency.ico-currency--bitcoin
+              .reserves__item__content
+                .reserves__item__name BTCE USD
+                .reserves__item__left 15.9
+          // item
+          .col-sm-4.col-xl-3
+            .reserves__item
+              i.ico.ico-currency.ico-currency--yandex
+              .reserves__item__content
+                .reserves__item__name Яндекс.Деньги RUR
+                .reserves__item__left 1 895.9
+
+          // item
+          .col-sm-4.col-xl-3
+            .reserves__item
+              i.ico.ico-currency.ico-currency--bitcoin
+              .reserves__item__content
+                .reserves__item__name BTCE USD
+                .reserves__item__left 15.9
+          // item
+          .col-sm-4.col-xl-3
+            .reserves__item
+              i.ico.ico-currency.ico-currency--yandex
+              .reserves__item__content
+                .reserves__item__name Яндекс.Деньги RUR
+                .reserves__item__left 1 895.9
+
+          // item
+          .col-sm-4.col-xl-3
+            .reserves__item
+              i.ico.ico-currency.ico-currency--bitcoin
+              .reserves__item__content
+                .reserves__item__name BTCE USD
+                .reserves__item__left 15.9
+
+          // item
+          .col-sm-4.col-xl-3
+            .reserves__item
+              i.ico.ico-currency.ico-currency--yandex
+              .reserves__item__content
+                .reserves__item__name Яндекс.Деньги RUR
+                .reserves__item__left 1 895.9
+
+          // item
+          .col-sm-4.col-xl-3
+            .reserves__item
+              i.ico.ico-currency.ico-currency--bitcoin
+              .reserves__item__content
+                .reserves__item__name BTCE USD
+                .reserves__item__left 15.9
+          // item
+          .col-sm-4.col-xl-3
+            .reserves__item
+              i.ico.ico-currency.ico-currency--yandex
+              .reserves__item__content
+                .reserves__item__name Яндекс.Деньги RUR
+                .reserves__item__left 1 895.9
+
+          // item
+          .col-sm-4.col-xl-3
+            .reserves__item
+              i.ico.ico-currency.ico-currency--bitcoin
+              .reserves__item__content
+                .reserves__item__name BTCE USD
+                .reserves__item__left 15.9
+
+    // НОВОСТИ
+    .news
+      .container
+        .row
+          .col-sm-12
+            .block-heading Новости
+            .news__wrapper
+              // item
+              .news__item
+                .news__item__name Где купить доллары?
+                .news__item__short Открыты новые направления для вывода электронных валют: Contact, Unistream, MoneyGram и другие системы денежных переводов.
+                .news__item__date 20.08.2016
+              // item
+              .news__item
+                .news__item__name Новые направления для вывода электронных валют
+                .news__item__short Открыты новые направления для вывода электронных валют: Contact, Unistream, MoneyGram и другие системы денежных переводов.
+                .news__item__date 20.08.2016
+              // item
+              .news__item
+                .news__item__name Где купить доллары?
+                .news__item__short Открыты новые направления для вывода электронных валют: Contact, Unistream, MoneyGram и другие системы денежных переводов.
+                .news__item__date 20.08.2016
+            .block__muted-bottom
+              a(href='#')
+                i.ico.ico-files
+                span Ещё новости
+
+    // ОТЗЫВЫ
+    .testimonials
+      .container
+        .row
+          .col-sm-8
+            .block-heading отзывы
+            .testimonials__wrapper.owl-carousel#owlTestmonials
+              .testimonials__item
+                .testimonials__item__head
+                  .testimonials__item__avatar
+                    img(src="images/testimonial.png")
+                  .testimonials__item__name Константин Константинопольский
+                    span 12 января
+                .testimonials__item__content
+                  .testimonials__item__content__icons
+                    a(href="#")
+                      i.ico.ico-heart
+                    a(href="#")
+                      i.ico.ico-testimonials
+                  .testimonials__item__content__text
+                    p Как обычно оператор все объяснит все расскажет какие имеются вопросы сервис на вышем уровне зачисления на биткойн быстро в общем всем рекомендую оценка 10/10 балов.
+              // следующий отзыв
+              .testimonials__item
+                .testimonials__item__head
+                  .testimonials__item__avatar
+                    img(src="images/testimonial.png")
+                  .testimonials__item__name Константин Константинопольский
+                    span 12 января
+                .testimonials__item__content
+                  .testimonials__item__content__icons
+                    a(href="#")
+                      i.ico.ico-heart
+                    a(href="#")
+                      i.ico.ico-testimonials
+                  .testimonials__item__content__text
+                    p Как обычно оператор все объяснит все расскажет какие имеются вопросы сервис на вышем уровне зачисления на биткойн быстро в общем всем рекомендую оценка 10/10 балов.
+
+
+
+            .block__muted-bottom
+              a(href='#')
+                i.ico.ico-comments
+                span Ещё отзывы
+
+          .col-sm-4
+            .block-heading последний обмен
+
+
+
+    include shared/footer.pug
