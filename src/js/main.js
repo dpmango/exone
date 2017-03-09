@@ -13,6 +13,16 @@ $(document).ready(function(){
         return false;
 	});
 
+  // enable tooltips
+  $('[data-toggle="tooltip"]').tooltip();
+
+  // FAKE LOGIC
+  $('.exchange-list__item').on('click', function(){
+    $(this).siblings().removeClass('active');
+    $(this).addClass('active');
+  });
+
+
   // owl
   $('#owlTestmonials').owlCarousel({
     loop: true,
@@ -21,46 +31,6 @@ $(document).ready(function(){
     margin: 0,
     items: 1
   });
-
-  // Magnific Popup
-  $('.popup-with-zoom-anim').magnificPopup({
-    type: 'inline',
-    fixedContentPos: false,
-    fixedBgPos: true,
-    overflowY: 'auto',
-    closeBtnInside: true,
-    preloader: false,
-    midClick: true,
-    removalDelay: 300,
-    mainClass: 'my-mfp-zoom-in'
-  });
-
-  $('.popup-with-move-anim').magnificPopup({
-    type: 'inline',
-    fixedContentPos: false,
-    fixedBgPos: true,
-    overflowY: 'auto',
-    closeBtnInside: true,
-    preloader: false,
-    midClick: true,
-    removalDelay: 300,
-    mainClass: 'my-mfp-slide-bottom'
-  });
-
-  $('.popup-gallery').magnificPopup({
-		delegate: 'a',
-		type: 'image',
-		tLoading: 'Loading image #%curr%...',
-		mainClass: 'mfp-img-mobile',
-		gallery: {
-			enabled: true,
-			navigateByImgClick: true,
-			preload: [0,1]
-		},
-		image: {
-			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
-		}
-	});
 
   // Masked input
   $("#date").mask("99/99/9999",{placeholder:"mm/dd/yyyy"});
@@ -76,4 +46,45 @@ $(document).ready(function(){
     $(this).parent().removeClass('active');
   });
 
+
+
+  // // Magnific Popup
+  // $('.popup-with-zoom-anim').magnificPopup({
+  //   type: 'inline',
+  //   fixedContentPos: false,
+  //   fixedBgPos: true,
+  //   overflowY: 'auto',
+  //   closeBtnInside: true,
+  //   preloader: false,
+  //   midClick: true,
+  //   removalDelay: 300,
+  //   mainClass: 'my-mfp-zoom-in'
+  // });
+  //
+  // $('.popup-with-move-anim').magnificPopup({
+  //   type: 'inline',
+  //   fixedContentPos: false,
+  //   fixedBgPos: true,
+  //   overflowY: 'auto',
+  //   closeBtnInside: true,
+  //   preloader: false,
+  //   midClick: true,
+  //   removalDelay: 300,
+  //   mainClass: 'my-mfp-slide-bottom'
+  // });
+  //
+  // $('.popup-gallery').magnificPopup({
+	// 	delegate: 'a',
+	// 	type: 'image',
+	// 	tLoading: 'Loading image #%curr%...',
+	// 	mainClass: 'mfp-img-mobile',
+	// 	gallery: {
+	// 		enabled: true,
+	// 		navigateByImgClick: true,
+	// 		preload: [0,1]
+	// 	},
+	// 	image: {
+	// 		tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+	// 	}
+	// });
 });

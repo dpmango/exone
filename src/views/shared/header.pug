@@ -2,34 +2,48 @@
 header.header
   .container
     .row.align-items-sm-center
-      .col-sm-6.col-xl-5
+      .col-6.col-sm-6.col-md-4.col-lg-6.col-xl-5
         a(href='#')
           i.ico.ico-logo
-        .header__metrics
+        .header__metrics.hidden-md-down
           .header__metric
             | Выплаченные дивиденды:
             span  1 000 000 $
           .header__metric
             | Прибыль в год:
             span  4%
-      .col-sm-4
+      .hidden-sm-down.col-sm-4.col-md-6.col-lg-4
         .header__buttons
           a(href="#").btn.btn-secondary Инвесторам
           a(href="#").header__help-link Помощь
-      .col-sm-2.col-xl-3.text-sm-right
-        .header__profile
-          .header__profile__avatar
-            img(src="images/avatar.png")
-          .header__profile__counter 4
-          i.ico.ico-dropdown
+      .col-6.col-sm-6.col-md-2.col-xl-3.text-right
+        .dropdown
+          .header__profile#dLabel(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            .header__profile__avatar
+              img(src="images/avatar.png")
+            .header__profile__counter 4
+            i.ico.ico-dropdown
+          ul.dropdown-menu(aria-labelledby='dLabel')
+            li
+              a(href="#") пункт меню
+            li
+              a(href="#") пункт меню
+            li
+              a(href="#") пункт меню
+            li
+              a(href="#") пункт меню
+
+
+
 
 .subheader
   .container
     .row
-      .col-sm-6
+      .col-sm-6.hidden-sm-down
         .crumbs
           a(href="#") Весь сайт
           a(href="#") Специальность
           span Ссылка
-      .col-sm-6.text-sm-right
+      .col-12.col-md-6.text-right
         .subheader__support Тех. поддержка 8 800 123 45 67
+        a(href="#").subheader__status.subheader__status--online Online

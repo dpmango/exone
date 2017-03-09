@@ -1,0 +1,70 @@
+{
+  "data": {
+    "ActiveDirections": [
+      {
+        "Currency1Id": "0ccecda2-04d8-11e7-bb36-6601a15671ae",
+        "Currency2Id": "0a6374a5-04d8-11e7-bb36-6601a15671ae",
+        "Id": "128f045a-04d8-11e7-bb36-6601a15671ae",
+        "Rate1": 1,
+        "Rate2": 1
+      },
+      {
+        "Currency1Id": "0c03a3bf-04d8-11e7-bb36-6601a15671ae",
+        "Currency2Id": "0b32c32c-04d8-11e7-bb36-6601a15671ae",
+        "Id": "15495563-04d8-11e7-bb36-6601a15671ae",
+        "Rate1": 1,
+        "Rate2": 0.9
+      },
+      {
+        "Currency1Id": "0ccecda2-04d8-11e7-bb36-6601a15671ae",
+        "Currency2Id": "0b32c32c-04d8-11e7-bb36-6601a15671ae",
+        "Id": "17ff0792-04d8-11e7-bb36-6601a15671ae",
+        "Rate1": 60,
+        "Rate2": 1
+      },
+      {
+        "Currency1Id": "0ccecda2-04d8-11e7-bb36-6601a15671ae",
+        "Currency2Id": "0c03a3bf-04d8-11e7-bb36-6601a15671ae",
+        "Id": "1ac44ab9-04d8-11e7-bb36-6601a15671ae",
+        "Rate1": 65,
+        "Rate2": 1
+      }
+    ],
+    "IncomingDirectionsCurrencies": [
+      {
+        "CurrencyId": "0c03a3bf-04d8-11e7-bb36-6601a15671ae",
+        "LogoSrc": "/Content/uploads/currency/7d0ebddf-f0f3-11e6-bb36-6601a15671ae/logo",
+        "Rate": 0,
+        "Title": "Яндекс Деньги EUR"
+      },
+      {
+        "CurrencyId": "0ccecda2-04d8-11e7-bb36-6601a15671ae",
+        "LogoSrc": "/Content/uploads/currency/7d0ebddf-f0f3-11e6-bb36-6601a15671ae/logo",
+        "Rate": 0,
+        "Title": "Яндекс Деньги RUB"
+      }
+    ],
+    "OutgoingDirectionsCurrencies": [
+      {
+        "CurrencyId": "0a6374a5-04d8-11e7-bb36-6601a15671ae",
+        "LogoSrc": "/Content/uploads/currency/3f0618d7-f10b-11e6-bb36-6601a15671ae/logo",
+        "Rate": 0,
+        "Title": "Webmoney RUB"
+      },
+      {
+        "CurrencyId": "0b32c32c-04d8-11e7-bb36-6601a15671ae",
+        "LogoSrc": "/Content/uploads/currency/3f0618d7-f10b-11e6-bb36-6601a15671ae/logo",
+        "Rate": 0,
+        "Title": "Webmoney USD"
+      },
+      {
+        "CurrencyId": "0c03a3bf-04d8-11e7-bb36-6601a15671ae",
+        "LogoSrc": "/Content/uploads/currency/7d0ebddf-f0f3-11e6-bb36-6601a15671ae/logo",
+        "Rate": 0,
+        "Title": "Яндекс Деньги EUR"
+      }
+    ]
+  },
+  "Status": "Success",
+  "Message": "Выполнено"
+}
