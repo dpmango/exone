@@ -1,5 +1,8 @@
-# Gulp Starter Pack
-Gulp starter package to use with PostCss or sass, pug, autoprefixer, compile bootstrap, minify assets and perform other common front-end tasks.
+# EXONE - Currency exchange
+Based on starter package to use with PostCss or sass, pug, autoprefixer, compile bootstrap, minify assets and perform other common front-end tasks.
+
+## Demo (github pages)
+https://dpmango.github.io/exone/
 
 ## Getting stated
 __Development:__
