@@ -47,6 +47,19 @@
 .ico-refresh
   background-image: url('../images/svg/ico-refresh.svg')
   size: 16px 20px
+  transition: all .3s ease
+  &:hover
+    opacity: .5
+  &.refreshing
+    animation-name: rotate
+    animation-duration: 1s
+
+
+@keyframes rotate
+  from
+    transform: rotate(0)
+  to
+    transform: rotate(360deg)
 
 .ico-currency
   border-radius: 14px

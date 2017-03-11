@@ -92,10 +92,14 @@
     font-size: 14px
     font-weight: 600
     border-radius: 10px
+    transition: all .3s ease
     &--online
       background: $colorGreen
     &__offline
-
+      background: $colorOrange
+    &:hover
+      opacity: .7
+      color: white
 // footer
 .footer
   margin-top: 80px
@@ -178,6 +182,8 @@
       @media($wide)
         padding-left: 30px
         padding-right: 30px
+      @media($desktop)
+        margin-bottom: 30px
 
       @media($mobile)
         padding: 20px
@@ -247,7 +253,10 @@
 
 
 .exchange
-  .col-sm-6
+  display: none
+  margin-top: 25px
+
+  .col-sm-10
     display: flex
     flex-direction: column
   &-list
@@ -291,12 +300,18 @@
         font-size: 18px
         color: $colorBlue
         border-bottom: 1px solid color($colorBlue a(35%))
+        @media($wide)
+          font-size: 16px
+          border-bottom: none
+          text-decoration: underline
         span
           font-weight: 400
       &__reserv
         align-self: flex-end
         margin-left: auto
         text-align: right
+        @media($wide)
+          flex: 1 0 80px
         &__name
           font-size: 15px
           .ico
@@ -304,6 +319,8 @@
         &__value
           font-size: 18px
           font-weight: 600
+          @media($wide)
+            font-size: 16px
 
       &__fold
         display: none
@@ -313,6 +330,8 @@
         padding-top: 30px
         padding-bottom: 20px
         padding-right: 20px
+        @media($wide)
+          padding-left: 25px
       &__rate
         font-size: 15px
         .ico
@@ -329,6 +348,10 @@
 
 .reserves
   margin-top: 80px
+  @media($desktop)
+    margin-top: 50px
+  @media($tablet)
+    margin-top: 20px
   &__item
     background: white
     border-radius: 14px
@@ -374,6 +397,8 @@
 // NEWS
 .news
   margin-top: 20px
+  @media($tablet)
+    margin-top: 40px
   &__wrapper
     background: white
     padding-left: 20px
@@ -408,11 +433,11 @@
       font-size: 16px
       margin-top: 15px
       margin-bottom: 30px
-      @media($tablet)
-        margin-bottom: 10px
       @media($desktop)
         font-size: 14px
         margin-bottom: 20px
+      @media($tablet)
+        margin-bottom: 10px
     &__date
       font-size: 16px
       font-weight: 600
@@ -422,6 +447,8 @@
 
 .testimonials
   margin-top: 60px
+  @media($tablet)
+    margin-top: 40px
   &__wrapper
     padding: 45px 80px
     background: white
@@ -429,9 +456,9 @@
     border-top-right-radius: 14px
     position: relative
     @media($desktop)
-      padding: 35px 60px
+      padding: 35px 80px
     @media($tablet)
-      padding: 25px 40px
+      padding: 25px 70px
     @media($mobile)
       padding-left: 20px
       padding-right: 20px
@@ -493,7 +520,7 @@
       padding-left: 60px
       padding-right: 60px
     @media($mobile)
-      padding: 50px 20px
+      padding: 30px 50px
   &__item
     flex: 0 1 auto
   &__name
@@ -517,6 +544,9 @@
   display: flex
   justify-content: space-between
   align-items: center
+  @media($mobile)
+    justify-content: flex-start
+    margin-bottom: 10px
   span
     font-size: 15px
     padding-right: 15px
@@ -531,8 +561,6 @@
   background: #f0f4f3
   border-radius: 8px
   border: 1px solid transparent
-  @media($mobile)
-    margin-bottom: 10px
   &.bold
     font-size: 18px
     font-weight: 600
@@ -540,6 +568,9 @@
     @media($wide)
       padding-left: 15px
       padding-right: 15px
+    @media($mobile)
+      align-self: flex-start
+      max-width: 100px !important
   &:focus
     background: #f0f4f3
     border-color: #657384
@@ -586,5 +617,6 @@
       padding: 8px 25px
       cursor: pointer
       display: flex
+      align-items: center
       &:hover
         background: color(#f0f4f3 a(50%))

@@ -48,6 +48,21 @@ $(document).ready(function(){
   });
 
 
+  // FAKE FUNCTIONALITY
+  $('#firstStep').on('click', function(){
+    $('.counter').fadeOut();
+    $('.exchange').fadeIn();
+  });
+
+  $('.ico-refresh').on('click', function(){
+    var that = $(this);
+    that.addClass('refreshing');
+    setTimeout(function(){
+      that.removeClass('refreshing');
+    }, 1000);
+  });
+
+
 
   // // Magnific Popup
   // $('.popup-with-zoom-anim').magnificPopup({

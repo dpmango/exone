@@ -5,6 +5,8 @@
   padding-left: 10px
   span
     font-weight: 400
+  @media($desktop)
+    font-size: 16px
 
 
 .block-heading
@@ -13,6 +15,9 @@
   text-transform: uppercase
   margin-bottom: 15px
   padding-left: 20px
+  @media($mobile)
+    padding-left: 0
+    font-size: 18px
 
 .block__muted-bottom
   background: #eff5fd
@@ -60,7 +65,7 @@
     background-image: svg-load('../../images/svg/owl-arrow.svg', fill=$colorBlue)
   @media($mobile)
     display: none
-    
+
 .owl-prev
   left: 25px
 
