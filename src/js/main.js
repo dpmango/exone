@@ -29,7 +29,8 @@ $(document).ready(function(){
     nav: true,
     dots: false,
     margin: 0,
-    items: 1
+    items: 1,
+    autoplay: true
   });
 
   // Masked input

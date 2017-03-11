@@ -22,7 +22,13 @@
   padding: 20px
   color: $colorBlue
   font-size: 18px
-  text-decoration: underline
+  @media($desktop)
+    font-size: 16px
+    padding: 15px
+  span
+    line-height: 1
+    border-bottom: 1px solid color($colorBlue a(35%))
+
   &.dark-text
     color: $fontColor
     text-decoration: none
@@ -38,14 +44,23 @@
   margin-top: 35px
 
 
+.mt-30--dekstop
+  @media($desktop)
+    margin-top: 30px
+
+
 .owl-prev, .owl-next
-  background: url('../images/svg/owl-arrow.svg') no-repeat center
-  size: 30px 100px
+  background: svg-load('../../images/svg/owl-arrow.svg', fill=rgb(182, 194, 206)) no-repeat center
+  size: 32px 100px
   font-size: 0
   position: absolute
   top: 50%
   transform: translateY(-50%)
-
+  &:hover
+    background-image: svg-load('../../images/svg/owl-arrow.svg', fill=$colorBlue)
+  @media($mobile)
+    display: none
+    
 .owl-prev
   left: 25px
 

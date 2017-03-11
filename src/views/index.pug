@@ -9,12 +9,12 @@ html
     .counter
       .container
         .row
-          .col-sm-6
+          .col-sm-10.offset-sm-1.col-md-8.offset-md-2.col-sm-8.col-lg-6.offset-lg-0
             // block
             .counter__block
               .counter__block__heading Отдаёте ↓
               .row
-                .col-sm-8
+                .col-sm-7.col-xl-8
                   .ui-select
                     .ui-select__visible
                       i.ico.ico-select
@@ -28,32 +28,31 @@ html
                         i.ico.ico-currency.ico-currency--qiwi
                         span.currency__name QIWI <span>RUB</span>
 
-                .col-sm-4
+                .col-sm-5.col-xl-4
                   .ui-input
                     span Сумма:
-                    input(type="text" value="5000").form-control
+                    input(type="text" value="5000").form-control.form-control--short
 
               // row
               .row.mt15
-                .col-sm-8
+                .col-sm-7.col-xl-8
                   .counter__help-text С учетом комиссии платежной системы QIWI RUB (0.15 %) к списания с вашего счета
-                .col-sm-4
+                .col-sm-5.col-xl-4
                   .ui-input
                     span Сумма:
-                    input(type="text" value="5126,00" disabled).form-control
+                    input(type="text" value="5126,00" disabled).form-control.form-control--short
               // row
               .row
-                .col-sm-8
+                .col-sm-7.col-xl-8
                   .form-group
                     label Со счета:
                     input(type="text" placeholder="введите счет").form-control.bold
-                .col-sm-4
-          .col-sm-6
+          .col-sm-10.offset-sm-1.col-md-8.offset-md-2.col-lg-6.offset-lg-0
             // BLOCK
             .counter__block
               .counter__block__heading Получаете ↓
               .row
-                .col-sm-8
+                .col-sm-7.col-xl-8
                   .ui-select
                     .ui-select__visible
                       i.ico.ico-select
@@ -67,33 +66,33 @@ html
                         i.ico.ico-currency.ico-currency--qiwi
                         span.currency__name QIWI <span>RUB</span>
 
-                .col-sm-4
+                .col-sm-5.col-xl-4
                   .ui-input
                     span Сумма:
-                    input(type="text" value="5000").form-control
+                    input(type="text" value="5000").form-control.form-control--short
 
               // row
               .row.mt15
-                .col-sm-8
+                .col-sm-7.col-xl-8
                   .counter__help-text С учетом комиссии платежной системы QIWI RUB (0.15 %) к списания с вашего счета
-                .col-sm-4
+                .col-sm-5.col-xl-4
                   .ui-input
                     span Сумма:
-                    input(type="text" value="5126,00" disabled).form-control
+                    input(type="text" value="5126,00" disabled).form-control.form-control--short
               // row
               .row
-                .col-sm-8
+                .col-sm-7.col-xl-8
                   .form-group
                     label На счет:
                     input(type="text" placeholder="введите счет").form-control.bold
-                .col-sm-4.mt35
+                .col-sm-5.col-xl-4.mt35
                   a(href="#").btn.btn-primary.btn-block Дальше
 
     // EXCHANGE
     .exchange
       .container
         .row
-          .col-sm-6
+          .col-sm-10.offset-sm-1.col-md-8.offset-md-2.col-sm-8.col-lg-6.offset-lg-0
             .counter__block.counter__block--exchange
               .counter__block__exchange
                 .counter__block__heading Отдаёте  →
@@ -117,7 +116,7 @@ html
                     i.ico.ico-currency.ico-currency--ethereum
                     .exchange-list__item__name Ethereum
 
-          .col-sm-6
+          .col-sm-10.offset-sm-1.col-md-8.offset-md-2.col-sm-8.col-lg-6.offset-lg-0
             .counter__block.counter__block--exchange
               .counter__block__exchange
                 .counter__block__heading Отдаёте  →
@@ -207,9 +206,9 @@ html
         .row
           .col-sm-12
             .block-heading резерв валюты
-        .row
+        .row.condenced-pad
           // item
-          .col-sm-4.col-xl-3
+          .col-sm-6.col-md-4.col-xl-3
             .reserves__item
               i.ico.ico-currency.ico-currency--yandex
               .reserves__item__content
@@ -217,14 +216,14 @@ html
                 .reserves__item__left 1 895.9
 
           // item
-          .col-sm-4.col-xl-3
+          .col-sm-6.col-md-4.col-xl-3
             .reserves__item
               i.ico.ico-currency.ico-currency--bitcoin
               .reserves__item__content
                 .reserves__item__name BTCE USD
                 .reserves__item__left 15.9
           // item
-          .col-sm-4.col-xl-3
+          .col-sm-6.col-md-4.col-xl-3
             .reserves__item
               i.ico.ico-currency.ico-currency--yandex
               .reserves__item__content
@@ -232,14 +231,14 @@ html
                 .reserves__item__left 1 895.9
 
           // item
-          .col-sm-4.col-xl-3
+          .col-sm-6.col-md-4.col-xl-3
             .reserves__item
               i.ico.ico-currency.ico-currency--bitcoin
               .reserves__item__content
                 .reserves__item__name BTCE USD
                 .reserves__item__left 15.9
           // item
-          .col-sm-4.col-xl-3
+          .col-sm-6.col-md-4.col-xl-3
             .reserves__item
               i.ico.ico-currency.ico-currency--yandex
               .reserves__item__content
@@ -247,14 +246,14 @@ html
                 .reserves__item__left 1 895.9
 
           // item
-          .col-sm-4.col-xl-3
+          .col-sm-6.col-md-4.col-xl-3
             .reserves__item
               i.ico.ico-currency.ico-currency--bitcoin
               .reserves__item__content
                 .reserves__item__name BTCE USD
                 .reserves__item__left 15.9
           // item
-          .col-sm-4.col-xl-3
+          .col-sm-6.col-md-4.col-xl-3
             .reserves__item
               i.ico.ico-currency.ico-currency--yandex
               .reserves__item__content
@@ -262,7 +261,7 @@ html
                 .reserves__item__left 1 895.9
 
           // item
-          .col-sm-4.col-xl-3
+          .col-sm-6.col-md-4.col-xl-3
             .reserves__item
               i.ico.ico-currency.ico-currency--bitcoin
               .reserves__item__content
@@ -270,7 +269,7 @@ html
                 .reserves__item__left 15.9
 
           // item
-          .col-sm-4.col-xl-3
+          .col-sm-6.col-md-4.col-xl-3
             .reserves__item
               i.ico.ico-currency.ico-currency--yandex
               .reserves__item__content
@@ -278,14 +277,14 @@ html
                 .reserves__item__left 1 895.9
 
           // item
-          .col-sm-4.col-xl-3
+          .col-sm-6.col-md-4.col-xl-3
             .reserves__item
               i.ico.ico-currency.ico-currency--bitcoin
               .reserves__item__content
                 .reserves__item__name BTCE USD
                 .reserves__item__left 15.9
           // item
-          .col-sm-4.col-xl-3
+          .col-sm-6.col-md-4.col-xl-3
             .reserves__item
               i.ico.ico-currency.ico-currency--yandex
               .reserves__item__content
@@ -293,7 +292,7 @@ html
                 .reserves__item__left 1 895.9
 
           // item
-          .col-sm-4.col-xl-3
+          .col-sm-6.col-md-4.col-xl-3
             .reserves__item
               i.ico.ico-currency.ico-currency--bitcoin
               .reserves__item__content
@@ -331,7 +330,7 @@ html
     .testimonials
       .container
         .row
-          .col-sm-8
+          .col-sm-12.col-lg-8
             .block-heading отзывы
             .testimonials__wrapper.owl-carousel#owlTestmonials
               .testimonials__item
@@ -369,7 +368,7 @@ html
                 i.ico.ico-comments
                 span Ещё отзывы
 
-          .col-sm-4
+          .col-sm-6.offset-sm-3.col-lg-4.offset-lg-0.mt-30--dekstop
             .block-heading последний обмен
             .last-exchange
               .last-exchange__wrapper

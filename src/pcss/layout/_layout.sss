@@ -4,8 +4,8 @@ $mobile: width <= 568px
 $mobile-from: width >= 568px
 $tablet: width <= 768px
 $tablet-from: width <= 768px
-$desktop: width <= 1000px
-$desktop-from: width >= 1000px
+$desktop: width <= 992px
+$desktop-from: width >= 992px
 $wide: width <= 1200px
 $wide-from: width >= 1200px
 $hd: width <= 1680px
@@ -47,3 +47,9 @@ body, html
 .container
   max-width: 1310px
   width: 100%
+
+.condenced-pad
+  .col-sm-6
+    @media($wide)
+      padding-left: 7px
+      padding-right: 7px

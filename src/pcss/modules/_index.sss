@@ -5,8 +5,10 @@
   padding-bottom: 20px
   background: white
   padding-left: 60px
+  padding-right: 60px
   @media($desktop)
     padding-left: 0
+    padding-right: 0
   &__metrics
     padding-left: 24px
     display: inline-block
@@ -167,19 +169,35 @@
     border-radius: 8px
     padding: 30px 50px
     margin-bottom: 20px
+    @media($mobile)
+      padding: 20px 25px
     &--exchange
       padding: 40px
       margin-bottom: 0
+      flex: 1
+      @media($wide)
+        padding-left: 30px
+        padding-right: 30px
+
+      @media($mobile)
+        padding: 20px
       .counter__block__heading
         margin-bottom: 0
     &__heading
       font-family: 'Droid Serif', serif
       font-size: 30px
       margin-bottom: 20px
+      @media($desktop)
+        font-size: 26px
+      @media($tablet)
+        font-size: 24px
+
     &__exchange
       display: flex
       justify-content: space-between
       align-items: center
+      @media($mobile)
+        flex-wrap: wrap
     &__filters
       display: inline-block
     &__filter
@@ -191,6 +209,12 @@
       border-radius: 25px
       cursor: pointer
       transition: all .4s ease
+      @media($wide)
+        font-size: 14px
+        margin-right: 5px
+        padding: 3px 8px
+      @media($tablet)
+        padding: 2px 7px
       &:hover
         background: #a5a6bb
       &.active
@@ -204,18 +228,30 @@
         margin-right: 3px
         font-size: 20px
         color: #515974
+        vertical-align: 0
+        @media($wide)
+          font-size: 16px
+        @media($tablet)
+          margin-right: 0
+          font-size: 16px
+          vertical-align: 0px
 
 
 
   &__help-text
     font-size: 11px
     color: #888c98
+    @media($mobile)
+      margin-bottom: 10px
+      margin-top: -10px
 
 
 .exchange
+  .col-sm-6
+    display: flex
+    flex-direction: column
   &-list
-    height: 500px
-    overflow-y: scroll
+    height: auto
     margin-top: 35px
     &__item
       overflow: visible
@@ -254,6 +290,7 @@
         font-weight: 600
         font-size: 18px
         color: $colorBlue
+        border-bottom: 1px solid color($colorBlue a(35%))
         span
           font-weight: 400
       &__reserv
@@ -300,17 +337,37 @@
     justify-content: space-between
     align-items: center
     margin-bottom: 15px
+    @media($wide)
+      padding-left: 10px
+      padding-right: 10px
+    @media($tablet)
+      padding: 10px
+      margin-bottom: 8px
+      border-radius: 8px
     .ico-currency
       size: 60px
+      flex: 0 0 auto
+      @media($desktop)
+        size: 50px
+      @media($tablet)
+        size: 40px
     &__content
       flex: 1
       padding-left: 10px
       font-size: 18px
+      @media($wide)
+        font-size: 16px
+      @media($tablet)
+        font-size: 14px
     &__name
+      display: inline-block
       font-weight: 600
       color: $colorBlue
-      text-decoration: underline
+      line-height: 1em
+      padding-bottom: 2px
+      border-bottom: 1px solid color($colorBlue a(35%))
     &__left
+      display: block
       margin-top: 0px
       color: #303031
 
@@ -339,6 +396,13 @@
       font-size: 24px
       font-weight: 600
       transition: all .3s ease
+      @media($wide)
+        font-size: 22px
+      @media($desktop)
+        font-size: 20px
+      @media($tablet)
+        font-size: 18px
+
     &__short
       font-family: 'Droid Serif', serif
       font-size: 16px
@@ -346,9 +410,15 @@
       margin-bottom: 30px
       @media($tablet)
         margin-bottom: 10px
+      @media($desktop)
+        font-size: 14px
+        margin-bottom: 20px
     &__date
       font-size: 16px
       font-weight: 600
+      @media($desktop)
+        font-size: 14px
+
 
 .testimonials
   margin-top: 60px
@@ -358,6 +428,14 @@
     border-top-left-radius: 14px
     border-top-right-radius: 14px
     position: relative
+    @media($desktop)
+      padding: 35px 60px
+    @media($tablet)
+      padding: 25px 40px
+    @media($mobile)
+      padding-left: 20px
+      padding-right: 20px
+
   &__item
     &__head
       margin-bottom: 20px
@@ -381,6 +459,8 @@
       font-family: 'Droid Serif', serif
       font-size: 16px
       display: flex
+      @media($mobile)
+        font-size: 14px
       &__icons
         flex: 0 0 50px
         display: inline-block
@@ -408,12 +488,14 @@
     display: flex
     justify-content: space-between
     @media($wide)
-      padding: 70px 40px
+      padding: 70px 60px
     @media($desktop)
-      padding-left: 20px
-      padding-right: 20px
+      padding-left: 60px
+      padding-right: 60px
+    @media($mobile)
+      padding: 50px 20px
   &__item
-    flex: 1
+    flex: 0 1 auto
   &__name
     font-size: 18px
     line-height: 1
@@ -445,13 +527,19 @@
 
 .form-control
   font-size: 15px
-  padding: 16px 25px
+  padding: 16px 20px
   background: #f0f4f3
   border-radius: 8px
   border: 1px solid transparent
+  @media($mobile)
+    margin-bottom: 10px
   &.bold
     font-size: 18px
     font-weight: 600
+  &--short
+    @media($wide)
+      padding-left: 15px
+      padding-right: 15px
   &:focus
     background: #f0f4f3
     border-color: #657384
@@ -460,6 +548,8 @@
 
 .ui-select
   position: relative
+  @media($mobile)
+    margin-bottom: 15px
   &__visible
     padding: 6px 25px
     background: #f0f4f3
