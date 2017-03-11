@@ -33,35 +33,35 @@
     "IncomingDirectionsCurrencies": [
       {
         "CurrencyId": "0c03a3bf-04d8-11e7-bb36-6601a15671ae",
-        "LogoSrc": "/Content/uploads/currency/7d0ebddf-f0f3-11e6-bb36-6601a15671ae/logo",
+        "LogoName": "yandex",
         "Rate": 0,
-        "Title": "Яндекс Деньги EUR"
+        "Title": "Яндекс Деньги <span>EUR</span>"
       },
       {
         "CurrencyId": "0ccecda2-04d8-11e7-bb36-6601a15671ae",
-        "LogoSrc": "/Content/uploads/currency/7d0ebddf-f0f3-11e6-bb36-6601a15671ae/logo",
+        "LogoName": "yandex",
         "Rate": 0,
-        "Title": "Яндекс Деньги RUB"
+        "Title": "Яндекс Деньги <span>RUB</span>"
       }
     ],
     "OutgoingDirectionsCurrencies": [
       {
         "CurrencyId": "0a6374a5-04d8-11e7-bb36-6601a15671ae",
-        "LogoSrc": "/Content/uploads/currency/3f0618d7-f10b-11e6-bb36-6601a15671ae/logo",
+        "LogoName": "webmoney",
         "Rate": 0,
-        "Title": "Webmoney RUB"
+        "Title": "Webmoney <span>RUB</span>"
       },
       {
         "CurrencyId": "0b32c32c-04d8-11e7-bb36-6601a15671ae",
-        "LogoSrc": "/Content/uploads/currency/3f0618d7-f10b-11e6-bb36-6601a15671ae/logo",
+        "LogoName": "webmoney",
         "Rate": 0,
-        "Title": "Webmoney USD"
+        "Title": "Webmoney <span>USD</span>"
       },
       {
         "CurrencyId": "0c03a3bf-04d8-11e7-bb36-6601a15671ae",
-        "LogoSrc": "/Content/uploads/currency/7d0ebddf-f0f3-11e6-bb36-6601a15671ae/logo",
+        "LogoName": "yandex",
         "Rate": 0,
-        "Title": "Яндекс Деньги EUR"
+        "Title": "Яндекс Деньги <span>EUR</span>"
       }
     ]
   },

@@ -20,16 +20,8 @@ html
                       i.ico.ico-select
                       i.ico.ico-currency.ico-currency--qiwi
                       span.currency__name QIWI <span>RUB</span>
-                    .ui-select__dropdown
-                      .ui-select__dropdown__item(data-id="item")
-                        i.ico.ico-currency.ico-currency--sberbank
-                        span.currency__name Сбербанк <span>Онл@йн</span>
-                      .ui-select__dropdown__item(data-id="item")
-                        i.ico.ico-currency.ico-currency--tinkoff
-                        span.currency__name Тиньков <span>RUB</span>
-                      .ui-select__dropdown__item(data-id="item")
-                        i.ico.ico-currency.ico-currency--alpha
-                        span.currency__name Альфабанк <span>RUB</span>
+                    .ui-select__dropdown#incomingDirections
+                      // populated with ajax
 
                 .col-sm-5.col-xl-4
                   .ui-input
@@ -61,16 +53,9 @@ html
                       i.ico.ico-select
                       i.ico.ico-currency.ico-currency--qiwi
                       span.currency__name QIWI <span>RUB</span>
-                    .ui-select__dropdown
-                      .ui-select__dropdown__item(data-id="item")
-                        i.ico.ico-currency.ico-currency--sberbank
-                        span.currency__name Сбербанк <span>Онл@йн</span>
-                      .ui-select__dropdown__item(data-id="item")
-                        i.ico.ico-currency.ico-currency--tinkoff
-                        span.currency__name Тиньков <span>RUB</span>
-                      .ui-select__dropdown__item(data-id="item")
-                        i.ico.ico-currency.ico-currency--alpha
-                        span.currency__name Альфабанк <span>RUB</span>
+                    .ui-select__dropdown#outgoingDirections
+                      // populated with ajax
+
 
                 .col-sm-5.col-xl-4
                   .ui-input

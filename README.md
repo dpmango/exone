@@ -34,4 +34,4 @@ __Production__
 - Masked input
 - CSS Hamburgers
 
-gulp build && git add . && git commit -m "moving to functional part" && git push && git subtree push --prefix dist origin gh-pages
+gulp build && git add . && git commit -m "start function - puplate from json" && git push && git subtree push --prefix dist origin gh-pages
