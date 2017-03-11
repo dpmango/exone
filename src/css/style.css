@@ -2327,10 +2327,13 @@ body, html {
 }
 .form-control {
     padding: 16px 20px;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     border-radius: 8px;
     background: #f0f4f3;
     font-size: 15px;
+}
+.form-control.not-valid {
+    border-color: #f45b63;
 }
 .form-control.bold {
     font-weight: 600;
@@ -2365,6 +2368,9 @@ body, html {
         margin-bottom: 15px;
     }
 }
+.ui-select.not-valid .ui-select__visible {
+    border-color: #f45b63;
+}
 .ui-select__visible {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2373,6 +2379,8 @@ body, html {
     -webkit-align-items: center;
             align-items: center;
     padding: 6px 25px;
+    min-height: 52px;
+    border: 2px solid transparent;
     border-radius: 8px;
     background: #f0f4f3;
     cursor: pointer;

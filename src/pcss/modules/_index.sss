@@ -560,7 +560,9 @@
   padding: 16px 20px
   background: #f0f4f3
   border-radius: 8px
-  border: 1px solid transparent
+  border: 2px solid transparent
+  &.not-valid
+    border-color: $colorRed
   &.bold
     font-size: 18px
     font-weight: 600
@@ -581,14 +583,19 @@
   position: relative
   @media($mobile)
     margin-bottom: 15px
+  &.not-valid
+    .ui-select__visible
+      border-color: $colorRed
   &__visible
     padding: 6px 25px
+    min-height: 52px
     background: #f0f4f3
     border-radius: 8px
     cursor: pointer
     display: flex
     align-items: center
     transition: all .4s ease
+    border: 2px solid transparent
     .ico-select
       position: absolute
       top: 50%

@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+  //////////////
+  // BASIC STUFF
+  //////////////
+
  	// Prevent # errors
 	$('[href="#"]').click(function (e) {
 		e.preventDefault();
@@ -30,7 +34,10 @@ $(document).ready(function(){
   $("#date").mask("99/99/9999",{placeholder:"mm/dd/yyyy"});
   $("input[name='phone']").mask("9 (999) 999-9999");
 
+  //////////////
   // LOGIC
+  //////////////
+
   var params = {}
   $.ajax({
     type: 'GET',
@@ -71,6 +78,7 @@ $(document).ready(function(){
       });
   }
 
+  // store selected currecnies
   var selectedIncomingCurrencyID = "";
   var selectedOutgoingCurrencyID = "";
 
@@ -78,10 +86,27 @@ $(document).ready(function(){
   $('.ui-select__visible').on('click', function(){
     $(this).parent().find('.ui-select__dropdown').toggleClass('active');
   });
-  $('.ui-select__dropdown').on('click', '.ui-select__dropdown__item', function(){
+
+  $('#incomingDirections').on('click', '.ui-select__dropdown__item', function(){
     $(this).parent().removeClass('active');
     selectedIncomingCurrencyID = $(this).data('id');
-    console.log(selectedIncomingCurrencyID);
+    $.each(IncomingDirectionsCurrencies, function(key, val){
+      if ( val.CurrencyId == selectedIncomingCurrencyID){
+        var buildSelectedHtml = '<i class="ico ico-select"></i><i class="ico ico-currency ico-currency--'+ val.LogoName +'"></i><span class="currency__name">' + val.Title + '</span>'
+        $('#selectedIncomingDirection').html(buildSelectedHtml);
+      }
+    });
+  });
+
+  $('#outgoingDirections').on('click', '.ui-select__dropdown__item', function(){
+    $(this).parent().removeClass('active');
+    selectedOutgoingCurrencyID = $(this).data('id');
+    $.each(OutgoingDirectionsCurrencies, function(key, val){
+      if ( val.CurrencyId == selectedOutgoingCurrencyID){
+        var buildSelectedHtml = '<i class="ico ico-select"></i><i class="ico ico-currency ico-currency--'+ val.LogoName +'"></i><span class="currency__name">' + val.Title + '</span>'
+        $('#selectedOutgoingDirection').html(buildSelectedHtml);
+      }
+    });
   });
 
   $(document).mouseup(function (e) {
@@ -95,64 +120,95 @@ $(document).ready(function(){
     });
   });
 
-  // FAKE LOGIC
+
+  // SECOND STEP FUNCTIONALITY
+  var paymentData = {};
+  var firstStepValid = false;
+
+  function firstStepValidation(){
+    if (paymentData.incomingCurrency == ""){
+      $('#incomingDirections').closest('.ui-select').addClass('not-valid');
+      firstStepValid = false;
+    } else{
+      $('#incomingDirections').closest('.ui-select').removeClass('not-valid');
+    }
+
+    if (paymentData.incomingValue == ""){
+      $('#incomingValue').addClass('not-valid');
+      firstStepValid = false;
+    } else{
+      $('#incomingValue').removeClass('not-valid');
+    }
+
+    if (paymentData.incomingAccount == ""){
+      $('#incomingAccount').addClass('not-valid');
+      firstStepValid = false;
+    } else{
+      $('#incomingAccount').removeClass('not-valid');
+    }
+
+    if (paymentData.outgoingCurrency == ""){
+      $('#outgoingDirections').closest('.ui-select').addClass('not-valid');
+      firstStepValid = false;
+    } else{
+      $('#outgoingDirections').closest('.ui-select').removeClass('not-valid');
+    }
+
+    if (paymentData.outgoingValue == ""){
+      $('#outgoingValue').addClass('not-valid');
+      firstStepValid = false;
+    } else{
+      $('#outgoingValue').removeClass('not-valid');
+    }
+
+    if (paymentData.outgoingAccount == ""){
+      $('#outgoingAccount').addClass('not-valid');
+      firstStepValid = false;
+    } else{
+      $('#outgoingAccount').removeClass('not-valid');
+    }
+  }
+
+  $('#firstStep').on('click', function(){
+    paymentData = {
+      "incomingCurrency" : selectedIncomingCurrencyID,
+      "incomingValue" : $('#incomingValue').val(),
+      "incomingAccount" : $("#incomingAccount").val(),
+      "outgoingCurrency" : selectedOutgoingCurrencyID,
+      "outgoingValue" : $('#outgoingValue').val(),
+      "outgoingAccount" : $("#outgoingAccount").val()
+    }
+
+    // validation
+    firstStepValidation();
+
+    // if valid show next step
+    if (firstStepValid == true){
+      $('.counter').fadeOut();
+      $('.exchange').fadeIn();
+    }
+  });
+
+  //////////////
+  // SECOND STEP
+  //////////////
+
+  // set active class
   $('.exchange-list__item').on('click', function(){
     $(this).siblings().removeClass('active');
     $(this).addClass('active');
   });
 
-
-  // FAKE FUNCTIONALITY
-  $('#firstStep').on('click', function(){
-    $('.counter').fadeOut();
-    $('.exchange').fadeIn();
-  });
-
+  // refresh functionality
   $('.ico-refresh').on('click', function(){
     var that = $(this);
     that.addClass('refreshing');
+
+    // some ajax stuff
+
     setTimeout(function(){
       that.removeClass('refreshing');
     }, 1000);
   });
 
-  // // Magnific Popup
-  // $('.popup-with-zoom-anim').magnificPopup({
-  //   type: 'inline',
-  //   fixedContentPos: false,
-  //   fixedBgPos: true,
-  //   overflowY: 'auto',
-  //   closeBtnInside: true,
-  //   preloader: false,
-  //   midClick: true,
-  //   removalDelay: 300,
-  //   mainClass: 'my-mfp-zoom-in'
-  // });
-  //
-  // $('.popup-with-move-anim').magnificPopup({
-  //   type: 'inline',
-  //   fixedContentPos: false,
-  //   fixedBgPos: true,
-  //   overflowY: 'auto',
-  //   closeBtnInside: true,
-  //   preloader: false,
-  //   midClick: true,
-  //   removalDelay: 300,
-  //   mainClass: 'my-mfp-slide-bottom'
-  // });
-  //
-  // $('.popup-gallery').magnificPopup({
-	// 	delegate: 'a',
-	// 	type: 'image',
-	// 	tLoading: 'Loading image #%curr%...',
-	// 	mainClass: 'mfp-img-mobile',
-	// 	gallery: {
-	// 		enabled: true,
-	// 		navigateByImgClick: true,
-	// 		preload: [0,1]
-	// 	},
-	// 	image: {
-	// 		tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
-	// 	}
-	// });
 });
