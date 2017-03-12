@@ -128,44 +128,44 @@ $(document).ready(function(){
   function firstStepValidation(){
     if (paymentData.incomingCurrency == ""){
       $('#incomingDirections').closest('.ui-select').addClass('not-valid');
-      firstStepValid = false;
     } else{
       $('#incomingDirections').closest('.ui-select').removeClass('not-valid');
     }
 
     if (paymentData.incomingValue == ""){
       $('#incomingValue').addClass('not-valid');
-      firstStepValid = false;
     } else{
       $('#incomingValue').removeClass('not-valid');
     }
 
     if (paymentData.incomingAccount == ""){
       $('#incomingAccount').addClass('not-valid');
-      firstStepValid = false;
     } else{
       $('#incomingAccount').removeClass('not-valid');
     }
 
     if (paymentData.outgoingCurrency == ""){
       $('#outgoingDirections').closest('.ui-select').addClass('not-valid');
-      firstStepValid = false;
     } else{
       $('#outgoingDirections').closest('.ui-select').removeClass('not-valid');
     }
 
     if (paymentData.outgoingValue == ""){
       $('#outgoingValue').addClass('not-valid');
-      firstStepValid = false;
     } else{
       $('#outgoingValue').removeClass('not-valid');
     }
 
     if (paymentData.outgoingAccount == ""){
       $('#outgoingAccount').addClass('not-valid');
-      firstStepValid = false;
     } else{
       $('#outgoingAccount').removeClass('not-valid');
+    }
+
+    if (paymentData.incomingCurrency == "" || paymentData.incomingValue == "" || paymentData.incomingAccount == "" || paymentData.outgoingCurrency == "" || paymentData.outgoingValue == "" || paymentData.outgoingAccount == ""){
+      firstStepValid = false;
+    } else{
+      firstStepValid = true;
     }
   }
 
