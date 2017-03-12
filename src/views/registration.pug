@@ -5,358 +5,76 @@ html
   body
     include shared/header.pug
 
-    // EXCHANGE
-    .exchange
+    // РЕГИСТРАЦИЯ
+    .registration
       .container
         .row
-          .col-sm-10.offset-sm-1.col-md-8.offset-md-2.col-sm-8.col-lg-6.offset-lg-0
-            .counter__block.counter__block--exchange
-              .counter__block__exchange
-                .counter__block__heading Отдаёте  →
-                .counter__block__filters
-                  .counter__block__filter.active(data-filter="btc") <span>฿</span> BTC
-                  .counter__block__filter(data-filter="rur") <span>₽</span> RUR
-                  .counter__block__filter(data-filter="usd") <span>$</span> USD
-                  .counter__block__filter(data-filter="eur") <span>€</span> EUR
-
-              .exchange-list
-                .exchange-list__item(data-currency="btc").active
-                  .exchange-list__item__inner
-                    i.ico.ico-currency.ico-currency--bitcoin-yellow
-                    .exchange-list__item__name Bitcoin
-                .exchange-list__item(data-currency="btc")
-                  .exchange-list__item__inner
-                    i.ico.ico-currency.ico-currency--litecoin
-                    .exchange-list__item__name Litecoin
-                .exchange-list__item(data-currency="btc")
-                  .exchange-list__item__inner
-                    i.ico.ico-currency.ico-currency--ethereum
-                    .exchange-list__item__name Ethereum
-
-          .col-sm-10.offset-sm-1.col-md-8.offset-md-2.col-sm-8.col-lg-6.offset-lg-0
-            .counter__block.counter__block--exchange
-              .counter__block__exchange
-                .counter__block__heading Отдаёте  →
-                .counter__block__filters.counter__block__filters--second
-                  .counter__block__filter(data-filter="btc") <span>฿</span> BTC
-                  .counter__block__filter.active(data-filter="rur") <span>₽</span> RUR
-                  .counter__block__filter(data-filter="usd") <span>$</span> USD
-                  .counter__block__filter(data-filter="eur") <span>€</span> EUR
-
-              .exchange-list
-                .exchange-list__item(data-currency="btc")
-                  .exchange-list__item__inner
-                    i.ico.ico-currency.ico-currency--alpha
-                    .exchange-list__item__name Альфа-Банк <span>RUB</span>
-                    .exchange-list__item__reserv
-                      .exchange-list__item__reserv__name
-                        span Резерв
-                        i.ico.ico-question(data-toggle="tooltip" data-placement="left" title="Какая то инфа")
-                      .exchange-list__item__reserv__value
-                        span 7 470 RUR
-                  .exchange-list__item__fold
-                    .exchange-list__item__rate
-                      i.ico.ico-rate
-                      span Курс: 1 BTC = 69037 RUR
-                    .exchange-list__item__cta
-                      i.ico.ico-refresh
-                      a(href='#').btn.btn-primary Обменять
-                // items
-                .exchange-list__item(data-currency="btc").active
-                  .exchange-list__item__inner
-                    i.ico.ico-currency.ico-currency--sberbank
-                    .exchange-list__item__name Сбербанк <span>ОнЛ@йн</span>
-                    .exchange-list__item__reserv
-                      .exchange-list__item__reserv__name
-                        span Резерв
-                        i.ico.ico-question(data-toggle="tooltip" data-placement="left" title="Какая то инфа")
-                      .exchange-list__item__reserv__value
-                        span 7 470 RUR
-                  .exchange-list__item__fold
-                    .exchange-list__item__rate
-                      i.ico.ico-rate
-                      span Курс: 1 BTC = 69037 RUR
-                    .exchange-list__item__cta
-                      i.ico.ico-refresh
-                      a(href='#').btn.btn-primary Обменять
-
-                // items
-                .exchange-list__item(data-currency="btc")
-                  .exchange-list__item__inner
-                    i.ico.ico-currency.ico-currency--tinkoff
-                    .exchange-list__item__name Тинькофф <span>Кредитные Системы</span>
-                    .exchange-list__item__reserv
-                      .exchange-list__item__reserv__name
-                        span Резерв
-                        i.ico.ico-question(data-toggle="tooltip" data-placement="left" title="Какая то инфа")
-                      .exchange-list__item__reserv__value
-                        span 7 470 RUR
-                  .exchange-list__item__fold
-                    .exchange-list__item__rate
-                      i.ico.ico-rate
-                      span Курс: 1 BTC = 69037 RUR
-                    .exchange-list__item__cta
-                      i.ico.ico-refresh
-                      a(href='#').btn.btn-primary Обменять
-
-                // items
-                .exchange-list__item(data-currency="btc")
-                  .exchange-list__item__inner
-                    i.ico.ico-currency.ico-currency--qiwi
-                    .exchange-list__item__name QIWI <span>RUB</span>
-                    .exchange-list__item__reserv
-                      .exchange-list__item__reserv__name
-                        span Резерв
-                        i.ico.ico-question(data-toggle="tooltip" data-placement="left" title="Какая то инфа")
-                      .exchange-list__item__reserv__value
-                        span 7 470 RUR
-                  .exchange-list__item__fold
-                    .exchange-list__item__rate
-                      i.ico.ico-rate
-                      span Курс: 1 BTC = 69037 RUR
-                    .exchange-list__item__cta
-                      i.ico.ico-refresh
-                      a(href='#').btn.btn-primary Обменять
-
-    // COUNTER::START
-    .counter
-      .container
-        .row
-          .col-sm-10.offset-sm-1.col-md-8.offset-md-2.col-sm-8.col-lg-6.offset-lg-0
-            // block
+          .col-sm-12.col-lg-8
             .counter__block
-              .counter__block__heading Отдаёте ↓
-              .row
-                .col-sm-7.col-xl-8
-                  .ui-select
-                    .ui-select__visible#selectedIncomingDirection
-                      i.ico.ico-select
-                      span.currency__name Выберите валюту
-                    .ui-select__dropdown#incomingDirections
-                      // populated with ajax
+              .counter__block__heading Регистрация пользователя
 
-                .col-sm-5.col-xl-4
-                  .ui-input
-                    span Сумма:
-                    input(type="text" value="5000")#incomingValue.form-control.form-control--short
-
-              // row
-              .row.mt15
-                .col-sm-7.col-xl-8
-                  .counter__help-text С учетом комиссии платежной системы QIWI RUB (0.15 %) к списания с вашего счета
-                .col-sm-5.col-xl-4
-                  .ui-input
-                    span Сумма:
-                    input(type="text" value="5126,00" disabled).form-control.form-control--short
-              // row
-              .row
-                .col-sm-7.col-xl-8
-                  .form-group
-                    label Со счета:
-                    input(type="text" placeholder="введите счет")#incomingAccount.form-control.bold
-
-            // BLOCK
-            .counter__block
-              .counter__block__heading Получаете ↓
-              .row
-                .col-sm-7.col-xl-8
-                  .ui-select
-                    .ui-select__visible#selectedOutgoingDirection
-                      i.ico.ico-select
-                      span.currency__name Выберите валюту
-                    .ui-select__dropdown#outgoingDirections
-                      // populated with ajax
-
-
-                .col-sm-5.col-xl-4
-                  .ui-input
-                    span Сумма:
-                    input(type="text" value="5000")#outgoingValue.form-control.form-control--short
-
-              // row
-              .row.mt15
-                .col-sm-7.col-xl-8
-                  .counter__help-text С учетом комиссии платежной системы QIWI RUB (0.15 %) к списания с вашего счета
-                .col-sm-5.col-xl-4
-                  .ui-input
-                    span Сумма:
-                    input(type="text" value="5126,00" disabled).form-control.form-control--short
-              // row
-              .row
-                .col-sm-7.col-xl-8
-                  .form-group
-                    label На счет:
-                    input(type="text" placeholder="введите счет")#outgoingAccount.form-control.bold
-                .col-sm-5.col-xl-4.mt35
-                  a(href="#")#firstStep.btn.btn-primary.btn-block Дальше
-
-          .col-sm-10.offset-sm-1.col-md-8.offset-md-2.col-lg-6.offset-lg-0
-            .counter__block
-              .counter__block__heading Персональные данные
-              form(action="").counter__contacts-collector
+              form(action="#")
                 .row
-                  .col-sm-8
+                  .col-sm-6
                     .form-group
-                      input(type="text" placeholder="Фамилия").form-control
-                  .col-sm-4
-                    .counter__input-helper
-                      i.ico.ico-checkmark
-                      span Данные из профиля
-                  .col-sm-8
+                      label Логин
+                      input(type="text" placeholder="Логин").form-control
+                  .col-sm-6
                     .form-group
-                      input(type="text" placeholder="Имя").form-control
-                  .col-sm-4
-                  .col-sm-8
+                      label Email
+                      input(type="email" placeholder="Ваш email").form-control
+                  .col-sm-6
                     .form-group
-                      input(type="text" placeholder="Отчество").form-control
-                  .col-sm-4
-                  .col-sm-8
+                      label Пароль
+                      input(type="password" placeholder="Ваш пароль").form-control
+                  .col-sm-6
                     .form-group
-                      input(type="email" placeholder="Email").form-control.not-valid
-                  .col-sm-4
-                    .counter__input-helper.counter__input-helper--validation
-                      span Ошибка! <br> Необходимо ввести Email
-                  .col-sm-8
+                      label Подтвердите пароль
+                      input(type="password" placeholder="Подтвердите пароль").form-control
+                  .col-sm-6
                     .form-group
-                      input(type="tel" placeholder="Телефон").form-control
-                  .col-sm-4
-                  .col-sm-8
-                    .captcha
-                      input(type="text" value="3" disabled).form-control
-                      span +
-                      input(type="text" value="6" disabled).form-control
-                      span =
-                      input(type="text" value="").form-control
-                      i.ico.ico-refresh
+                      label Имя
+                      input(type="text" placeholder="Ваше имя").form-control
+                  .col-sm-6
+                    .form-group
+                      label Фамилия
+                      input(type="text" placeholder="Ваша фамилия").form-control
+                  .col-sm-6
+                    .form-group
+                      label Дата рождения
+                      .captcha.birthday
+                        input(type="text" placeholder="23").form-control
+                        input(type="text" placeholder="23").form-control
+                        input(type="text" placeholder="23").form-control
 
-                  .col-sm-12.text-center.mt35
-                    a(href='#').btn.btn-primary.btn-green Продолжить
+                  .col-sm-6
+                    .form-group
+                      label Телефон
+                      input(type="tel" placeholder="Ваш Телефон").form-control
+                .row
+                  .col-sm-12
+                    .ui-checkbox
+                      input(type="checkbox" name='agree' id='agree')
+                      label(for="agree") Я принимаю согласие на обработку моих данных, а также ознакомлен с <a href="#">правилами</a> сайта.
 
-    // РЕЗЕРВЫ
-    .reserves
-      .container
-        .row
-          .col-sm-12
-            .block-heading резерв валюты
-        .row.condenced-pad
-          // item
-          .col-sm-6.col-md-4.col-xl-3
-            .reserves__item
-              i.ico.ico-currency.ico-currency--yandex
-              .reserves__item__content
-                .reserves__item__name Яндекс.Деньги RUR
-                .reserves__item__left 1 895.9
+                    .counter__input-helper--validation
+                      span Ошибка! <br> Исправьте поля выделенные красным
 
-          // item
-          .col-sm-6.col-md-4.col-xl-3
-            .reserves__item
-              i.ico.ico-currency.ico-currency--bitcoin
-              .reserves__item__content
-                .reserves__item__name BTCE USD
-                .reserves__item__left 15.9
-          // item
-          .col-sm-6.col-md-4.col-xl-3
-            .reserves__item
-              i.ico.ico-currency.ico-currency--yandex
-              .reserves__item__content
-                .reserves__item__name Яндекс.Деньги RUR
-                .reserves__item__left 1 895.9
+                    .text-center.mt15
+                      button(type="submit").btn.btn-primary.btn-green Завершить регистрацию
 
-          // item
-          .col-sm-6.col-md-4.col-xl-3
-            .reserves__item
-              i.ico.ico-currency.ico-currency--bitcoin
-              .reserves__item__content
-                .reserves__item__name BTCE USD
-                .reserves__item__left 15.9
-          // item
-          .col-sm-6.col-md-4.col-xl-3
-            .reserves__item
-              i.ico.ico-currency.ico-currency--yandex
-              .reserves__item__content
-                .reserves__item__name Яндекс.Деньги RUR
-                .reserves__item__left 1 895.9
+          .col-sm-10.offset-sm-1.col-lg-4.offset-lg-0.mt-30--dekstop.no-pad-l
 
-          // item
-          .col-sm-6.col-md-4.col-xl-3
-            .reserves__item
-              i.ico.ico-currency.ico-currency--bitcoin
-              .reserves__item__content
-                .reserves__item__name BTCE USD
-                .reserves__item__left 15.9
-          // item
-          .col-sm-6.col-md-4.col-xl-3
-            .reserves__item
-              i.ico.ico-currency.ico-currency--yandex
-              .reserves__item__content
-                .reserves__item__name Яндекс.Деньги RUR
-                .reserves__item__left 1 895.9
+            .counter__block.counter__block--narrow
+              .counter__block__heading Правила сайта
+              .registration__rules
+                p 1. Термины, используемые в настоящих Правилах
 
-          // item
-          .col-sm-6.col-md-4.col-xl-3
-            .reserves__item
-              i.ico.ico-currency.ico-currency--bitcoin
-              .reserves__item__content
-                .reserves__item__name BTCE USD
-                .reserves__item__left 15.9
+                p 1.1. Сайт ВКонтакте (или Сайт) – социальная сеть, известная под именем «ВКонтакте», размещенная на сайте в сети Интернет по адресу: VK.com (включая все уровни указанного домена, как функционирующие на дату принятия Пользователем настоящих Правил, так и запускаемые и вводимые в эксплуатацию в течение всего срока его действия) и доступная Пользователю через сайт, мобильную версию сайта, приложения и иные ресурсы, представляющая собой результат интеллектуальной деятельности в форме программы для ЭВМ. Социальная сеть представлена в объективной форме совокупностью данных и команд, и порождаемых аудиовизуальных отображений (включая входящие в ее состав графические изображения и пользовательский интерфейс), (далее – данные и команды), предназначенных для функционирования ЭВМ и мобильных устройств в целях получения определенного результата в виде организации функционала социальной сети. Совокупность данных и команд состоит из активированных и неактивированных данных и команд.
 
-          // item
-          .col-sm-6.col-md-4.col-xl-3
-            .reserves__item
-              i.ico.ico-currency.ico-currency--yandex
-              .reserves__item__content
-                .reserves__item__name Яндекс.Деньги RUR
-                .reserves__item__left 1 895.9
+                p 1.2. Неактивированные данные и команды – данные, команды и порождаемые аудиовизуальные отображения, позволяющие увеличить количество виртуальных ценностей, используемых в рамках функциональных возможностей Сайта. Условия предоставления Администрацией Пользователю права на использование неактивированных данных и команд определены в лицензионном соглашении, действующая редакция которого располагается в свободном доступе в сети Интернет по адресу: http://vk.com/licence, заключаемом Администрацией Сайта с Пользователем.
 
-          // item
-          .col-sm-6.col-md-4.col-xl-3
-            .reserves__item
-              i.ico.ico-currency.ico-currency--bitcoin
-              .reserves__item__content
-                .reserves__item__name BTCE USD
-                .reserves__item__left 15.9
-          // item
-          .col-sm-6.col-md-4.col-xl-3
-            .reserves__item
-              i.ico.ico-currency.ico-currency--yandex
-              .reserves__item__content
-                .reserves__item__name Яндекс.Деньги RUR
-                .reserves__item__left 1 895.9
 
-          // item
-          .col-sm-6.col-md-4.col-xl-3
-            .reserves__item
-              i.ico.ico-currency.ico-currency--bitcoin
-              .reserves__item__content
-                .reserves__item__name BTCE USD
-                .reserves__item__left 15.9
-
-    // НОВОСТИ
-    .news
-      .container
-        .row
-          .col-sm-12
-            .block-heading Новости
-            .news__wrapper
-              // item
-              .news__item
-                a(href='#').news__item__name Где купить доллары?
-                .news__item__short Открыты новые направления для вывода электронных валют: Contact, Unistream, MoneyGram и другие системы денежных переводов.
-                .news__item__date 20.08.2016
-              // item
-              .news__item
-                a(href='#').news__item__name Новые направления для вывода электронных валют
-                .news__item__short Открыты новые направления для вывода электронных валют: Contact, Unistream, MoneyGram и другие системы денежных переводов.
-                .news__item__date 20.08.2016
-              // item
-              .news__item
-                a(href='#').news__item__name Где купить доллары?
-                .news__item__short Открыты новые направления для вывода электронных валют: Contact, Unistream, MoneyGram и другие системы денежных переводов.
-                .news__item__date 20.08.2016
-            .block__muted-bottom
-              a(href='#')
-                i.ico.ico-files
-                span Ещё новости
 
     // ОТЗЫВЫ
     .testimonials
