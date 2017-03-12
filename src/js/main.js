@@ -35,8 +35,55 @@ $(document).ready(function(){
   $("input[name='phone']").mask("9 (999) 999-9999");
 
   //////////////
+  // FIRST STEP
+  //////////////
+
+  // set active class
+  $('.exchange-list__item').on('click', function(){
+    $(this).siblings().removeClass('active');
+    $(this).addClass('active');
+  });
+
+  $('.counter__block__filter').on('click', function(){
+    var currentFilter = $(this).data('filter');
+    $(this).siblings().removeClass('active');
+    $(this).addClass('active');
+
+    // filters
+    var targetBlocks = $(this).closest('.col-sm-10').find('.exchange-list__item');
+
+    $.each(targetBlocks, function(key, val){
+      console.log(val);
+      if ( $(val).data('currency') == currentFilter){
+        $(this).show();
+      } else{
+        $(this).hide();
+      }
+    });
+
+  });
+
+  $('.exchange').on('click', '.btn-primary', function(){
+    $('.exchange').fadeOut();
+    $('.counter').fadeIn();
+  });
+
+  // refresh functionality
+  $('.ico-refresh').on('click', function(){
+    var that = $(this);
+    that.addClass('refreshing');
+
+    // some ajax stuff
+
+    setTimeout(function(){
+      that.removeClass('refreshing');
+    }, 1000);
+  });
+
+  //////////////
   // LOGIC
   //////////////
+
 
   var params = {}
   $.ajax({
@@ -184,31 +231,9 @@ $(document).ready(function(){
 
     // if valid show next step
     if (firstStepValid == true){
-      $('.counter').fadeOut();
-      $('.exchange').fadeIn();
+      // do somethings
     }
   });
 
-  //////////////
-  // SECOND STEP
-  //////////////
-
-  // set active class
-  $('.exchange-list__item').on('click', function(){
-    $(this).siblings().removeClass('active');
-    $(this).addClass('active');
-  });
-
-  // refresh functionality
-  $('.ico-refresh').on('click', function(){
-    var that = $(this);
-    that.addClass('refreshing');
-
-    // some ajax stuff
-
-    setTimeout(function(){
-      that.removeClass('refreshing');
-    }, 1000);
-  });
 
 });

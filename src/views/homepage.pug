@@ -5,78 +5,6 @@ html
   body
     include shared/header.pug
 
-    // COUNTER::START
-    .counter
-      .container
-        .row
-          .col-sm-10.offset-sm-1.col-md-8.offset-md-2.col-sm-8.col-lg-6.offset-lg-0
-            // block
-            .counter__block
-              .counter__block__heading Отдаёте ↓
-              .row
-                .col-sm-7.col-xl-8
-                  .ui-select
-                    .ui-select__visible#selectedIncomingDirection
-                      i.ico.ico-select
-                      span.currency__name Выберите валюту
-                    .ui-select__dropdown#incomingDirections
-                      // populated with ajax
-
-                .col-sm-5.col-xl-4
-                  .ui-input
-                    span Сумма:
-                    input(type="text" value="5000")#incomingValue.form-control.form-control--short
-
-              // row
-              .row.mt15
-                .col-sm-7.col-xl-8
-                  .counter__help-text С учетом комиссии платежной системы QIWI RUB (0.15 %) к списания с вашего счета
-                .col-sm-5.col-xl-4
-                  .ui-input
-                    span Сумма:
-                    input(type="text" value="5126,00" disabled).form-control.form-control--short
-              // row
-              .row
-                .col-sm-7.col-xl-8
-                  .form-group
-                    label Со счета:
-                    input(type="text" placeholder="введите счет")#incomingAccount.form-control.bold
-          .col-sm-10.offset-sm-1.col-md-8.offset-md-2.col-lg-6.offset-lg-0
-            // BLOCK
-            .counter__block
-              .counter__block__heading Получаете ↓
-              .row
-                .col-sm-7.col-xl-8
-                  .ui-select
-                    .ui-select__visible#selectedOutgoingDirection
-                      i.ico.ico-select
-                      span.currency__name Выберите валюту
-                    .ui-select__dropdown#outgoingDirections
-                      // populated with ajax
-
-
-                .col-sm-5.col-xl-4
-                  .ui-input
-                    span Сумма:
-                    input(type="text" value="5000")#outgoingValue.form-control.form-control--short
-
-              // row
-              .row.mt15
-                .col-sm-7.col-xl-8
-                  .counter__help-text С учетом комиссии платежной системы QIWI RUB (0.15 %) к списания с вашего счета
-                .col-sm-5.col-xl-4
-                  .ui-input
-                    span Сумма:
-                    input(type="text" value="5126,00" disabled).form-control.form-control--short
-              // row
-              .row
-                .col-sm-7.col-xl-8
-                  .form-group
-                    label На счет:
-                    input(type="text" placeholder="введите счет")#outgoingAccount.form-control.bold
-                .col-sm-5.col-xl-4.mt35
-                  a(href="#")#firstStep.btn.btn-primary.btn-block Дальше
-
     // EXCHANGE
     .exchange
       .container
@@ -87,9 +15,9 @@ html
                 .counter__block__heading Отдаёте  →
                 .counter__block__filters
                   .counter__block__filter.active(data-filter="btc") <span>฿</span> BTC
-                  .counter__block__filter(data-filter="") <span>₽</span> RUR
-                  .counter__block__filter(data-filter="") <span>$</span> USD
-                  .counter__block__filter(data-filter="") <span>€</span> EUR
+                  .counter__block__filter(data-filter="rur") <span>₽</span> RUR
+                  .counter__block__filter(data-filter="usd") <span>$</span> USD
+                  .counter__block__filter(data-filter="eur") <span>€</span> EUR
 
               .exchange-list
                 .exchange-list__item(data-currency="btc").active
@@ -109,11 +37,11 @@ html
             .counter__block.counter__block--exchange
               .counter__block__exchange
                 .counter__block__heading Отдаёте  →
-                .counter__block__filters
-                  .counter__block__filter.active(data-filter="") <span>฿</span> BTC
-                  .counter__block__filter(data-filter="") <span>₽</span> RUR
-                  .counter__block__filter(data-filter="") <span>$</span> USD
-                  .counter__block__filter(data-filter="") <span>€</span> EUR
+                .counter__block__filters.counter__block__filters--second
+                  .counter__block__filter(data-filter="btc") <span>฿</span> BTC
+                  .counter__block__filter.active(data-filter="rur") <span>₽</span> RUR
+                  .counter__block__filter(data-filter="usd") <span>$</span> USD
+                  .counter__block__filter(data-filter="eur") <span>€</span> EUR
 
               .exchange-list
                 .exchange-list__item(data-currency="btc")
@@ -189,6 +117,121 @@ html
                     .exchange-list__item__cta
                       i.ico.ico-refresh
                       a(href='#').btn.btn-primary Обменять
+
+    // COUNTER::START
+    .counter
+      .container
+        .row
+          .col-sm-10.offset-sm-1.col-md-8.offset-md-2.col-sm-8.col-lg-6.offset-lg-0
+            // block
+            .counter__block
+              .counter__block__heading Отдаёте ↓
+              .row
+                .col-sm-7.col-xl-8
+                  .ui-select
+                    .ui-select__visible#selectedIncomingDirection
+                      i.ico.ico-select
+                      span.currency__name Выберите валюту
+                    .ui-select__dropdown#incomingDirections
+                      // populated with ajax
+
+                .col-sm-5.col-xl-4
+                  .ui-input
+                    span Сумма:
+                    input(type="text" value="5000")#incomingValue.form-control.form-control--short
+
+              // row
+              .row.mt15
+                .col-sm-7.col-xl-8
+                  .counter__help-text С учетом комиссии платежной системы QIWI RUB (0.15 %) к списания с вашего счета
+                .col-sm-5.col-xl-4
+                  .ui-input
+                    span Сумма:
+                    input(type="text" value="5126,00" disabled).form-control.form-control--short
+              // row
+              .row
+                .col-sm-7.col-xl-8
+                  .form-group
+                    label Со счета:
+                    input(type="text" placeholder="введите счет")#incomingAccount.form-control.bold
+
+            // BLOCK
+            .counter__block
+              .counter__block__heading Получаете ↓
+              .row
+                .col-sm-7.col-xl-8
+                  .ui-select
+                    .ui-select__visible#selectedOutgoingDirection
+                      i.ico.ico-select
+                      span.currency__name Выберите валюту
+                    .ui-select__dropdown#outgoingDirections
+                      // populated with ajax
+
+
+                .col-sm-5.col-xl-4
+                  .ui-input
+                    span Сумма:
+                    input(type="text" value="5000")#outgoingValue.form-control.form-control--short
+
+              // row
+              .row.mt15
+                .col-sm-7.col-xl-8
+                  .counter__help-text С учетом комиссии платежной системы QIWI RUB (0.15 %) к списания с вашего счета
+                .col-sm-5.col-xl-4
+                  .ui-input
+                    span Сумма:
+                    input(type="text" value="5126,00" disabled).form-control.form-control--short
+              // row
+              .row
+                .col-sm-7.col-xl-8
+                  .form-group
+                    label На счет:
+                    input(type="text" placeholder="введите счет")#outgoingAccount.form-control.bold
+                .col-sm-5.col-xl-4.mt35
+                  a(href="#")#firstStep.btn.btn-primary.btn-block Дальше
+
+          .col-sm-10.offset-sm-1.col-md-8.offset-md-2.col-lg-6.offset-lg-0
+            .counter__block
+              .counter__block__heading Персональные данные
+              form(action="").counter__contacts-collector
+                .row
+                  .col-sm-8
+                    .form-group
+                      input(type="text" placeholder="Фамилия").form-control
+                  .col-sm-4
+                    .counter__input-helper
+                      i.ico.ico-checkmark
+                      span Данные из профиля
+                  .col-sm-8
+                    .form-group
+                      input(type="text" placeholder="Имя").form-control
+                  .col-sm-4
+                  .col-sm-8
+                    .form-group
+                      input(type="text" placeholder="Отчество").form-control
+                  .col-sm-4
+                  .col-sm-8
+                    .form-group
+                      input(type="email" placeholder="Email").form-control.not-valid
+                  .col-sm-4
+                    .counter__input-helper.counter__input-helper--validation
+                      span Ошибка! <br> Необходимо ввести Email
+                  .col-sm-8
+                    .form-group
+                      input(type="tel" placeholder="Телефон").form-control
+                  .col-sm-4
+                  .col-sm-8
+                    .captcha
+                      input(type="text" value="3" disabled).form-control
+                      span +
+                      input(type="text" value="6" disabled).form-control
+                      span =
+                      input(type="text" value="").form-control
+                      i.ico.ico-refresh
+
+                  .col-sm-12.text-center.mt35
+                    a(href='#').btn.btn-primary.btn-green Продолжить
+
     // РЕЗЕРВЫ
     .reserves
       .container

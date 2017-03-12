@@ -168,6 +168,7 @@
 // COUNTER
 .counter
   margin-top: 25px
+
   &__block
     background: white
     border-radius: 8px
@@ -206,6 +207,10 @@
         flex-wrap: wrap
     &__filters
       display: inline-block
+      &--second
+        .counter__block__filter.active
+          background: $colorGreen
+          border-color: $colorGreen
     &__filter
       display: inline-block
       font-size: 16px
@@ -242,8 +247,6 @@
           font-size: 16px
           vertical-align: 0px
 
-
-
   &__help-text
     font-size: 11px
     color: #888c98
@@ -251,9 +254,26 @@
       margin-bottom: 10px
       margin-top: -10px
 
+  &__input-helper
+    display: flex
+    align-items: center
+    margin-bottom: 15px
+    font-size: 12px
+    .ico
+      margin-right: 7px
+    &--validation
+      color: $colorValidation
+      font-size: 11px
+
+  &__contacts-collector
+    margin-right: -20px
+    .col-sm-4
+      display: flex
+      align-items: center
+
+
 
 .exchange
-  display: none
   margin-top: 25px
 
   .col-sm-10
@@ -444,6 +464,47 @@
       @media($desktop)
         font-size: 14px
 
+  &__card
+    background: white
+    border-radius: 10px
+    overflow: hidden
+    margin-bottom: 20px
+    box-shadow: 0 0 16px color(black a(25%))
+    transition: all .4s ease
+    &:hover
+      box-shadow: none
+
+    &__content
+      padding: 20px 30px
+    &__image
+      height: 170px
+      position: relative
+      overflow: hidden
+      @media($desktop)
+        height: 150px
+      img
+        width: 100%
+        position: absolute
+        top: 0
+        left: 0
+    &__metrics
+      display: flex
+      font-size: 16px
+      font-weight: 600
+      @media($desktop)
+        font-size: 14px
+    &__metric
+      display: flex
+      align-items: center
+      margin-right: 15px
+      .ico
+        margin-right: 7px
+
+
+
+
+
+
 
 .testimonials
   margin-top: 60px
@@ -562,7 +623,7 @@
   border-radius: 8px
   border: 2px solid transparent
   &.not-valid
-    border-color: $colorRed
+    border-color: $colorValidation
   &.bold
     font-size: 18px
     font-weight: 600
@@ -585,7 +646,7 @@
     margin-bottom: 15px
   &.not-valid
     .ui-select__visible
-      border-color: $colorRed
+      border-color: $colorValidation
   &__visible
     padding: 6px 25px
     min-height: 52px
@@ -627,3 +688,27 @@
       align-items: center
       &:hover
         background: color(#f0f4f3 a(50%))
+
+.captcha
+  display: flex
+  align-items: center
+  .form-control
+    display: inline-block
+    padding-left: 5px
+    padding-right: 5px
+    text-align: center
+    flex: 0 1 45px
+  .ico-refresh
+    flex: 0 0 20px
+    margin-left: 10px
+  span
+    padding-left: 7px
+    padding-right: 7px
+    font-size: 18px
+    font-weight: 600
+  input[disabled]
+    cursor: auto
+    color: $fontColor
+    background-color: #f0f4f3
+    ::placeholder
+      color: $fontColor
