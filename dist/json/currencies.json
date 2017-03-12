@@ -1,0 +1,70 @@
+{
+  "data": {
+    "ActiveDirections": [
+      {
+        "Currency1Id": "0ccecda2-04d8-11e7-bb36-6601a15671ae",
+        "Currency2Id": "0a6374a5-04d8-11e7-bb36-6601a15671ae",
+        "Id": "128f045a-04d8-11e7-bb36-6601a15671ae",
+        "Rate1": 1,
+        "Rate2": 1
+      },
+      {
+        "Currency1Id": "0c03a3bf-04d8-11e7-bb36-6601a15671ae",
+        "Currency2Id": "0b32c32c-04d8-11e7-bb36-6601a15671ae",
+        "Id": "15495563-04d8-11e7-bb36-6601a15671ae",
+        "Rate1": 1,
+        "Rate2": 0.9
+      },
+      {
+        "Currency1Id": "0ccecda2-04d8-11e7-bb36-6601a15671ae",
+        "Currency2Id": "0b32c32c-04d8-11e7-bb36-6601a15671ae",
+        "Id": "17ff0792-04d8-11e7-bb36-6601a15671ae",
+        "Rate1": 60,
+        "Rate2": 1
+      },
+      {
+        "Currency1Id": "0ccecda2-04d8-11e7-bb36-6601a15671ae",
+        "Currency2Id": "0c03a3bf-04d8-11e7-bb36-6601a15671ae",
+        "Id": "1ac44ab9-04d8-11e7-bb36-6601a15671ae",
+        "Rate1": 65,
+        "Rate2": 1
+      }
+    ],
+    "IncomingDirectionsCurrencies": [
+      {
+        "CurrencyId": "0c03a3bf-04d8-11e7-bb36-6601a15671ae",
+        "LogoName": "yandex",
+        "Rate": 0,
+        "Title": "Яндекс Деньги <span>EUR</span>"
+      },
+      {
+        "CurrencyId": "0ccecda2-04d8-11e7-bb36-6601a15671ae",
+        "LogoName": "yandex",
+        "Rate": 0,
+        "Title": "Яндекс Деньги <span>RUB</span>"
+      }
+    ],
+    "OutgoingDirectionsCurrencies": [
+      {
+        "CurrencyId": "0a6374a5-04d8-11e7-bb36-6601a15671ae",
+        "LogoName": "webmoney",
+        "Rate": 0,
+        "Title": "Webmoney <span>RUB</span>"
+      },
+      {
+        "CurrencyId": "0b32c32c-04d8-11e7-bb36-6601a15671ae",
+        "LogoName": "webmoney",
+        "Rate": 0,
+        "Title": "Webmoney <span>USD</span>"
+      },
+      {
+        "CurrencyId": "0c03a3bf-04d8-11e7-bb36-6601a15671ae",
+        "LogoName": "yandex",
+        "Rate": 0,
+        "Title": "Яндекс Деньги <span>EUR</span>"
+      }
+    ]
+  },
+  "Status": "Success",
+  "Message": "Выполнено"
+}

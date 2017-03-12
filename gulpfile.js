@@ -53,7 +53,7 @@ gulp.task('build', function (callback) {
     'clean:dist',
     'pug',
     'postcss',
-    ['useref', 'images', 'fonts'],
+    ['useref', 'images', 'fonts', 'json'],
     'cssnano',
     callback
   )
@@ -164,7 +164,10 @@ gulp.task('fonts', function() {
   return gulp.src('./src/fonts/**/*')
   .pipe(gulp.dest('dist/fonts'))
 })
-
+gulp.task('json', function() {
+  return gulp.src('./src/json/**/*')
+  .pipe(gulp.dest('dist/json'))
+})
 gulp.task('clean:dist', function() {
   return del.sync(['dist/**/*', '!dist/images', '!dist/images/**/*']);
 })
