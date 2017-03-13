@@ -30,6 +30,25 @@ $(document).ready(function(){
     autoplay: true
   });
 
+  // hamburger
+  $('.hamburger').on('click', function(){
+    $(this).toggleClass('is-active');
+    $('.mobile-menu').toggleClass('is-active');
+    $('.pusher').toggleClass('is-active');
+  });
+
+  $(document).mouseup(function (e) {
+    var container = new Array();
+    container.push($('.mobile-menu'));
+
+    $.each(container, function(key, value) {
+        if (!$(value).is(e.target) && $(value).has(e.target).length === 0) {
+          $('.hamburger').removeClass('is-active');
+          $('.mobile-menu').removeClass('is-active');
+          $('.pusher').removeClass('is-active');
+        }
+    });
+  });
   // Masked input
   $("#date").mask("99/99/9999",{placeholder:"mm/dd/yyyy"});
   $("input[name='phone']").mask("9 (999) 999-9999");

@@ -3,161 +3,164 @@ html
   include shared/head.pug
 
   body
-    include shared/header.pug
+    include shared/mobile-menu.pug
 
-    // NEWS
-    .news
-      .container
-        .row
-          // news card
-          .col-sm-6.col-md-4
-            .news__card
-              .news__card__image
-                img(src="images/newsImage.png")
-              .news__card__content
-                a(href="#").news__item__name Как создать свою операционную систему с нуля?
-                .news__item__short Открыты новые направления для вывода электронных валют: Contact, Unistream, MoneyGram и другие системы денежных переводов.
-                .news__card__metrics
-                  .news__card__metric
-                    i.ico.ico-time
-                    span 20.08.2016
-                  .news__card__metric
-                    i.ico.ico-chat
-                    span 17
-          // news card
-          .col-sm-6.col-md-4
-            .news__card
-              .news__card__image
-                img(src="images/newsImage.png")
-              .news__card__content
-                a(href="#").news__item__name Как создать свою операционную систему с нуля?
-                .news__item__short Открыты новые направления для вывода электронных валют: Contact, Unistream, MoneyGram и другие системы денежных переводов.
-                .news__card__metrics
-                  .news__card__metric
-                    i.ico.ico-time
-                    span 20.08.2016
-                  .news__card__metric
-                    i.ico.ico-chat
-                    span 17
-          // news card
-          .col-sm-6.col-md-4
-            .news__card
-              .news__card__image
-                img(src="images/newsImage.png")
-              .news__card__content
-                a(href="#").news__item__name Как создать свою операционную систему с нуля?
-                .news__item__short Открыты новые направления для вывода электронных валют: Contact, Unistream, MoneyGram и другие системы денежных переводов.
-                .news__card__metrics
-                  .news__card__metric
-                    i.ico.ico-time
-                    span 20.08.2016
-                  .news__card__metric
-                    i.ico.ico-chat
-                    span 17
-          // news card
-          .col-sm-6.col-md-4
-            .news__card
-              .news__card__image
-                img(src="images/newsImage.png")
-              .news__card__content
-                a(href="#").news__item__name Как создать свою операционную систему с нуля?
-                .news__item__short Открыты новые направления для вывода электронных валют: Contact, Unistream, MoneyGram и другие системы денежных переводов.
-                .news__card__metrics
-                  .news__card__metric
-                    i.ico.ico-time
-                    span 20.08.2016
-                  .news__card__metric
-                    i.ico.ico-chat
-                    span 17
-          // news card
-          .col-sm-6.col-md-4
-            .news__card
-              .news__card__image
-                img(src="images/newsImage.png")
-              .news__card__content
-                a(href="#").news__item__name Как создать свою операционную систему с нуля?
-                .news__item__short Открыты новые направления для вывода электронных валют: Contact, Unistream, MoneyGram и другие системы денежных переводов.
-                .news__card__metrics
-                  .news__card__metric
-                    i.ico.ico-time
-                    span 20.08.2016
-                  .news__card__metric
-                    i.ico.ico-chat
-                    span 17
-          // news card
-          .col-sm-6.col-md-4
-            .news__card
-              .news__card__image
-                img(src="images/newsImage.png")
-              .news__card__content
-                a(href="#").news__item__name Как создать свою операционную систему с нуля?
-                .news__item__short Открыты новые направления для вывода электронных валют: Contact, Unistream, MoneyGram и другие системы денежных переводов.
-                .news__card__metrics
-                  .news__card__metric
-                    i.ico.ico-time
-                    span 20.08.2016
-                  .news__card__metric
-                    i.ico.ico-chat
-                    span 17
+    .pusher
+      include shared/header.pug
 
-
-    // ОТЗЫВЫ
-    .testimonials
-      .container
-        .row
-          .col-sm-12.col-lg-8
-            .block-heading отзывы
-            .testimonials__wrapper.owl-carousel#owlTestmonials
-              .testimonials__item
-                .testimonials__item__head
-                  .testimonials__item__avatar
-                    img(src="images/testimonial.png")
-                  .testimonials__item__name Константин Константинопольский
-                    span 12 января
-                .testimonials__item__content
-                  .testimonials__item__content__icons
-                    a(href="#")
-                      i.ico.ico-heart
-                    a(href="#")
-                      i.ico.ico-testimonials
-                  .testimonials__item__content__text
-                    p Как обычно оператор все объяснит все расскажет какие имеются вопросы сервис на вышем уровне зачисления на биткойн быстро в общем всем рекомендую оценка 10/10 балов.
-              // следующий отзыв
-              .testimonials__item
-                .testimonials__item__head
-                  .testimonials__item__avatar
-                    img(src="images/testimonial.png")
-                  .testimonials__item__name Константин Константинопольский
-                    span 12 января
-                .testimonials__item__content
-                  .testimonials__item__content__icons
-                    a(href="#")
-                      i.ico.ico-heart
-                    a(href="#")
-                      i.ico.ico-testimonials
-                  .testimonials__item__content__text
-                    p Как обычно оператор все объяснит все расскажет какие имеются вопросы сервис на вышем уровне зачисления на биткойн быстро в общем всем рекомендую оценка 10/10 балов.
-
-            .block__muted-bottom
-              a(href='#')
-                i.ico.ico-comments
-                span Ещё отзывы
-
-          .col-sm-6.offset-sm-3.col-lg-4.offset-lg-0.mt-30--dekstop
-            .block-heading последний обмен
-            .last-exchange
-              .last-exchange__wrapper
-                .last-exchange__item
-                  i.ico.ico-currency.ico-currency--sberbank
-                  .last-exchange__name 178 392 <span>RUR</span>
-                .last-exchange__item
-                  .last-exchange__next →
-                .last-exchange__item
-                  i.ico.ico-currency.ico-currency--yandex
-                  .last-exchange__name 78 392 <span>RUR</span>
-
-            .block__muted-bottom.dark-text
-              span 05.03.2017, 17:13
+      // NEWS
+      .news
+        .container
+          .row
+            // news card
+            .col-sm-6.col-md-4
+              .news__card
+                .news__card__image
+                  img(src="images/newsImage.png")
+                .news__card__content
+                  a(href="#").news__item__name Как создать свою операционную систему с нуля?
+                  .news__item__short Открыты новые направления для вывода электронных валют: Contact, Unistream, MoneyGram и другие системы денежных переводов.
+                  .news__card__metrics
+                    .news__card__metric
+                      i.ico.ico-time
+                      span 20.08.2016
+                    .news__card__metric
+                      i.ico.ico-chat
+                      span 17
+            // news card
+            .col-sm-6.col-md-4
+              .news__card
+                .news__card__image
+                  img(src="images/newsImage.png")
+                .news__card__content
+                  a(href="#").news__item__name Как создать свою операционную систему с нуля?
+                  .news__item__short Открыты новые направления для вывода электронных валют: Contact, Unistream, MoneyGram и другие системы денежных переводов.
+                  .news__card__metrics
+                    .news__card__metric
+                      i.ico.ico-time
+                      span 20.08.2016
+                    .news__card__metric
+                      i.ico.ico-chat
+                      span 17
+            // news card
+            .col-sm-6.col-md-4
+              .news__card
+                .news__card__image
+                  img(src="images/newsImage.png")
+                .news__card__content
+                  a(href="#").news__item__name Как создать свою операционную систему с нуля?
+                  .news__item__short Открыты новые направления для вывода электронных валют: Contact, Unistream, MoneyGram и другие системы денежных переводов.
+                  .news__card__metrics
+                    .news__card__metric
+                      i.ico.ico-time
+                      span 20.08.2016
+                    .news__card__metric
+                      i.ico.ico-chat
+                      span 17
+            // news card
+            .col-sm-6.col-md-4
+              .news__card
+                .news__card__image
+                  img(src="images/newsImage.png")
+                .news__card__content
+                  a(href="#").news__item__name Как создать свою операционную систему с нуля?
+                  .news__item__short Открыты новые направления для вывода электронных валют: Contact, Unistream, MoneyGram и другие системы денежных переводов.
+                  .news__card__metrics
+                    .news__card__metric
+                      i.ico.ico-time
+                      span 20.08.2016
+                    .news__card__metric
+                      i.ico.ico-chat
+                      span 17
+            // news card
+            .col-sm-6.col-md-4
+              .news__card
+                .news__card__image
+                  img(src="images/newsImage.png")
+                .news__card__content
+                  a(href="#").news__item__name Как создать свою операционную систему с нуля?
+                  .news__item__short Открыты новые направления для вывода электронных валют: Contact, Unistream, MoneyGram и другие системы денежных переводов.
+                  .news__card__metrics
+                    .news__card__metric
+                      i.ico.ico-time
+                      span 20.08.2016
+                    .news__card__metric
+                      i.ico.ico-chat
+                      span 17
+            // news card
+            .col-sm-6.col-md-4
+              .news__card
+                .news__card__image
+                  img(src="images/newsImage.png")
+                .news__card__content
+                  a(href="#").news__item__name Как создать свою операционную систему с нуля?
+                  .news__item__short Открыты новые направления для вывода электронных валют: Contact, Unistream, MoneyGram и другие системы денежных переводов.
+                  .news__card__metrics
+                    .news__card__metric
+                      i.ico.ico-time
+                      span 20.08.2016
+                    .news__card__metric
+                      i.ico.ico-chat
+                      span 17
 
 
-    include shared/footer.pug
+      // ОТЗЫВЫ
+      .testimonials
+        .container
+          .row
+            .col-sm-12.col-lg-8
+              .block-heading отзывы
+              .testimonials__wrapper.owl-carousel#owlTestmonials
+                .testimonials__item
+                  .testimonials__item__head
+                    .testimonials__item__avatar
+                      img(src="images/testimonial.png")
+                    .testimonials__item__name Константин Константинопольский
+                      span 12 января
+                  .testimonials__item__content
+                    .testimonials__item__content__icons
+                      a(href="#")
+                        i.ico.ico-heart
+                      a(href="#")
+                        i.ico.ico-testimonials
+                    .testimonials__item__content__text
+                      p Как обычно оператор все объяснит все расскажет какие имеются вопросы сервис на вышем уровне зачисления на биткойн быстро в общем всем рекомендую оценка 10/10 балов.
+                // следующий отзыв
+                .testimonials__item
+                  .testimonials__item__head
+                    .testimonials__item__avatar
+                      img(src="images/testimonial.png")
+                    .testimonials__item__name Константин Константинопольский
+                      span 12 января
+                  .testimonials__item__content
+                    .testimonials__item__content__icons
+                      a(href="#")
+                        i.ico.ico-heart
+                      a(href="#")
+                        i.ico.ico-testimonials
+                    .testimonials__item__content__text
+                      p Как обычно оператор все объяснит все расскажет какие имеются вопросы сервис на вышем уровне зачисления на биткойн быстро в общем всем рекомендую оценка 10/10 балов.
+
+              .block__muted-bottom
+                a(href='#')
+                  i.ico.ico-comments
+                  span Ещё отзывы
+
+            .col-sm-6.offset-sm-3.col-lg-4.offset-lg-0.mt-30--dekstop
+              .block-heading последний обмен
+              .last-exchange
+                .last-exchange__wrapper
+                  .last-exchange__item
+                    i.ico.ico-currency.ico-currency--sberbank
+                    .last-exchange__name 178 392 <span>RUR</span>
+                  .last-exchange__item
+                    .last-exchange__next →
+                  .last-exchange__item
+                    i.ico.ico-currency.ico-currency--yandex
+                    .last-exchange__name 78 392 <span>RUR</span>
+
+              .block__muted-bottom.dark-text
+                span 05.03.2017, 17:13
+
+
+      include shared/footer.pug

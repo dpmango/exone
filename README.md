@@ -34,4 +34,4 @@ __Production__
 - Masked input
 - CSS Hamburgers
 
-gulp build && git add . && git commit -m "inner pages done" && git push && git subtree push --prefix dist origin gh-pages
+gulp build && git add . && git commit -m "mobile fixes and hamburger menu" && git push && git subtree push --prefix dist origin gh-pages

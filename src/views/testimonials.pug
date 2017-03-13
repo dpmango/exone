@@ -3,96 +3,99 @@ html
   include shared/head.pug
 
   body
-    include shared/header.pug
+    include shared/mobile-menu.pug
 
-    // ОТЗЫВЫ
-    .testimonials.testimonials--collumn
-      .container
-        .row
-          .col-sm-12
-            .block-heading отзывы
-        .row
-          .col-sm-12.col-lg-8
-            // next testimonial
-            .testimonials__wrapper
-              .testimonials__item
-                .testimonials__item__head
-                  .testimonials__item__avatar
-                    img(src="images/testimonial.png")
-                  .testimonials__item__name Константин Константинопольский
-                    span 12 января
-                .testimonials__item__content
-                  .testimonials__item__content__icons
-                    a(href="#")
-                      i.ico.ico-heart
-                    a(href="#")
-                      i.ico.ico-testimonials
-                  .testimonials__item__content__text
-                    p Как обычно оператор все объяснит все расскажет какие имеются вопросы сервис на вышем уровне зачисления на биткойн быстро в общем всем рекомендую оценка 10/10 балов.
-            // next testimonial
-            .testimonials__wrapper
-              .testimonials__item
-                .testimonials__item__head
-                  .testimonials__item__avatar
-                    img(src="images/testimonial.png")
-                  .testimonials__item__name Константин Константинопольский
-                    span 12 января
-                .testimonials__item__content
-                  .testimonials__item__content__icons
-                    a(href="#")
-                      i.ico.ico-heart
-                    a(href="#")
-                      i.ico.ico-testimonials
-                  .testimonials__item__content__text
-                    p Как обычно оператор все объяснит все расскажет какие имеются вопросы сервис на вышем уровне зачислени
-            // next testimonial
-            .testimonials__wrapper
-              .testimonials__item
-                .testimonials__item__head
-                  .testimonials__item__avatar
-                    img(src="images/testimonial.png")
-                  .testimonials__item__name Константин Константинопольский
-                    span 12 января
-                .testimonials__item__content
-                  .testimonials__item__content__icons
-                    a(href="#")
-                      i.ico.ico-heart
-                    a(href="#")
-                      i.ico.ico-testimonials
-                  .testimonials__item__content__text
-                    p Как обычно оператор все объяснит все расскажет какие имеются вопросы сервис на вышем уровне зачисления на биткойн быстро в общем всем рекомендую оценка 10/10 балов.
-            // next testimonial
-            .testimonials__wrapper
-              .testimonials__item
-                .testimonials__item__head
-                  .testimonials__item__avatar
-                    img(src="images/testimonial.png")
-                  .testimonials__item__name Константин Константинопольский
-                    span 12 января
-                .testimonials__item__content
-                  .testimonials__item__content__icons
-                    a(href="#")
-                      i.ico.ico-heart
-                    a(href="#")
-                      i.ico.ico-testimonials
-                  .testimonials__item__content__text
-                    p Как обычно оператор все объяснит все расскажет какие имеются вопросы сервис на выш
+    .pusher
+      include shared/header.pug
 
-
-
-          .col-sm-6.offset-sm-3.col-lg-4.offset-lg-0.mt-30--dekstop
-            form(action="")
-              .testimonials__textarea
-                textarea(placeholder="Введите текст для отправки....").form-control
-                .testimonials__textarea__bottom
-                  button(type="submit").btn.btn-primary.btn-green
-                    i.ico.ico-comment
-                    span Оставить отзыв
-                  a(href='#')
-                    i.ico.ico-attachment
-                  a(href='#')
-                    i.ico.ico-image
+      // ОТЗЫВЫ
+      .testimonials.testimonials--collumn
+        .container
+          .row
+            .col-sm-12
+              .block-heading отзывы
+          .row
+            .col-sm-12.col-lg-8
+              // next testimonial
+              .testimonials__wrapper
+                .testimonials__item
+                  .testimonials__item__head
+                    .testimonials__item__avatar
+                      img(src="images/testimonial.png")
+                    .testimonials__item__name Константин Константинопольский
+                      span 12 января
+                  .testimonials__item__content
+                    .testimonials__item__content__icons
+                      a(href="#")
+                        i.ico.ico-heart
+                      a(href="#")
+                        i.ico.ico-testimonials
+                    .testimonials__item__content__text
+                      p Как обычно оператор все объяснит все расскажет какие имеются вопросы сервис на вышем уровне зачисления на биткойн быстро в общем всем рекомендую оценка 10/10 балов.
+              // next testimonial
+              .testimonials__wrapper
+                .testimonials__item
+                  .testimonials__item__head
+                    .testimonials__item__avatar
+                      img(src="images/testimonial.png")
+                    .testimonials__item__name Константин Константинопольский
+                      span 12 января
+                  .testimonials__item__content
+                    .testimonials__item__content__icons
+                      a(href="#")
+                        i.ico.ico-heart
+                      a(href="#")
+                        i.ico.ico-testimonials
+                    .testimonials__item__content__text
+                      p Как обычно оператор все объяснит все расскажет какие имеются вопросы сервис на вышем уровне зачислени
+              // next testimonial
+              .testimonials__wrapper
+                .testimonials__item
+                  .testimonials__item__head
+                    .testimonials__item__avatar
+                      img(src="images/testimonial.png")
+                    .testimonials__item__name Константин Константинопольский
+                      span 12 января
+                  .testimonials__item__content
+                    .testimonials__item__content__icons
+                      a(href="#")
+                        i.ico.ico-heart
+                      a(href="#")
+                        i.ico.ico-testimonials
+                    .testimonials__item__content__text
+                      p Как обычно оператор все объяснит все расскажет какие имеются вопросы сервис на вышем уровне зачисления на биткойн быстро в общем всем рекомендую оценка 10/10 балов.
+              // next testimonial
+              .testimonials__wrapper
+                .testimonials__item
+                  .testimonials__item__head
+                    .testimonials__item__avatar
+                      img(src="images/testimonial.png")
+                    .testimonials__item__name Константин Константинопольский
+                      span 12 января
+                  .testimonials__item__content
+                    .testimonials__item__content__icons
+                      a(href="#")
+                        i.ico.ico-heart
+                      a(href="#")
+                        i.ico.ico-testimonials
+                    .testimonials__item__content__text
+                      p Как обычно оператор все объяснит все расскажет какие имеются вопросы сервис на выш
 
 
 
-    include shared/footer.pug
+            .col-sm-6.offset-sm-3.col-lg-4.offset-lg-0.mt-30--dekstop
+              form(action="")
+                .testimonials__textarea
+                  textarea(placeholder="Введите текст для отправки....").form-control
+                  .testimonials__textarea__bottom
+                    button(type="submit").btn.btn-primary.btn-green
+                      i.ico.ico-comment
+                      span Оставить отзыв
+                    a(href='#')
+                      i.ico.ico-attachment
+                    a(href='#')
+                      i.ico.ico-image
+
+
+
+      include shared/footer.pug

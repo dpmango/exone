@@ -15,217 +15,223 @@
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
   </head>
   <body>
-    <!-- HEADER::START-->
-    <header class="header">
-      <div class="container">
-        <div class="row align-items-sm-center">
-          <div class="col-6 col-sm-6 col-md-4 col-lg-6 col-xl-5"><a href="#"><i class="ico ico-logo"></i></a>
-            <div class="header__metrics hidden-md-down">
-              <div class="header__metric">Выплаченные дивиденды:<span> 1 000 000 $</span></div>
-              <div class="header__metric">Прибыль в год:<span> 4%</span></div>
-            </div>
-          </div>
-          <div class="hidden-sm-down col-sm-4 col-md-6 col-lg-4">
-            <div class="header__buttons"><a class="btn btn-secondary" href="#">Инвесторам</a><a class="header__help-link" href="#">Помощь</a></div>
-          </div>
-          <div class="col-6 col-sm-6 col-md-2 col-xl-3 text-right">
-            <div class="dropdown">
-              <div class="header__profile" id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <div class="header__profile__avatar"><img src="images/avatar.png"></div>
-                <div class="header__profile__counter">4</div><i class="ico ico-dropdown"></i>
-              </div>
-              <ul class="dropdown-menu" aria-labelledby="dLabel">
-                <li><a href="#">пункт меню</a></li>
-                <li><a href="#">пункт меню</a></li>
-                <li><a href="#">пункт меню</a></li>
-                <li><a href="#">пункт меню</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <div class="subheader">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6 hidden-sm-down">
-            <div class="crumbs"><a href="#">Весь сайт</a><a href="#">Специальность</a><span>Ссылка</span></div>
-          </div>
-          <div class="col-12 col-md-6 text-right">
-            <div class="subheader__support">Тех. поддержка 8 800 123 45 67</div><a class="subheader__status subheader__status--online" href="#">Online</a>
-          </div>
-        </div>
-      </div>
+    <div class="mobile-menu">
+      <div class="mobile-menu__menu"><i class="ico ico-logo"></i><a href="homepage.html">Обмен валют</a><a href="news.html">Новости</a><a href="testimonials.html">Отзывы</a><a href="registration.html">Личный кабинет</a></div>
     </div>
-    <!-- РЕГИСТРАЦИЯ-->
-    <div class="registration">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-lg-8">
-            <div class="counter__block">
-              <div class="counter__block__heading">Регистрация пользователя</div>
-              <form action="#">
-                <div class="row">
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                      <label>Логин</label>
-                      <input class="form-control" type="text" placeholder="Логин">
+    <div class="pusher">
+      <!-- HEADER::START-->
+      <header class="header">
+        <div class="container">
+          <div class="row align-items-sm-center">
+            <div class="col-6 col-sm-6 col-md-4 col-lg-6 col-xl-5 flex flex--center">
+              <button class="hamburger hamburger--stand hidden-lg-up" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button><a href="#"><i class="ico ico-logo"></i></a>
+              <div class="header__metrics hidden-md-down">
+                <div class="header__metric">Выплаченные дивиденды:<span> 1 000 000 $</span></div>
+                <div class="header__metric">Прибыль в год:<span> 4%</span></div>
+              </div>
+            </div>
+            <div class="hidden-sm-down col-sm-4 col-md-6 col-lg-4">
+              <div class="header__buttons"><a class="btn btn-secondary" href="#">Инвесторам</a><a class="header__help-link" href="#">Помощь</a></div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-2 col-xl-3 text-right">
+              <div class="dropdown">
+                <div class="header__profile" id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <div class="header__profile__avatar"><img src="images/avatar.png"></div>
+                  <div class="header__profile__counter">4</div><i class="ico ico-dropdown"></i>
+                </div>
+                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                  <li><a href="#">пункт меню</a></li>
+                  <li><a href="#">пункт меню</a></li>
+                  <li><a href="#">пункт меню</a></li>
+                  <li><a href="#">пункт меню</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 hidden-sm-down">
+              <div class="crumbs"><a href="#">Весь сайт</a><a href="#">Специальность</a><span>Ссылка</span></div>
+            </div>
+            <div class="col-12 col-md-6 text-right">
+              <div class="subheader__support">Тех. поддержка 8 800 123 45 67</div><a class="subheader__status subheader__status--online" href="#">Online</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- РЕГИСТРАЦИЯ-->
+      <div class="registration">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-lg-8">
+              <div class="counter__block">
+                <div class="counter__block__heading">Регистрация пользователя</div>
+                <form action="#">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Логин</label>
+                        <input class="form-control" type="text" placeholder="Логин">
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                      <label>Email</label>
-                      <input class="form-control" type="email" placeholder="Ваш email">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Email</label>
+                        <input class="form-control" type="email" placeholder="Ваш email">
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                      <label>Пароль</label>
-                      <input class="form-control" type="password" placeholder="Ваш пароль">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Пароль</label>
+                        <input class="form-control" type="password" placeholder="Ваш пароль">
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                      <label>Подтвердите пароль</label>
-                      <input class="form-control" type="password" placeholder="Подтвердите пароль">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Подтвердите пароль</label>
+                        <input class="form-control" type="password" placeholder="Подтвердите пароль">
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                      <label>Имя</label>
-                      <input class="form-control" type="text" placeholder="Ваше имя">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Имя</label>
+                        <input class="form-control" type="text" placeholder="Ваше имя">
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                      <label>Фамилия</label>
-                      <input class="form-control" type="text" placeholder="Ваша фамилия">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Фамилия</label>
+                        <input class="form-control" type="text" placeholder="Ваша фамилия">
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                      <label>Дата рождения</label>
-                      <div class="captcha birthday">
-                        <input class="form-control" type="text" placeholder="23">
-                        <input class="form-control" type="text" placeholder="23">
-                        <input class="form-control" type="text" placeholder="23">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Дата рождения</label>
+                        <div class="captcha birthday">
+                          <input class="form-control" type="text" placeholder="23">
+                          <input class="form-control" type="text" placeholder="23">
+                          <input class="form-control" type="text" placeholder="23">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Телефон</label>
+                        <input class="form-control" type="tel" placeholder="Ваш Телефон">
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                      <label>Телефон</label>
-                      <input class="form-control" type="tel" placeholder="Ваш Телефон">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="ui-checkbox">
+                        <input type="checkbox" name="agree" id="agree">
+                        <label for="agree">Я принимаю согласие на обработку моих данных, а также ознакомлен с <a href="#">правилами</a> сайта.</label>
+                      </div>
+                      <div class="counter__input-helper--validation"><span>Ошибка! <br> Исправьте поля выделенные красным</span></div>
+                      <div class="text-center mt15">
+                        <button class="btn btn-primary btn-green" type="submit">Завершить регистрацию</button>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-12">
-                    <div class="ui-checkbox">
-                      <input type="checkbox" name="agree" id="agree">
-                      <label for="agree">Я принимаю согласие на обработку моих данных, а также ознакомлен с <a href="#">правилами</a> сайта.</label>
-                    </div>
-                    <div class="counter__input-helper--validation"><span>Ошибка! <br> Исправьте поля выделенные красным</span></div>
-                    <div class="text-center mt15">
-                      <button class="btn btn-primary btn-green" type="submit">Завершить регистрацию</button>
-                    </div>
-                  </div>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
-          </div>
-          <div class="col-sm-10 offset-sm-1 col-lg-4 offset-lg-0 mt-30--dekstop no-pad-l">
-            <div class="counter__block counter__block--narrow">
-              <div class="counter__block__heading">Правила сайта</div>
-              <div class="registration__rules">
-                <p>1. Термины, используемые в настоящих Правилах</p>
-                <p>1.1. Сайт ВКонтакте (или Сайт) – социальная сеть, известная под именем «ВКонтакте», размещенная на сайте в сети Интернет по адресу: VK.com (включая все уровни указанного домена, как функционирующие на дату принятия Пользователем настоящих Правил, так и запускаемые и вводимые в эксплуатацию в течение всего срока его действия) и доступная Пользователю через сайт, мобильную версию сайта, приложения и иные ресурсы, представляющая собой результат интеллектуальной деятельности в форме программы для ЭВМ. Социальная сеть представлена в объективной форме совокупностью данных и команд, и порождаемых аудиовизуальных отображений (включая входящие в ее состав графические изображения и пользовательский интерфейс), (далее – данные и команды), предназначенных для функционирования ЭВМ и мобильных устройств в целях получения определенного результата в виде организации функционала социальной сети. Совокупность данных и команд состоит из активированных и неактивированных данных и команд.</p>
-                <p>1.2. Неактивированные данные и команды – данные, команды и порождаемые аудиовизуальные отображения, позволяющие увеличить количество виртуальных ценностей, используемых в рамках функциональных возможностей Сайта. Условия предоставления Администрацией Пользователю права на использование неактивированных данных и команд определены в лицензионном соглашении, действующая редакция которого располагается в свободном доступе в сети Интернет по адресу: http://vk.com/licence, заключаемом Администрацией Сайта с Пользователем.</p>
+            <div class="col-sm-10 offset-sm-1 col-lg-4 offset-lg-0 mt-30--dekstop no-pad-l">
+              <div class="counter__block counter__block--narrow">
+                <div class="counter__block__heading">Правила сайта</div>
+                <div class="registration__rules">
+                  <p>1. Термины, используемые в настоящих Правилах</p>
+                  <p>1.1. Сайт ВКонтакте (или Сайт) – социальная сеть, известная под именем «ВКонтакте», размещенная на сайте в сети Интернет по адресу: VK.com (включая все уровни указанного домена, как функционирующие на дату принятия Пользователем настоящих Правил, так и запускаемые и вводимые в эксплуатацию в течение всего срока его действия) и доступная Пользователю через сайт, мобильную версию сайта, приложения и иные ресурсы, представляющая собой результат интеллектуальной деятельности в форме программы для ЭВМ. Социальная сеть представлена в объективной форме совокупностью данных и команд, и порождаемых аудиовизуальных отображений (включая входящие в ее состав графические изображения и пользовательский интерфейс), (далее – данные и команды), предназначенных для функционирования ЭВМ и мобильных устройств в целях получения определенного результата в виде организации функционала социальной сети. Совокупность данных и команд состоит из активированных и неактивированных данных и команд.</p>
+                  <p>1.2. Неактивированные данные и команды – данные, команды и порождаемые аудиовизуальные отображения, позволяющие увеличить количество виртуальных ценностей, используемых в рамках функциональных возможностей Сайта. Условия предоставления Администрацией Пользователю права на использование неактивированных данных и команд определены в лицензионном соглашении, действующая редакция которого располагается в свободном доступе в сети Интернет по адресу: http://vk.com/licence, заключаемом Администрацией Сайта с Пользователем.</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- ОТЗЫВЫ-->
+      <div class="testimonials">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-lg-8">
+              <div class="block-heading">отзывы</div>
+              <div class="testimonials__wrapper owl-carousel" id="owlTestmonials">
+                <div class="testimonials__item">
+                  <div class="testimonials__item__head">
+                    <div class="testimonials__item__avatar"><img src="images/testimonial.png"></div>
+                    <div class="testimonials__item__name">Константин Константинопольский<span>12 января</span></div>
+                  </div>
+                  <div class="testimonials__item__content">
+                    <div class="testimonials__item__content__icons"><a href="#"><i class="ico ico-heart"></i></a><a href="#"><i class="ico ico-testimonials"></i></a></div>
+                    <div class="testimonials__item__content__text">
+                      <p>Как обычно оператор все объяснит все расскажет какие имеются вопросы сервис на вышем уровне зачисления на биткойн быстро в общем всем рекомендую оценка 10/10 балов.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- следующий отзыв-->
+                <div class="testimonials__item">
+                  <div class="testimonials__item__head">
+                    <div class="testimonials__item__avatar"><img src="images/testimonial.png"></div>
+                    <div class="testimonials__item__name">Константин Константинопольский<span>12 января</span></div>
+                  </div>
+                  <div class="testimonials__item__content">
+                    <div class="testimonials__item__content__icons"><a href="#"><i class="ico ico-heart"></i></a><a href="#"><i class="ico ico-testimonials"></i></a></div>
+                    <div class="testimonials__item__content__text">
+                      <p>Как обычно оператор все объяснит все расскажет какие имеются вопросы сервис на вышем уровне зачисления на биткойн быстро в общем всем рекомендую оценка 10/10 балов.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="block__muted-bottom"><a href="#"><i class="ico ico-comments"></i><span>Ещё отзывы</span></a></div>
+            </div>
+            <div class="col-sm-6 offset-sm-3 col-lg-4 offset-lg-0 mt-30--dekstop">
+              <div class="block-heading">последний обмен</div>
+              <div class="last-exchange">
+                <div class="last-exchange__wrapper">
+                  <div class="last-exchange__item"><i class="ico ico-currency ico-currency--sberbank"></i>
+                    <div class="last-exchange__name">178 392 <span>RUR</span></div>
+                  </div>
+                  <div class="last-exchange__item">
+                    <div class="last-exchange__next">→</div>
+                  </div>
+                  <div class="last-exchange__item"><i class="ico ico-currency ico-currency--yandex"></i>
+                    <div class="last-exchange__name">78 392 <span>RUR</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="block__muted-bottom dark-text"><span>05.03.2017, 17:13</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER::START-->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8">
+              <div class="footer__copy">© 2017   EXone — Мультивалютный обменный сервис.</div>
+              <div class="footer__contact"><i class="fa fa-location-arrow"></i><a href="#">Сочи, ул. Маяковского, 150-Б</a></div>
+              <div class="footer__contact"><i class="fa fa-mobile"></i><span>+7 (8652) 25-09-20, 25-69-72</span></div>
+              <div class="footer__contact"><i class="fa fa-envelope"></i><a href="mailto:exone228">exone228@mail.ru</a></div>
+            </div>
+            <div class="col-sm-4">
+              <div class="footer__developer">Дизайн —<a href="#">Школа Шашлыка</a></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- SCRIPTS-->
+      <!--build:js js/scripts.min.js-->
+      <script src="components/jquery/dist/jquery.min.js"></script>
+      <script src="components/owl.carousel/dist/owl.carousel.min.js"></script>
+      <script src="js/libs/jquery.maskedinput.min.js"></script>
+      <script src="components/tether/dist/js/tether.min.js"></script>
+      <script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="js/main.js"></script>
+      <!--endbuild-->
     </div>
-    <!-- ОТЗЫВЫ-->
-    <div class="testimonials">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-lg-8">
-            <div class="block-heading">отзывы</div>
-            <div class="testimonials__wrapper owl-carousel" id="owlTestmonials">
-              <div class="testimonials__item">
-                <div class="testimonials__item__head">
-                  <div class="testimonials__item__avatar"><img src="images/testimonial.png"></div>
-                  <div class="testimonials__item__name">Константин Константинопольский<span>12 января</span></div>
-                </div>
-                <div class="testimonials__item__content">
-                  <div class="testimonials__item__content__icons"><a href="#"><i class="ico ico-heart"></i></a><a href="#"><i class="ico ico-testimonials"></i></a></div>
-                  <div class="testimonials__item__content__text">
-                    <p>Как обычно оператор все объяснит все расскажет какие имеются вопросы сервис на вышем уровне зачисления на биткойн быстро в общем всем рекомендую оценка 10/10 балов.</p>
-                  </div>
-                </div>
-              </div>
-              <!-- следующий отзыв-->
-              <div class="testimonials__item">
-                <div class="testimonials__item__head">
-                  <div class="testimonials__item__avatar"><img src="images/testimonial.png"></div>
-                  <div class="testimonials__item__name">Константин Константинопольский<span>12 января</span></div>
-                </div>
-                <div class="testimonials__item__content">
-                  <div class="testimonials__item__content__icons"><a href="#"><i class="ico ico-heart"></i></a><a href="#"><i class="ico ico-testimonials"></i></a></div>
-                  <div class="testimonials__item__content__text">
-                    <p>Как обычно оператор все объяснит все расскажет какие имеются вопросы сервис на вышем уровне зачисления на биткойн быстро в общем всем рекомендую оценка 10/10 балов.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="block__muted-bottom"><a href="#"><i class="ico ico-comments"></i><span>Ещё отзывы</span></a></div>
-          </div>
-          <div class="col-sm-6 offset-sm-3 col-lg-4 offset-lg-0 mt-30--dekstop">
-            <div class="block-heading">последний обмен</div>
-            <div class="last-exchange">
-              <div class="last-exchange__wrapper">
-                <div class="last-exchange__item"><i class="ico ico-currency ico-currency--sberbank"></i>
-                  <div class="last-exchange__name">178 392 <span>RUR</span></div>
-                </div>
-                <div class="last-exchange__item">
-                  <div class="last-exchange__next">→</div>
-                </div>
-                <div class="last-exchange__item"><i class="ico ico-currency ico-currency--yandex"></i>
-                  <div class="last-exchange__name">78 392 <span>RUR</span></div>
-                </div>
-              </div>
-            </div>
-            <div class="block__muted-bottom dark-text"><span>05.03.2017, 17:13</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- FOOTER::START-->
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-8">
-            <div class="footer__copy">© 2017   EXone — Мультивалютный обменный сервис.</div>
-            <div class="footer__contact"><i class="fa fa-location-arrow"></i><a href="#">Сочи, ул. Маяковского, 150-Б</a></div>
-            <div class="footer__contact"><i class="fa fa-mobile"></i><span>+7 (8652) 25-09-20, 25-69-72</span></div>
-            <div class="footer__contact"><i class="fa fa-envelope"></i><a href="mailto:exone228">exone228@mail.ru</a></div>
-          </div>
-          <div class="col-sm-4">
-            <div class="footer__developer">Дизайн —<a href="#">Школа Шашлыка</a></div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- SCRIPTS-->
-    <!--build:js js/scripts.min.js-->
-    <script src="components/jquery/dist/jquery.min.js"></script>
-    <script src="components/owl.carousel/dist/owl.carousel.min.js"></script>
-    <script src="js/libs/jquery.maskedinput.min.js"></script>
-    <script src="components/tether/dist/js/tether.min.js"></script>
-    <script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-    <!--endbuild-->
   </body>
 </html>

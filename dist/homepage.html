@@ -11,147 +11,153 @@
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
   </head>
   <body>
-    <!-- HEADER::START-->
-    <header class="header">
-      <div class="container">
-        <div class="row align-items-sm-center">
-          <div class="col-6 col-sm-6 col-md-4 col-lg-6 col-xl-5"><a href="#"><i class="ico ico-logo"></i></a>
-            <div class="header__metrics hidden-md-down">
-              <div class="header__metric">Выплаченные дивиденды:<span> 1 000 000 $</span></div>
-              <div class="header__metric">Прибыль в год:<span> 4%</span></div>
-            </div>
-          </div>
-          <div class="hidden-sm-down col-sm-4 col-md-6 col-lg-4">
-            <div class="header__buttons"><a class="btn btn-secondary" href="#">Инвесторам</a><a class="header__help-link" href="#">Помощь</a></div>
-          </div>
-          <div class="col-6 col-sm-6 col-md-2 col-xl-3 text-right">
-            <div class="dropdown">
-              <div class="header__profile" id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <div class="header__profile__avatar"><img src="images/avatar.png"></div>
-                <div class="header__profile__counter">4</div><i class="ico ico-dropdown"></i>
-              </div>
-              <ul class="dropdown-menu" aria-labelledby="dLabel">
-                <li><a href="#">пункт меню</a></li>
-                <li><a href="#">пункт меню</a></li>
-                <li><a href="#">пункт меню</a></li>
-                <li><a href="#">пункт меню</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <div class="subheader">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6 hidden-sm-down">
-            <div class="crumbs"><a href="#">Весь сайт</a><a href="#">Специальность</a><span>Ссылка</span></div>
-          </div>
-          <div class="col-12 col-md-6 text-right">
-            <div class="subheader__support">Тех. поддержка 8 800 123 45 67</div><a class="subheader__status subheader__status--online" href="#">Online</a>
-          </div>
-        </div>
-      </div>
+    <div class="mobile-menu">
+      <div class="mobile-menu__menu"><i class="ico ico-logo"></i><a href="homepage.html">Обмен валют</a><a href="news.html">Новости</a><a href="testimonials.html">Отзывы</a><a href="registration.html">Личный кабинет</a></div>
     </div>
-    <!-- EXCHANGE-->
-    <div class="exchange">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-sm-8 col-lg-6 offset-lg-0">
-            <div class="counter__block counter__block--exchange">
-              <div class="counter__block__exchange">
-                <div class="counter__block__heading">Отдаёте  →</div>
-                <div class="counter__block__filters">
-                  <div class="counter__block__filter active" data-filter="btc"><span>฿</span> BTC</div>
-                  <div class="counter__block__filter" data-filter="rur"><span>₽</span> RUR</div>
-                  <div class="counter__block__filter" data-filter="usd"><span>$</span> USD</div>
-                  <div class="counter__block__filter" data-filter="eur"><span>€</span> EUR</div>
-                </div>
+    <div class="pusher">
+      <!-- HEADER::START-->
+      <header class="header">
+        <div class="container">
+          <div class="row align-items-sm-center">
+            <div class="col-6 col-sm-6 col-md-4 col-lg-6 col-xl-5 flex flex--center">
+              <button class="hamburger hamburger--stand hidden-lg-up" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button><a href="#"><i class="ico ico-logo"></i></a>
+              <div class="header__metrics hidden-md-down">
+                <div class="header__metric">Выплаченные дивиденды:<span> 1 000 000 $</span></div>
+                <div class="header__metric">Прибыль в год:<span> 4%</span></div>
               </div>
-              <div class="exchange-list">
-                <div class="exchange-list__item active" data-currency="btc">
-                  <div class="exchange-list__item__inner"><i class="ico ico-currency ico-currency--bitcoin-yellow"></i>
-                    <div class="exchange-list__item__name">Bitcoin</div>
+            </div>
+            <div class="hidden-sm-down col-sm-4 col-md-6 col-lg-4">
+              <div class="header__buttons"><a class="btn btn-secondary" href="#">Инвесторам</a><a class="header__help-link" href="#">Помощь</a></div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-2 col-xl-3 text-right">
+              <div class="dropdown">
+                <div class="header__profile" id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <div class="header__profile__avatar"><img src="images/avatar.png"></div>
+                  <div class="header__profile__counter">4</div><i class="ico ico-dropdown"></i>
+                </div>
+                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                  <li><a href="#">пункт меню</a></li>
+                  <li><a href="#">пункт меню</a></li>
+                  <li><a href="#">пункт меню</a></li>
+                  <li><a href="#">пункт меню</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 hidden-sm-down">
+              <div class="crumbs"><a href="#">Весь сайт</a><a href="#">Специальность</a><span>Ссылка</span></div>
+            </div>
+            <div class="col-12 col-md-6 text-right">
+              <div class="subheader__support">Тех. поддержка 8 800 123 45 67</div><a class="subheader__status subheader__status--online" href="#">Online</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- EXCHANGE-->
+      <div class="exchange">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-sm-8 col-lg-6 offset-lg-0">
+              <div class="counter__block counter__block--exchange">
+                <div class="counter__block__exchange">
+                  <div class="counter__block__heading">Отдаёте  →</div>
+                  <div class="counter__block__filters">
+                    <div class="counter__block__filter active" data-filter="btc"><span>฿</span> BTC</div>
+                    <div class="counter__block__filter" data-filter="rur"><span>₽</span> RUR</div>
+                    <div class="counter__block__filter" data-filter="usd"><span>$</span> USD</div>
+                    <div class="counter__block__filter" data-filter="eur"><span>€</span> EUR</div>
                   </div>
                 </div>
-                <div class="exchange-list__item" data-currency="btc">
-                  <div class="exchange-list__item__inner"><i class="ico ico-currency ico-currency--litecoin"></i>
-                    <div class="exchange-list__item__name">Litecoin</div>
+                <div class="exchange-list">
+                  <div class="exchange-list__item active" data-currency="btc">
+                    <div class="exchange-list__item__inner"><i class="ico ico-currency ico-currency--bitcoin-yellow"></i>
+                      <div class="exchange-list__item__name">Bitcoin</div>
+                    </div>
                   </div>
-                </div>
-                <div class="exchange-list__item" data-currency="btc">
-                  <div class="exchange-list__item__inner"><i class="ico ico-currency ico-currency--ethereum"></i>
-                    <div class="exchange-list__item__name">Ethereum</div>
+                  <div class="exchange-list__item" data-currency="btc">
+                    <div class="exchange-list__item__inner"><i class="ico ico-currency ico-currency--litecoin"></i>
+                      <div class="exchange-list__item__name">Litecoin</div>
+                    </div>
+                  </div>
+                  <div class="exchange-list__item" data-currency="btc">
+                    <div class="exchange-list__item__inner"><i class="ico ico-currency ico-currency--ethereum"></i>
+                      <div class="exchange-list__item__name">Ethereum</div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-sm-8 col-lg-6 offset-lg-0">
-            <div class="counter__block counter__block--exchange">
-              <div class="counter__block__exchange">
-                <div class="counter__block__heading">Отдаёте  →</div>
-                <div class="counter__block__filters counter__block__filters--second">
-                  <div class="counter__block__filter" data-filter="btc"><span>฿</span> BTC</div>
-                  <div class="counter__block__filter active" data-filter="rur"><span>₽</span> RUR</div>
-                  <div class="counter__block__filter" data-filter="usd"><span>$</span> USD</div>
-                  <div class="counter__block__filter" data-filter="eur"><span>€</span> EUR</div>
-                </div>
-              </div>
-              <div class="exchange-list">
-                <div class="exchange-list__item" data-currency="btc">
-                  <div class="exchange-list__item__inner"><i class="ico ico-currency ico-currency--alpha"></i>
-                    <div class="exchange-list__item__name">Альфа-Банк <span>RUB</span></div>
-                    <div class="exchange-list__item__reserv">
-                      <div class="exchange-list__item__reserv__name"><span>Резерв</span><i class="ico ico-question" data-toggle="tooltip" data-placement="left" title="Какая то инфа"></i></div>
-                      <div class="exchange-list__item__reserv__value"><span>7 470 RUR</span></div>
-                    </div>
-                  </div>
-                  <div class="exchange-list__item__fold">
-                    <div class="exchange-list__item__rate"><i class="ico ico-rate"></i><span>Курс: 1 BTC = 69037 RUR</span></div>
-                    <div class="exchange-list__item__cta"><i class="ico ico-refresh"></i><a class="btn btn-primary" href="#">Обменять</a></div>
+            <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-sm-8 col-lg-6 offset-lg-0">
+              <div class="counter__block counter__block--exchange">
+                <div class="counter__block__exchange">
+                  <div class="counter__block__heading">Отдаёте  →</div>
+                  <div class="counter__block__filters counter__block__filters--second">
+                    <div class="counter__block__filter" data-filter="btc"><span>฿</span> BTC</div>
+                    <div class="counter__block__filter active" data-filter="rur"><span>₽</span> RUR</div>
+                    <div class="counter__block__filter" data-filter="usd"><span>$</span> USD</div>
+                    <div class="counter__block__filter" data-filter="eur"><span>€</span> EUR</div>
                   </div>
                 </div>
-                <!-- items-->
-                <div class="exchange-list__item active" data-currency="btc">
-                  <div class="exchange-list__item__inner"><i class="ico ico-currency ico-currency--sberbank"></i>
-                    <div class="exchange-list__item__name">Сбербанк <span>ОнЛ@йн</span></div>
-                    <div class="exchange-list__item__reserv">
-                      <div class="exchange-list__item__reserv__name"><span>Резерв</span><i class="ico ico-question" data-toggle="tooltip" data-placement="left" title="Какая то инфа"></i></div>
-                      <div class="exchange-list__item__reserv__value"><span>7 470 RUR</span></div>
+                <div class="exchange-list">
+                  <div class="exchange-list__item" data-currency="btc">
+                    <div class="exchange-list__item__inner"><i class="ico ico-currency ico-currency--alpha"></i>
+                      <div class="exchange-list__item__name"><span>Альфа-Банк <span>RUB</span></span></div>
+                      <div class="exchange-list__item__reserv">
+                        <div class="exchange-list__item__reserv__name"><span>Резерв</span><i class="ico ico-question" data-toggle="tooltip" data-placement="left" title="Какая то инфа"></i></div>
+                        <div class="exchange-list__item__reserv__value"><span>7 470 RUR</span></div>
+                      </div>
+                    </div>
+                    <div class="exchange-list__item__fold">
+                      <div class="exchange-list__item__rate"><i class="ico ico-rate"></i><span>Курс: 1 BTC = 69037 RUR</span></div>
+                      <div class="exchange-list__item__cta"><i class="ico ico-refresh"></i><a class="btn btn-primary" href="#">Обменять</a></div>
                     </div>
                   </div>
-                  <div class="exchange-list__item__fold">
-                    <div class="exchange-list__item__rate"><i class="ico ico-rate"></i><span>Курс: 1 BTC = 69037 RUR</span></div>
-                    <div class="exchange-list__item__cta"><i class="ico ico-refresh"></i><a class="btn btn-primary" href="#">Обменять</a></div>
-                  </div>
-                </div>
-                <!-- items-->
-                <div class="exchange-list__item" data-currency="btc">
-                  <div class="exchange-list__item__inner"><i class="ico ico-currency ico-currency--tinkoff"></i>
-                    <div class="exchange-list__item__name">Тинькофф <span>Кредитные Системы</span></div>
-                    <div class="exchange-list__item__reserv">
-                      <div class="exchange-list__item__reserv__name"><span>Резерв</span><i class="ico ico-question" data-toggle="tooltip" data-placement="left" title="Какая то инфа"></i></div>
-                      <div class="exchange-list__item__reserv__value"><span>7 470 RUR</span></div>
+                  <!-- items-->
+                  <div class="exchange-list__item active" data-currency="btc">
+                    <div class="exchange-list__item__inner"><i class="ico ico-currency ico-currency--sberbank"></i>
+                      <div class="exchange-list__item__name"><span>Сбербанк <span>ОнЛ@йн</span></span></div>
+                      <div class="exchange-list__item__reserv">
+                        <div class="exchange-list__item__reserv__name"><span>Резерв</span><i class="ico ico-question" data-toggle="tooltip" data-placement="left" title="Какая то инфа"></i></div>
+                        <div class="exchange-list__item__reserv__value"><span>7 470 RUR</span></div>
+                      </div>
+                    </div>
+                    <div class="exchange-list__item__fold">
+                      <div class="exchange-list__item__rate"><i class="ico ico-rate"></i><span>Курс: 1 BTC = 69037 RUR</span></div>
+                      <div class="exchange-list__item__cta"><i class="ico ico-refresh"></i><a class="btn btn-primary" href="#">Обменять</a></div>
                     </div>
                   </div>
-                  <div class="exchange-list__item__fold">
-                    <div class="exchange-list__item__rate"><i class="ico ico-rate"></i><span>Курс: 1 BTC = 69037 RUR</span></div>
-                    <div class="exchange-list__item__cta"><i class="ico ico-refresh"></i><a class="btn btn-primary" href="#">Обменять</a></div>
-                  </div>
-                </div>
-                <!-- items-->
-                <div class="exchange-list__item" data-currency="btc">
-                  <div class="exchange-list__item__inner"><i class="ico ico-currency ico-currency--qiwi"></i>
-                    <div class="exchange-list__item__name">QIWI <span>RUB</span></div>
-                    <div class="exchange-list__item__reserv">
-                      <div class="exchange-list__item__reserv__name"><span>Резерв</span><i class="ico ico-question" data-toggle="tooltip" data-placement="left" title="Какая то инфа"></i></div>
-                      <div class="exchange-list__item__reserv__value"><span>7 470 RUR</span></div>
+                  <!-- items-->
+                  <div class="exchange-list__item" data-currency="btc">
+                    <div class="exchange-list__item__inner"><i class="ico ico-currency ico-currency--tinkoff"></i>
+                      <div class="exchange-list__item__name"><span>Тинькофф <span>Кредитные Системы</span></span></div>
+                      <div class="exchange-list__item__reserv">
+                        <div class="exchange-list__item__reserv__name"><span>Резерв</span><i class="ico ico-question" data-toggle="tooltip" data-placement="left" title="Какая то инфа"></i></div>
+                        <div class="exchange-list__item__reserv__value"><span>7 470 RUR</span></div>
+                      </div>
+                    </div>
+                    <div class="exchange-list__item__fold">
+                      <div class="exchange-list__item__rate"><i class="ico ico-rate"></i><span>Курс: 1 BTC = 69037 RUR</span></div>
+                      <div class="exchange-list__item__cta"><i class="ico ico-refresh"></i><a class="btn btn-primary" href="#">Обменять</a></div>
                     </div>
                   </div>
-                  <div class="exchange-list__item__fold">
-                    <div class="exchange-list__item__rate"><i class="ico ico-rate"></i><span>Курс: 1 BTC = 69037 RUR</span></div>
-                    <div class="exchange-list__item__cta"><i class="ico ico-refresh"></i><a class="btn btn-primary" href="#">Обменять</a></div>
+                  <!-- items-->
+                  <div class="exchange-list__item" data-currency="btc">
+                    <div class="exchange-list__item__inner"><i class="ico ico-currency ico-currency--qiwi"></i>
+                      <div class="exchange-list__item__name"><span>QIWI <span>RUB</span></span></div>
+                      <div class="exchange-list__item__reserv">
+                        <div class="exchange-list__item__reserv__name"><span>Резерв</span><i class="ico ico-question" data-toggle="tooltip" data-placement="left" title="Какая то инфа"></i></div>
+                        <div class="exchange-list__item__reserv__value"><span>7 470 RUR</span></div>
+                      </div>
+                    </div>
+                    <div class="exchange-list__item__fold">
+                      <div class="exchange-list__item__rate"><i class="ico ico-rate"></i><span>Курс: 1 BTC = 69037 RUR</span></div>
+                      <div class="exchange-list__item__cta"><i class="ico ico-refresh"></i><a class="btn btn-primary" href="#">Обменять</a></div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -159,366 +165,366 @@
           </div>
         </div>
       </div>
-    </div>
-    <!-- COUNTER::START-->
-    <div class="counter">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-sm-8 col-lg-6 offset-lg-0">
-            <!-- block-->
-            <div class="counter__block">
-              <div class="counter__block__heading">Отдаёте ↓</div>
-              <div class="row">
-                <div class="col-sm-7 col-xl-8">
-                  <div class="ui-select">
-                    <div class="ui-select__visible" id="selectedIncomingDirection"><i class="ico ico-select"></i><span class="currency__name">Выберите валюту</span></div>
-                    <div class="ui-select__dropdown" id="incomingDirections">
-                      <!-- populated with ajax-->
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-5 col-xl-4">
-                  <div class="ui-input"><span>Сумма:</span>
-                    <input class="form-control form-control--short" type="text" value="5000" id="incomingValue">
-                  </div>
-                </div>
-              </div>
-              <!-- row-->
-              <div class="row mt15">
-                <div class="col-sm-7 col-xl-8">
-                  <div class="counter__help-text">С учетом комиссии платежной системы QIWI RUB (0.15 %) к списания с вашего счета</div>
-                </div>
-                <div class="col-sm-5 col-xl-4">
-                  <div class="ui-input"><span>Сумма:</span>
-                    <input class="form-control form-control--short" type="text" value="5126,00" disabled>
-                  </div>
-                </div>
-              </div>
-              <!-- row-->
-              <div class="row">
-                <div class="col-sm-7 col-xl-8">
-                  <div class="form-group">
-                    <label>Со счета:</label>
-                    <input class="form-control bold" type="text" placeholder="введите счет" id="incomingAccount">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- BLOCK-->
-            <div class="counter__block">
-              <div class="counter__block__heading">Получаете ↓</div>
-              <div class="row">
-                <div class="col-sm-7 col-xl-8">
-                  <div class="ui-select">
-                    <div class="ui-select__visible" id="selectedOutgoingDirection"><i class="ico ico-select"></i><span class="currency__name">Выберите валюту</span></div>
-                    <div class="ui-select__dropdown" id="outgoingDirections">
-                      <!-- populated with ajax-->
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-5 col-xl-4">
-                  <div class="ui-input"><span>Сумма:</span>
-                    <input class="form-control form-control--short" type="text" value="5000" id="outgoingValue">
-                  </div>
-                </div>
-              </div>
-              <!-- row-->
-              <div class="row mt15">
-                <div class="col-sm-7 col-xl-8">
-                  <div class="counter__help-text">С учетом комиссии платежной системы QIWI RUB (0.15 %) к списания с вашего счета</div>
-                </div>
-                <div class="col-sm-5 col-xl-4">
-                  <div class="ui-input"><span>Сумма:</span>
-                    <input class="form-control form-control--short" type="text" value="5126,00" disabled>
-                  </div>
-                </div>
-              </div>
-              <!-- row-->
-              <div class="row">
-                <div class="col-sm-7 col-xl-8">
-                  <div class="form-group">
-                    <label>На счет:</label>
-                    <input class="form-control bold" type="text" placeholder="введите счет" id="outgoingAccount">
-                  </div>
-                </div>
-                <div class="col-sm-5 col-xl-4 mt35"><a class="btn btn-primary btn-block" href="#" id="firstStep">Дальше</a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-0">
-            <div class="counter__block">
-              <div class="counter__block__heading">Персональные данные</div>
-              <form class="counter__contacts-collector" action="">
+      <!-- COUNTER::START-->
+      <div class="counter">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-sm-8 col-lg-6 offset-lg-0">
+              <!-- block-->
+              <div class="counter__block">
+                <div class="counter__block__heading">Отдаёте ↓</div>
                 <div class="row">
-                  <div class="col-sm-8">
-                    <div class="form-group">
-                      <input class="form-control" type="text" placeholder="Фамилия">
+                  <div class="col-sm-7 col-xl-8">
+                    <div class="ui-select">
+                      <div class="ui-select__visible" id="selectedIncomingDirection"><i class="ico ico-select"></i><span class="currency__name">Выберите валюту</span></div>
+                      <div class="ui-select__dropdown" id="incomingDirections">
+                        <!-- populated with ajax-->
+                      </div>
                     </div>
                   </div>
-                  <div class="col-sm-4">
-                    <div class="counter__input-helper"><i class="ico ico-checkmark"></i><span>Данные из профиля</span></div>
-                  </div>
-                  <div class="col-sm-8">
-                    <div class="form-group">
-                      <input class="form-control" type="text" placeholder="Имя">
+                  <div class="col-sm-5 col-xl-4">
+                    <div class="ui-input"><span>Сумма:</span>
+                      <input class="form-control form-control--short" type="text" value="5000" id="incomingValue">
                     </div>
                   </div>
-                  <div class="col-sm-4"></div>
-                  <div class="col-sm-8">
-                    <div class="form-group">
-                      <input class="form-control" type="text" placeholder="Отчество">
-                    </div>
-                  </div>
-                  <div class="col-sm-4"></div>
-                  <div class="col-sm-8">
-                    <div class="form-group">
-                      <input class="form-control not-valid" type="email" placeholder="Email">
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="counter__input-helper counter__input-helper--validation"><span>Ошибка! <br> Необходимо ввести Email</span></div>
-                  </div>
-                  <div class="col-sm-8">
-                    <div class="form-group">
-                      <input class="form-control" type="tel" placeholder="Телефон">
-                    </div>
-                  </div>
-                  <div class="col-sm-4"></div>
-                  <div class="col-sm-8">
-                    <div class="captcha">
-                      <input class="form-control" type="text" value="3" disabled><span>+</span>
-                      <input class="form-control" type="text" value="6" disabled><span>=</span>
-                      <input class="form-control" type="text" value=""><i class="ico ico-refresh"></i>
-                    </div>
-                  </div>
-                  <div class="col-sm-12 text-center mt35"><a class="btn btn-primary btn-green" href="#">Продолжить</a></div>
                 </div>
-              </form>
+                <!-- row-->
+                <div class="row mt15">
+                  <div class="col-sm-7 col-xl-8">
+                    <div class="counter__help-text">С учетом комиссии платежной системы QIWI RUB (0.15 %) к списания с вашего счета</div>
+                  </div>
+                  <div class="col-sm-5 col-xl-4">
+                    <div class="ui-input"><span>Сумма:</span>
+                      <input class="form-control form-control--short" type="text" value="5126,00" disabled>
+                    </div>
+                  </div>
+                </div>
+                <!-- row-->
+                <div class="row">
+                  <div class="col-sm-7 col-xl-8">
+                    <div class="form-group">
+                      <label>Со счета:</label>
+                      <input class="form-control bold" type="text" placeholder="введите счет" id="incomingAccount">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- BLOCK-->
+              <div class="counter__block">
+                <div class="counter__block__heading">Получаете ↓</div>
+                <div class="row">
+                  <div class="col-sm-7 col-xl-8">
+                    <div class="ui-select">
+                      <div class="ui-select__visible" id="selectedOutgoingDirection"><i class="ico ico-select"></i><span class="currency__name">Выберите валюту</span></div>
+                      <div class="ui-select__dropdown" id="outgoingDirections">
+                        <!-- populated with ajax-->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-5 col-xl-4">
+                    <div class="ui-input"><span>Сумма:</span>
+                      <input class="form-control form-control--short" type="text" value="5000" id="outgoingValue">
+                    </div>
+                  </div>
+                </div>
+                <!-- row-->
+                <div class="row mt15">
+                  <div class="col-sm-7 col-xl-8">
+                    <div class="counter__help-text">С учетом комиссии платежной системы QIWI RUB (0.15 %) к списания с вашего счета</div>
+                  </div>
+                  <div class="col-sm-5 col-xl-4">
+                    <div class="ui-input"><span>Сумма:</span>
+                      <input class="form-control form-control--short" type="text" value="5126,00" disabled>
+                    </div>
+                  </div>
+                </div>
+                <!-- row-->
+                <div class="row">
+                  <div class="col-sm-7 col-xl-8">
+                    <div class="form-group">
+                      <label>На счет:</label>
+                      <input class="form-control bold" type="text" placeholder="введите счет" id="outgoingAccount">
+                    </div>
+                  </div>
+                  <div class="col-sm-5 col-xl-4 mt35"><a class="btn btn-primary btn-block" href="#" id="firstStep">Дальше</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-0">
+              <div class="counter__block">
+                <div class="counter__block__heading">Персональные данные</div>
+                <form class="counter__contacts-collector" action="">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Фамилия">
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="counter__input-helper"><i class="ico ico-checkmark"></i><span>Данные из профиля</span></div>
+                    </div>
+                    <div class="col-sm-8">
+                      <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Имя">
+                      </div>
+                    </div>
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-8">
+                      <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Отчество">
+                      </div>
+                    </div>
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-8">
+                      <div class="form-group">
+                        <input class="form-control not-valid" type="email" placeholder="Email">
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="counter__input-helper counter__input-helper--validation"><span>Ошибка! <br> Необходимо ввести Email</span></div>
+                    </div>
+                    <div class="col-sm-8">
+                      <div class="form-group">
+                        <input class="form-control" type="tel" placeholder="Телефон">
+                      </div>
+                    </div>
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-8">
+                      <div class="captcha">
+                        <input class="form-control" type="text" value="3" disabled><span>+</span>
+                        <input class="form-control" type="text" value="6" disabled><span>=</span>
+                        <input class="form-control" type="text" value=""><i class="ico ico-refresh"></i>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 text-center mt35"><a class="btn btn-primary btn-green" href="#">Продолжить</a></div>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- РЕЗЕРВЫ-->
+      <div class="reserves">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="block-heading">резерв валюты</div>
+            </div>
+          </div>
+          <div class="row condenced-pad">
+            <!-- item-->
+            <div class="col-sm-6 col-md-4 col-xl-3">
+              <div class="reserves__item"><i class="ico ico-currency ico-currency--yandex"></i>
+                <div class="reserves__item__content">
+                  <div class="reserves__item__name">Яндекс.Деньги RUR</div>
+                  <div class="reserves__item__left">1 895.9</div>
+                </div>
+              </div>
+            </div>
+            <!-- item-->
+            <div class="col-sm-6 col-md-4 col-xl-3">
+              <div class="reserves__item"><i class="ico ico-currency ico-currency--bitcoin"></i>
+                <div class="reserves__item__content">
+                  <div class="reserves__item__name">BTCE USD</div>
+                  <div class="reserves__item__left">15.9</div>
+                </div>
+              </div>
+            </div>
+            <!-- item-->
+            <div class="col-sm-6 col-md-4 col-xl-3">
+              <div class="reserves__item"><i class="ico ico-currency ico-currency--yandex"></i>
+                <div class="reserves__item__content">
+                  <div class="reserves__item__name">Яндекс.Деньги RUR</div>
+                  <div class="reserves__item__left">1 895.9</div>
+                </div>
+              </div>
+            </div>
+            <!-- item-->
+            <div class="col-sm-6 col-md-4 col-xl-3">
+              <div class="reserves__item"><i class="ico ico-currency ico-currency--bitcoin"></i>
+                <div class="reserves__item__content">
+                  <div class="reserves__item__name">BTCE USD</div>
+                  <div class="reserves__item__left">15.9</div>
+                </div>
+              </div>
+            </div>
+            <!-- item-->
+            <div class="col-sm-6 col-md-4 col-xl-3">
+              <div class="reserves__item"><i class="ico ico-currency ico-currency--yandex"></i>
+                <div class="reserves__item__content">
+                  <div class="reserves__item__name">Яндекс.Деньги RUR</div>
+                  <div class="reserves__item__left">1 895.9</div>
+                </div>
+              </div>
+            </div>
+            <!-- item-->
+            <div class="col-sm-6 col-md-4 col-xl-3">
+              <div class="reserves__item"><i class="ico ico-currency ico-currency--bitcoin"></i>
+                <div class="reserves__item__content">
+                  <div class="reserves__item__name">BTCE USD</div>
+                  <div class="reserves__item__left">15.9</div>
+                </div>
+              </div>
+            </div>
+            <!-- item-->
+            <div class="col-sm-6 col-md-4 col-xl-3">
+              <div class="reserves__item"><i class="ico ico-currency ico-currency--yandex"></i>
+                <div class="reserves__item__content">
+                  <div class="reserves__item__name">Яндекс.Деньги RUR</div>
+                  <div class="reserves__item__left">1 895.9</div>
+                </div>
+              </div>
+            </div>
+            <!-- item-->
+            <div class="col-sm-6 col-md-4 col-xl-3">
+              <div class="reserves__item"><i class="ico ico-currency ico-currency--bitcoin"></i>
+                <div class="reserves__item__content">
+                  <div class="reserves__item__name">BTCE USD</div>
+                  <div class="reserves__item__left">15.9</div>
+                </div>
+              </div>
+            </div>
+            <!-- item-->
+            <div class="col-sm-6 col-md-4 col-xl-3">
+              <div class="reserves__item"><i class="ico ico-currency ico-currency--yandex"></i>
+                <div class="reserves__item__content">
+                  <div class="reserves__item__name">Яндекс.Деньги RUR</div>
+                  <div class="reserves__item__left">1 895.9</div>
+                </div>
+              </div>
+            </div>
+            <!-- item-->
+            <div class="col-sm-6 col-md-4 col-xl-3">
+              <div class="reserves__item"><i class="ico ico-currency ico-currency--bitcoin"></i>
+                <div class="reserves__item__content">
+                  <div class="reserves__item__name">BTCE USD</div>
+                  <div class="reserves__item__left">15.9</div>
+                </div>
+              </div>
+            </div>
+            <!-- item-->
+            <div class="col-sm-6 col-md-4 col-xl-3">
+              <div class="reserves__item"><i class="ico ico-currency ico-currency--yandex"></i>
+                <div class="reserves__item__content">
+                  <div class="reserves__item__name">Яндекс.Деньги RUR</div>
+                  <div class="reserves__item__left">1 895.9</div>
+                </div>
+              </div>
+            </div>
+            <!-- item-->
+            <div class="col-sm-6 col-md-4 col-xl-3">
+              <div class="reserves__item"><i class="ico ico-currency ico-currency--bitcoin"></i>
+                <div class="reserves__item__content">
+                  <div class="reserves__item__name">BTCE USD</div>
+                  <div class="reserves__item__left">15.9</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- НОВОСТИ-->
+      <div class="news">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="block-heading">Новости</div>
+              <div class="news__wrapper">
+                <!-- item-->
+                <div class="news__item"><a class="news__item__name" href="#">Где купить доллары?</a>
+                  <div class="news__item__short">Открыты новые направления для вывода электронных валют: Contact, Unistream, MoneyGram и другие системы денежных переводов.</div>
+                  <div class="news__item__date">20.08.2016</div>
+                </div>
+                <!-- item-->
+                <div class="news__item"><a class="news__item__name" href="#">Новые направления для вывода электронных валют</a>
+                  <div class="news__item__short">Открыты новые направления для вывода электронных валют: Contact, Unistream, MoneyGram и другие системы денежных переводов.</div>
+                  <div class="news__item__date">20.08.2016</div>
+                </div>
+                <!-- item-->
+                <div class="news__item"><a class="news__item__name" href="#">Где купить доллары?</a>
+                  <div class="news__item__short">Открыты новые направления для вывода электронных валют: Contact, Unistream, MoneyGram и другие системы денежных переводов.</div>
+                  <div class="news__item__date">20.08.2016</div>
+                </div>
+              </div>
+              <div class="block__muted-bottom"><a href="news.html"><i class="ico ico-files"></i><span>Ещё новости</span></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ОТЗЫВЫ-->
+      <div class="testimonials">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-lg-8">
+              <div class="block-heading">отзывы</div>
+              <div class="testimonials__wrapper owl-carousel" id="owlTestmonials">
+                <div class="testimonials__item">
+                  <div class="testimonials__item__head">
+                    <div class="testimonials__item__avatar"><img src="images/testimonial.png"></div>
+                    <div class="testimonials__item__name">Константин Константинопольский<span>12 января</span></div>
+                  </div>
+                  <div class="testimonials__item__content">
+                    <div class="testimonials__item__content__icons"><a href="#"><i class="ico ico-heart"></i></a><a href="#"><i class="ico ico-testimonials"></i></a></div>
+                    <div class="testimonials__item__content__text">
+                      <p>Как обычно оператор все объяснит все расскажет какие имеются вопросы сервис на вышем уровне зачисления на биткойн быстро в общем всем рекомендую оценка 10/10 балов.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- следующий отзыв-->
+                <div class="testimonials__item">
+                  <div class="testimonials__item__head">
+                    <div class="testimonials__item__avatar"><img src="images/testimonial.png"></div>
+                    <div class="testimonials__item__name">Константин Константинопольский<span>12 января</span></div>
+                  </div>
+                  <div class="testimonials__item__content">
+                    <div class="testimonials__item__content__icons"><a href="#"><i class="ico ico-heart"></i></a><a href="#"><i class="ico ico-testimonials"></i></a></div>
+                    <div class="testimonials__item__content__text">
+                      <p>Как обычно оператор все объяснит все расскажет какие имеются вопросы сервис на вышем уровне зачисления на биткойн быстро в общем всем рекомендую оценка 10/10 балов.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="block__muted-bottom"><a href="testimonials.html"><i class="ico ico-comments"></i><span>Ещё отзывы</span></a></div>
+            </div>
+            <div class="col-sm-6 offset-sm-3 col-lg-4 offset-lg-0 mt-30--dekstop">
+              <div class="block-heading">последний обмен</div>
+              <div class="last-exchange">
+                <div class="last-exchange__wrapper">
+                  <div class="last-exchange__item"><i class="ico ico-currency ico-currency--sberbank"></i>
+                    <div class="last-exchange__name">178 392 <span>RUR</span></div>
+                  </div>
+                  <div class="last-exchange__item">
+                    <div class="last-exchange__next">→</div>
+                  </div>
+                  <div class="last-exchange__item"><i class="ico ico-currency ico-currency--yandex"></i>
+                    <div class="last-exchange__name">78 392 <span>RUR</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="block__muted-bottom dark-text"><span>05.03.2017, 17:13</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER::START-->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8">
+              <div class="footer__copy">© 2017   EXone — Мультивалютный обменный сервис.</div>
+              <div class="footer__contact"><i class="fa fa-location-arrow"></i><a href="#">Сочи, ул. Маяковского, 150-Б</a></div>
+              <div class="footer__contact"><i class="fa fa-mobile"></i><span>+7 (8652) 25-09-20, 25-69-72</span></div>
+              <div class="footer__contact"><i class="fa fa-envelope"></i><a href="mailto:exone228">exone228@mail.ru</a></div>
+            </div>
+            <div class="col-sm-4">
+              <div class="footer__developer">Дизайн —<a href="#">Школа Шашлыка</a></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- SCRIPTS-->
+      <script src="js/scripts.min.js"></script>
     </div>
-    <!-- РЕЗЕРВЫ-->
-    <div class="reserves">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="block-heading">резерв валюты</div>
-          </div>
-        </div>
-        <div class="row condenced-pad">
-          <!-- item-->
-          <div class="col-sm-6 col-md-4 col-xl-3">
-            <div class="reserves__item"><i class="ico ico-currency ico-currency--yandex"></i>
-              <div class="reserves__item__content">
-                <div class="reserves__item__name">Яндекс.Деньги RUR</div>
-                <div class="reserves__item__left">1 895.9</div>
-              </div>
-            </div>
-          </div>
-          <!-- item-->
-          <div class="col-sm-6 col-md-4 col-xl-3">
-            <div class="reserves__item"><i class="ico ico-currency ico-currency--bitcoin"></i>
-              <div class="reserves__item__content">
-                <div class="reserves__item__name">BTCE USD</div>
-                <div class="reserves__item__left">15.9</div>
-              </div>
-            </div>
-          </div>
-          <!-- item-->
-          <div class="col-sm-6 col-md-4 col-xl-3">
-            <div class="reserves__item"><i class="ico ico-currency ico-currency--yandex"></i>
-              <div class="reserves__item__content">
-                <div class="reserves__item__name">Яндекс.Деньги RUR</div>
-                <div class="reserves__item__left">1 895.9</div>
-              </div>
-            </div>
-          </div>
-          <!-- item-->
-          <div class="col-sm-6 col-md-4 col-xl-3">
-            <div class="reserves__item"><i class="ico ico-currency ico-currency--bitcoin"></i>
-              <div class="reserves__item__content">
-                <div class="reserves__item__name">BTCE USD</div>
-                <div class="reserves__item__left">15.9</div>
-              </div>
-            </div>
-          </div>
-          <!-- item-->
-          <div class="col-sm-6 col-md-4 col-xl-3">
-            <div class="reserves__item"><i class="ico ico-currency ico-currency--yandex"></i>
-              <div class="reserves__item__content">
-                <div class="reserves__item__name">Яндекс.Деньги RUR</div>
-                <div class="reserves__item__left">1 895.9</div>
-              </div>
-            </div>
-          </div>
-          <!-- item-->
-          <div class="col-sm-6 col-md-4 col-xl-3">
-            <div class="reserves__item"><i class="ico ico-currency ico-currency--bitcoin"></i>
-              <div class="reserves__item__content">
-                <div class="reserves__item__name">BTCE USD</div>
-                <div class="reserves__item__left">15.9</div>
-              </div>
-            </div>
-          </div>
-          <!-- item-->
-          <div class="col-sm-6 col-md-4 col-xl-3">
-            <div class="reserves__item"><i class="ico ico-currency ico-currency--yandex"></i>
-              <div class="reserves__item__content">
-                <div class="reserves__item__name">Яндекс.Деньги RUR</div>
-                <div class="reserves__item__left">1 895.9</div>
-              </div>
-            </div>
-          </div>
-          <!-- item-->
-          <div class="col-sm-6 col-md-4 col-xl-3">
-            <div class="reserves__item"><i class="ico ico-currency ico-currency--bitcoin"></i>
-              <div class="reserves__item__content">
-                <div class="reserves__item__name">BTCE USD</div>
-                <div class="reserves__item__left">15.9</div>
-              </div>
-            </div>
-          </div>
-          <!-- item-->
-          <div class="col-sm-6 col-md-4 col-xl-3">
-            <div class="reserves__item"><i class="ico ico-currency ico-currency--yandex"></i>
-              <div class="reserves__item__content">
-                <div class="reserves__item__name">Яндекс.Деньги RUR</div>
-                <div class="reserves__item__left">1 895.9</div>
-              </div>
-            </div>
-          </div>
-          <!-- item-->
-          <div class="col-sm-6 col-md-4 col-xl-3">
-            <div class="reserves__item"><i class="ico ico-currency ico-currency--bitcoin"></i>
-              <div class="reserves__item__content">
-                <div class="reserves__item__name">BTCE USD</div>
-                <div class="reserves__item__left">15.9</div>
-              </div>
-            </div>
-          </div>
-          <!-- item-->
-          <div class="col-sm-6 col-md-4 col-xl-3">
-            <div class="reserves__item"><i class="ico ico-currency ico-currency--yandex"></i>
-              <div class="reserves__item__content">
-                <div class="reserves__item__name">Яндекс.Деньги RUR</div>
-                <div class="reserves__item__left">1 895.9</div>
-              </div>
-            </div>
-          </div>
-          <!-- item-->
-          <div class="col-sm-6 col-md-4 col-xl-3">
-            <div class="reserves__item"><i class="ico ico-currency ico-currency--bitcoin"></i>
-              <div class="reserves__item__content">
-                <div class="reserves__item__name">BTCE USD</div>
-                <div class="reserves__item__left">15.9</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- НОВОСТИ-->
-    <div class="news">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="block-heading">Новости</div>
-            <div class="news__wrapper">
-              <!-- item-->
-              <div class="news__item"><a class="news__item__name" href="#">Где купить доллары?</a>
-                <div class="news__item__short">Открыты новые направления для вывода электронных валют: Contact, Unistream, MoneyGram и другие системы денежных переводов.</div>
-                <div class="news__item__date">20.08.2016</div>
-              </div>
-              <!-- item-->
-              <div class="news__item"><a class="news__item__name" href="#">Новые направления для вывода электронных валют</a>
-                <div class="news__item__short">Открыты новые направления для вывода электронных валют: Contact, Unistream, MoneyGram и другие системы денежных переводов.</div>
-                <div class="news__item__date">20.08.2016</div>
-              </div>
-              <!-- item-->
-              <div class="news__item"><a class="news__item__name" href="#">Где купить доллары?</a>
-                <div class="news__item__short">Открыты новые направления для вывода электронных валют: Contact, Unistream, MoneyGram и другие системы денежных переводов.</div>
-                <div class="news__item__date">20.08.2016</div>
-              </div>
-            </div>
-            <div class="block__muted-bottom"><a href="#"><i class="ico ico-files"></i><span>Ещё новости</span></a></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- ОТЗЫВЫ-->
-    <div class="testimonials">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-lg-8">
-            <div class="block-heading">отзывы</div>
-            <div class="testimonials__wrapper owl-carousel" id="owlTestmonials">
-              <div class="testimonials__item">
-                <div class="testimonials__item__head">
-                  <div class="testimonials__item__avatar"><img src="images/testimonial.png"></div>
-                  <div class="testimonials__item__name">Константин Константинопольский<span>12 января</span></div>
-                </div>
-                <div class="testimonials__item__content">
-                  <div class="testimonials__item__content__icons"><a href="#"><i class="ico ico-heart"></i></a><a href="#"><i class="ico ico-testimonials"></i></a></div>
-                  <div class="testimonials__item__content__text">
-                    <p>Как обычно оператор все объяснит все расскажет какие имеются вопросы сервис на вышем уровне зачисления на биткойн быстро в общем всем рекомендую оценка 10/10 балов.</p>
-                  </div>
-                </div>
-              </div>
-              <!-- следующий отзыв-->
-              <div class="testimonials__item">
-                <div class="testimonials__item__head">
-                  <div class="testimonials__item__avatar"><img src="images/testimonial.png"></div>
-                  <div class="testimonials__item__name">Константин Константинопольский<span>12 января</span></div>
-                </div>
-                <div class="testimonials__item__content">
-                  <div class="testimonials__item__content__icons"><a href="#"><i class="ico ico-heart"></i></a><a href="#"><i class="ico ico-testimonials"></i></a></div>
-                  <div class="testimonials__item__content__text">
-                    <p>Как обычно оператор все объяснит все расскажет какие имеются вопросы сервис на вышем уровне зачисления на биткойн быстро в общем всем рекомендую оценка 10/10 балов.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="block__muted-bottom"><a href="#"><i class="ico ico-comments"></i><span>Ещё отзывы</span></a></div>
-          </div>
-          <div class="col-sm-6 offset-sm-3 col-lg-4 offset-lg-0 mt-30--dekstop">
-            <div class="block-heading">последний обмен</div>
-            <div class="last-exchange">
-              <div class="last-exchange__wrapper">
-                <div class="last-exchange__item"><i class="ico ico-currency ico-currency--sberbank"></i>
-                  <div class="last-exchange__name">178 392 <span>RUR</span></div>
-                </div>
-                <div class="last-exchange__item">
-                  <div class="last-exchange__next">→</div>
-                </div>
-                <div class="last-exchange__item"><i class="ico ico-currency ico-currency--yandex"></i>
-                  <div class="last-exchange__name">78 392 <span>RUR</span></div>
-                </div>
-              </div>
-            </div>
-            <div class="block__muted-bottom dark-text"><span>05.03.2017, 17:13</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- FOOTER::START-->
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-8">
-            <div class="footer__copy">© 2017   EXone — Мультивалютный обменный сервис.</div>
-            <div class="footer__contact"><i class="fa fa-location-arrow"></i><a href="#">Сочи, ул. Маяковского, 150-Б</a></div>
-            <div class="footer__contact"><i class="fa fa-mobile"></i><span>+7 (8652) 25-09-20, 25-69-72</span></div>
-            <div class="footer__contact"><i class="fa fa-envelope"></i><a href="mailto:exone228">exone228@mail.ru</a></div>
-          </div>
-          <div class="col-sm-4">
-            <div class="footer__developer">Дизайн —<a href="#">Школа Шашлыка</a></div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- SCRIPTS-->
-    <script src="js/scripts.min.js"></script>
   </body>
 </html>
