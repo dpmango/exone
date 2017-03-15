@@ -1,0 +1,150 @@
+doctype html
+html
+  include shared/head.pug
+
+  body
+    include shared/mobile-menu.pug
+
+    .pusher
+      include shared/header.pug
+
+      // PROFILE
+      .profile
+        .container
+          .row
+            .col-sm-4
+              .profile__sidebar
+                .profile__sidebar__head
+                  .profile__sidebar__avatar
+                    .profile__sidebar__avatar__wrapper
+                      img(src='images/avatarProfile.png')
+                    .profile__sidebar__avatar__circle 12%
+                  .profile__sidebar__name <span>Константин</span> Константинопольский
+
+                .profile__sidebar__menu
+                  a(href='#')
+                    i.ico.ico-menu.ico-menu-lock
+                    span Настройки безопасности
+                  a(href='#')
+                    i.ico.ico-menu.ico-menu-wallet
+                    span Ваши счета
+                  a(href='#').active
+                    i.ico.ico-menu.ico-menu-calc
+                    span Внутренний счет
+                  a(href='#')
+                    i.ico.ico-menu.ico-menu-card
+                    span Ваши операции
+                  a(href='#')
+                    i.ico.ico-menu.ico-menu-xml
+                    span XML - файл курсов
+                  a(href='#')
+                    i.ico.ico-menu.ico-menu-txt
+                    span TXT - файл курсов
+                  a(href='#')
+                    i.ico.ico-menu.ico-menu-user
+                    span Партнёрский аккаунт
+                  a(href='#')
+                    i.ico.ico-menu.ico-menu-store
+                    span Рекламные материалы
+                  a(href='#')
+                    i.ico.ico-menu.ico-menu-stats
+                    span Партнёрские переходы
+                  a(href='#')
+                    i.ico.ico-menu.ico-menu-briefcase
+                    span Партнёрские обмены
+                  a(href='#')
+                    i.ico.ico-menu.ico-menu-paystock
+                    span Рефералы
+                  a(href='#')
+                    i.ico.ico-menu.ico-menu-download
+                    span Вывод партнёрских средств
+                  a(href='#')
+                    i.ico.ico-menu.ico-menu-faq
+                    span Партнёрский FAQ
+                  a(href='#')
+                    i.ico.ico-menu.ico-menu-draft
+                    span Условия Партнерской программы
+                  a(href='#')
+                    i.ico.ico-menu.ico-menu-invest
+                    span Инвесторам
+
+            .col-sm-8
+              .profile__content
+                .profile__content__title Партнёрский аккаунт
+
+                .profile__content__highlighted.profile__content__highlighted--purple
+                  .profile__content__highlighted__row
+                    span ID
+                    span 24738
+                  .profile__content__highlighted__row
+                    span Дата регистрации
+                    span 06.03.2017
+                  .profile__content__highlighted__row
+                    span E-mail
+                    span pak.online@yandex.ru
+                  .profile__content__highlighted__row
+                    span Ваш парт. процент
+                    span 0.05%
+
+                .profile__content__title.profile__content__title--smaller Статистика
+                .profile__content__highlighted.profile__content__highlighted--gray
+                  .profile__content__highlighted__row
+                    span Посетителей
+                    span 0
+                  .profile__content__highlighted__row
+                    span Количествно рефералов
+                    span 0
+                  .profile__content__highlighted__row
+                    span Обменов
+                    span 0
+                  .profile__content__highlighted__row
+                    span Сумма обменов
+                    span 0.05%
+                  .profile__content__highlighted__row
+                    span CTR
+                    span 0.05%
+                  .profile__content__highlighted__row
+                    span Заработано за все время
+                    span 0.05%
+                  .profile__content__highlighted__row
+                    span Ожидают выплаты
+                    span 0.05%
+                  .profile__content__highlighted__row
+                    span Выплачено
+                    span 0.05%
+                  .profile__content__highlighted__row
+                    span Текущий баланс
+                    span 0.05%
+                  .profile__content__highlighted__row
+                    span Доступно для выплаты
+                    span 0.05%
+
+                .profile__content__title.profile__content__title--smaller Рекламные материалы
+                .profile__content__text
+                  p Рекламный текст с ссылкой, который вы разместите в любом месте на Ваше усмотрение (на Вашем сайте, в блогах, форумах, в различных сервисах вопросов и ответов, социальных сетях и в сервисах закладок) будет вести пользователей на сайт, а Вы будете получать гарантированное вознаграждене за переходы пользователей.
+
+                  p Ниже представлены основные варианты рекламных материалов с Вашей партнерской ссылкой. Вы можете использовать любые тексты для ссылки или воспользоваться нашими вариантами. Для этого Вам нужно просто скопировать выбранный код к себе на сайт и начать получать доход.
+
+                .profile__content__title.profile__content__title--smaller Партнерская ссылка:
+                .profile__content__clipboard
+                  .profile__content__clipboard__copy Скопировать
+                  textarea https://exone-transfers.com/?rid=24738
+                .profile__content__title.profile__content__title--smaller Партнерская ссылка в HTML-коде (для размещения на сайтах и блогах):
+                .profile__content__clipboard
+                  .profile__content__clipboard__copy Скопировать
+                  textarea <a target="_blank" href="https://exone-transfers.com/?rid=24738">Обмен валют</a>
+                .profile__content__title.profile__content__title--smaller Скрытая партнерская ссылка в HTML-коде (для размещения на сайтах и блогах):
+                .profile__content__clipboard
+                  .profile__content__clipboard__copy Скопировать
+                  textarea <a target="_blank" href="https://exone-transfers.com/" onclick="this.href=https://cash-transfers.com/?rid=24738">Обмен валют</a>
+                .profile__content__title.profile__content__title--smaller Партнерская ссылка в BBCode (для размещения на форумах):
+                .profile__content__clipboard
+                  .profile__content__clipboard__copy Скопировать
+                  textarea [url="https://exone-transfers.com/?rid=24738"]Обмен валют[/url]
+
+
+      .modal
+        .modal__wrapper
+          .modal__content Cсылка успешно скопирована
+
+      include shared/footer.pug

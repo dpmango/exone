@@ -967,9 +967,11 @@
     padding: 30px
     &__title
       font-family: 'Droid Serif', serif
-      font-size: 30px
+      font-size: 27px
       margin-bottom: 20px
       margin-left: 15px
+      &--smaller
+        font-size: 22px
     &__filters
       display: -webkit-flex
       display: -ms-flex
@@ -1070,3 +1072,112 @@
           &.price
             color: #51b748
             font-weight: 600
+
+  &__content
+    &__highlighted
+      font-size: 17px
+      color: #444953
+      padding: 20px
+      padding-bottom: 15px
+      border-radius: 8px
+      &--purple
+        background: #eff5fd
+        border: 1px solid #ced6e0
+        margin-bottom: 20px
+      &--gray
+        background: #fbfbfd
+        border: 1px solid #ced6e0
+        width: 60%
+        margin-bottom: 20px
+        @media($desktop)
+          width: 75%
+        @media($tablet)
+          width: 75%
+      &__row
+        display: -webkit-flex
+        display: -ms-flex
+        display: flex
+        justify-content: space-between
+        margin-bottom: 5px
+        span
+          &:last-child
+            font-weight: 600
+    &__text
+      font-size: 14px
+      color: #888c98
+
+    &__clipboard
+      position: relative
+      overflow: hidden
+      margin-bottom: 20px
+      &__copy
+        background: #ced6e0
+        position: absolute
+        top: 0
+        right: 0
+        padding: 3px 5px
+        font-size: 14px
+        font-weight: 600
+        border-bottom-left-radius: 4px
+        border-top-right-radius: 8px
+        cursor: pointer
+        transition: background .3s ease-in-out
+        &:hover
+          background: color(#ced6e0 a(50%))
+
+      textarea
+        border: 1px solid #ced6e0
+        background: white
+        border-radius: 8px
+        font-size: 17px
+        display: block
+        vertical-align: middle
+        width: 100%
+        padding: 18px 20px
+        transition: all .3s ease
+        &:focus
+          outline: none
+          background: #f0f4f3
+          border-color: #657384
+          box-shadow: 0 2px 6px color(#b2bece a(60%))
+
+
+.modal
+  position: fixed 0 0 0 0
+  z-index: 9
+  background: color(black a(65%))
+  opacity: 0
+  pointer-events: none
+  &.blink
+    animation-name: blink
+    animation-duration: 1.5s
+    animation-timing-function: ease-in-out
+  &__wrapper
+    position: relative
+    height: 100%
+  &__content
+    position: absolute
+    top: 50%
+    left: 50%
+    width: 400px
+    padding: 25px
+    transform: translate(-50%, -50%)
+    box-shadow: 0 3px 10px color(black a(40%))
+    background: white
+    border-radius: 10px
+    text-align: center
+    text-transform: uppercase
+    font-size: 18px
+    font-weight: 600
+    @media($mobile)
+      width: 100%
+
+@keyframes blink
+  0%
+    opacity: 0
+  25%
+    opacity: 1
+  75%
+    opacity: 1
+  100%
+    opacity: 0
