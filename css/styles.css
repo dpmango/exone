@@ -8359,8 +8359,11 @@ body, html {
 .profile__content__title {
     margin-bottom: 20px;
     margin-left: 15px;
-    font-size: 30px;
+    font-size: 27px;
     font-family: 'Droid Serif', serif;
+}
+.profile__content__title--smaller {
+    font-size: 22px;
 }
 .profile__content__filters {
     display: -webkit-flex;
@@ -8452,4 +8455,170 @@ body, html {
 .profile__content__graph {
     margin-top: 30px;
     margin-bottom: 30px;
+}
+.profile__content {}
+.profile__content__highlighted {
+    padding: 20px;
+    padding-bottom: 15px;
+    border-radius: 8px;
+    color: #444953;
+    font-size: 17px;
+}
+.profile__content__highlighted--purple {
+    margin-bottom: 20px;
+    border: 1px solid #ced6e0;
+    background: #eff5fd;
+}
+.profile__content__highlighted--gray {
+    margin-bottom: 20px;
+    width: 60%;
+    border: 1px solid #ced6e0;
+    background: #fbfbfd;
+}
+@media(max-width: 992px) {
+    .profile__content__highlighted--gray {
+        width: 75%;
+    }
+}
+@media(max-width: 768px) {
+    .profile__content__highlighted--gray {
+        width: 75%;
+    }
+}
+.profile__content__highlighted__row {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    margin-bottom: 5px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+}
+.profile__content__highlighted__row span {}
+.profile__content__highlighted__row span:last-child {
+    font-weight: 600;
+}
+.profile__content__text {
+    color: #888c98;
+    font-size: 14px;
+}
+.profile__content__clipboard {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.profile__content__clipboard textarea {
+    display: block;
+    padding: 18px 20px;
+    width: 100%;
+    border: 1px solid #ced6e0;
+    border-radius: 8px;
+    background: white;
+    vertical-align: middle;
+    font-size: 17px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.profile__content__clipboard textarea:focus {
+    outline: none;
+    border-color: #657384;
+    background: #f0f4f3;
+    -webkit-box-shadow: 0 2px 6px rgba(178, 190, 206, 0.6);
+            box-shadow: 0 2px 6px rgba(178, 190, 206, 0.6);
+}
+.profile__content__clipboard__copy {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 3px 5px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 4px;
+    background: #ced6e0;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    -webkit-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+.profile__content__clipboard__copy:hover {
+    background: #ced6e0;
+    background: rgba(206, 214, 224, 0.5);
+}
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+    background: #000000;
+    background: rgba(0, 0, 0, 0.65);
+    opacity: 0;
+    pointer-events: none;
+}
+.modal.blink {
+    -webkit-animation-name: blink;
+            animation-name: blink;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+}
+.modal__wrapper {
+    position: relative;
+    height: 100%;
+}
+.modal__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 25px;
+    width: 400px;
+    border-radius: 10px;
+    background: white;
+    -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+@media(max-width: 568px) {
+    .modal__content {
+        width: 100%;
+    }
+}
+@-webkit-keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
