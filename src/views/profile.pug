@@ -1,0 +1,166 @@
+doctype html
+html
+  include shared/head.pug
+
+  body
+    include shared/mobile-menu.pug
+
+    .pusher
+      include shared/header.pug
+
+      // PROFILE
+      .profile
+        .container
+          .row
+            .col-sm-4
+              .profile__sidebar
+                .profile__sidebar__head
+                  .profile__sidebar__avatar
+                    .profile__sidebar__avatar__wrapper
+                      img(src='images/avatarProfile.png')
+                    .profile__sidebar__avatar__circle 12%
+                  .profile__sidebar__name <span>Константин</span> Константинопольский
+
+                .profile__sidebar__menu
+                  a(href='#')
+                    i.ico.ico-menu.ico-menu-lock
+                    span Настройки безопасности
+                  a(href='#')
+                    i.ico.ico-menu.ico-menu-wallet
+                    span Ваши счета
+                  a(href='#').active
+                    i.ico.ico-menu.ico-menu-calc
+                    span Внутренний счет
+                  a(href='#')
+                    i.ico.ico-menu.ico-menu-card
+                    span Ваши операции
+                  a(href='#')
+                    i.ico.ico-menu.ico-menu-xml
+                    span XML - файл курсов
+                  a(href='#')
+                    i.ico.ico-menu.ico-menu-txt
+                    span TXT - файл курсов
+                  a(href='#')
+                    i.ico.ico-menu.ico-menu-user
+                    span Партнёрский аккаунт
+                  a(href='#')
+                    i.ico.ico-menu.ico-menu-store
+                    span Рекламные материалы
+                  a(href='#')
+                    i.ico.ico-menu.ico-menu-stats
+                    span Партнёрские переходы
+                  a(href='#')
+                    i.ico.ico-menu.ico-menu-briefcase
+                    span Партнёрские обмены
+                  a(href='#')
+                    i.ico.ico-menu.ico-menu-paystock
+                    span Рефералы
+                  a(href='#')
+                    i.ico.ico-menu.ico-menu-download
+                    span Вывод партнёрских средств
+                  a(href='#')
+                    i.ico.ico-menu.ico-menu-faq
+                    span Партнёрский FAQ
+                  a(href='#')
+                    i.ico.ico-menu.ico-menu-draft
+                    span Условия Партнерской программы
+                  a(href='#')
+                    i.ico.ico-menu.ico-menu-invest
+                    span Инвесторам
+
+            .col-sm-8
+              .profile__content
+                .profile__content__title Кабинет инвестора
+                .profile__content__filters
+                  a(href="#") Предлагаем
+                  a(href="#") Преимущества
+                  a(href="#").active Привилегии
+                  a(href="#") Гарантии
+                  a(href="#") Регламент
+
+                .profile__content__info
+                  p Безопасное инвестирование в реальный обменный бизнес;
+                  p Более выгодные условия, чем предлагают банки в валюте;
+                  p Дополнительные бонусы в виде скидки на обмены и повышенный процент на доход от структуры.
+                .profile__content__title Калькулятор Инвестиций
+                .ui-input.profile__content__invest-row
+                  span Я хочу приумножить:
+                  input(type="text" placeholder="5000").form-control.form-control--120px
+                  span.rub ₽
+                  i.ico.ico-long-arrow
+                  a(href="#").btn.btn-primary Инвестировать
+
+                .profile__content__slider
+                  .profile__content__slider__title Срок вклада, 5 мес.
+                  input(type="range")#profileRange
+                  .profile__content__slider__inputs
+                    .ui-input
+                      span Доходность
+                      input(type="text" value="6" disabled).form-control.form-control--short
+                      span.rub %
+                    .ui-input
+                      span Я получу:
+                      input(type="text" value="5300" disabled).form-control.form-control--120px
+                      span.rub ₽
+                    .ui-input
+                      span Прибыль:
+                      input(type="text" value="300" disabled).form-control.form-control--120px
+                      span.rub ₽
+
+                .profile__content__graph
+                  #highChart
+
+                .profile__content__title Мои инвестиции
+                table.table
+                  thead
+                    tr
+                      td №
+                      td Дата
+                      td Сумма
+                      td Статус
+                      td Процент
+                  tbody
+                    tr
+                      td 1244
+                      td.date
+                        | 15 Декабря
+                        span 23:47
+                      td.price 45 000 ₽
+                      td Выполнено
+                      td 6%
+                    tr
+                      td 1244
+                      td.date
+                        | 15 Декабря
+                        span 23:47
+                      td.price 45 000 ₽
+                      td Выполнено
+                      td 6%
+                    tr
+                      td 1244
+                      td.date
+                        | 15 Декабря
+                        span 23:47
+                      td.price 45 000 ₽
+                      td Выполнено
+                      td 6%
+                    tr
+                      td 1244
+                      td.date
+                        | 15 Декабря
+                        span 23:47
+                      td.price 45 000 ₽
+                      td Выполнено
+                      td 6%
+
+
+
+
+
+
+
+
+
+
+
+      include shared/footer.pug

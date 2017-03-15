@@ -669,12 +669,17 @@
   display: flex
   justify-content: space-between
   align-items: center
+  &--fstart
+    justify-content: flex-start
   @media($mobile)
     justify-content: flex-start
     margin-bottom: 10px
   span
     font-size: 15px
     padding-right: 15px
+  .rub
+    font-size: 19px
+    margin-left: 5px
 
 .form-group
   label
@@ -698,6 +703,8 @@
     @media($mobile)
       align-self: flex-start
       max-width: 100px !important
+  &--120px
+    width: 120px
   &:focus
     background: #f0f4f3
     border-color: #657384
@@ -888,3 +895,178 @@
     &::after
       opacity: 1
       pointer-events: all
+
+
+.profile
+  &__sidebar
+    background: white
+    border-radius: 8px
+    margin-top: 25px
+    &__head
+      padding-top: 35px
+      padding-bottom: 30px
+    &__avatar
+      size: 180px
+      margin-left: auto
+      margin-right: auto
+      position: relative
+      &__wrapper
+        border: 4px solid #bdcdd6
+        border-radius: 50%
+        overflow: hidden
+      img
+        width: 100%
+      &__circle
+        background: $colorGreen
+        border-radius: 50%
+        color: white
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        bottom: -20px
+        size: 70px
+        padding-top: 21px
+        font-size: 20px
+        font-weight: 600
+        text-align: center
+
+    &__name
+      margin-top: 30px
+      font-size: 20px
+      font-weight: 600
+      text-align: center
+      span
+        display: block
+        font-weight: 400
+
+    &__menu
+      border-top: 1px solid #dfe6f0
+      background: #fbfbfd
+      padding: 20px 0
+      a
+        display: block
+        font-size: 18px
+        padding: 15px 10px 15px 40px
+        line-height: 1.1em
+        transition: all .3s ease
+        @media($wide)
+          font-size: 16px
+        &:hover, &.active
+          background: #556472
+          color: white
+          span
+            border-bottom: none
+            text-decoration: none
+        span
+          border-bottom: 1px solid color($colorBlue a(35%))
+
+  &__content
+    background: white
+    border-radius: 8px
+    margin-top: 25px
+    padding: 30px
+    &__title
+      font-family: 'Droid Serif', serif
+      font-size: 30px
+      margin-bottom: 20px
+      margin-left: 15px
+    &__filters
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      a
+        display: inline-block
+        border: 1px solid #556472
+        border-radius: 20px
+        background: url('../images/sprite/arrow-dark@2x.png') no-repeat 90% center
+        padding: 7px 35px 7px 20px
+        background-size: 10px 5px
+        transition: all .4s ease
+        margin-bottom: 10px
+        &:last-child
+          margin-right: 0
+
+        &:hover, &.active
+          background: #556472 url('../images/sprite/arrow-white@2x.png') no-repeat 90% center
+          color: white
+          background-size: 10px 5px
+
+    &__info
+      background: #fcfdef
+      border-radius: 8px
+      border: 1px solid #e0e0ce
+      padding: 25px 20px
+      margin-top: 40px
+      margin-bottom: 40px
+      font-size: 14px
+      color: #444953
+      p
+        margin-bottom: 5px
+    &__invest-row
+      margin-left: 15px
+      .ico-long-arrow
+        margin-left: 20px
+        margin-right: 20px
+        flex: 1 1 auto
+    &__slider
+      margin-top: 30px
+      &__title
+        font-weight: 600
+        font-size: 17px
+        margin-left: 15px
+      &__inputs
+        margin-top: 30px
+        margin-left: 15px
+        display: flex
+        justify-content: space-between
+        .ui-input
+          flex: 0 1 auto
+        .form-control--short
+          width: 50px
+          text-align: center
+    .rangeslider
+      margin-top: 10px
+      &--horizontal
+        height: 7px
+        background: #f0f4f3
+      &__fill
+        background: #7acb6b
+      &__handle
+        size: 15px
+        top: -5px
+        border: 2px solid #7acb6b
+        box-shadow: 0 0 0 2px white
+        &::after
+          display: none
+
+
+
+    &__graph
+      margin-bottom: 30px
+      margin-top: 30px
+  table
+    thead
+      color: #a5a6bb
+      font-size: 14px
+      td
+        border-top: 0
+    tbody
+      font-size: 15px
+      color: #515974
+      tr
+        td
+          vertical-align: middle
+          &.date
+            font-weight: 600
+            span
+              font-size: 12px
+              color: #a5a6bb
+              line-height: 1
+              display: block
+              font-weight: 400
+
+          &.price
+            color: #51b748
+            font-weight: 600

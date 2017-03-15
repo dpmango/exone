@@ -255,4 +255,64 @@ $(document).ready(function(){
   });
 
 
+  // profile
+  $('#profileRange').rangeslider({
+    polyfill: false,
+    // Callback function
+    onInit: function() {},
+
+    // Callback function
+    onSlide: function(position, value) {},
+
+    // Callback function
+    onSlideEnd: function(position, value) {}
+  });
+
+  Highcharts.chart('highChart', {
+      chart: {
+          type: 'areaspline'
+      },
+      title: {
+          text: ''
+      },
+      legend: {
+          enabled: false
+      },
+      xAxis: {
+          // categories: [
+          //     '3',
+          //     '6',
+          //     '9',
+          //     '12',
+          //     '15'
+          // ],
+          title: {
+              text: 'Срок вклада'
+          }
+      },
+      yAxis: {
+          title: {
+              text: 'Сумма'
+          },
+          gridLineDashStyle: 'ShortDash'
+      },
+      tooltip: {
+          valueSuffix: '',
+          headerFormat: "",
+          pointFormat: '<b>{point.y}</b><br/>'
+      },
+      credits: {
+          enabled: false
+      },
+      series: [{
+          name: 'Доход:',
+          data: [6000, 6700, 7500, 6000, 8000, 14000, 9000, 7000, 8600, 12000, 9000, 15000, 13500, 10000]
+      }
+      // , {
+      //     name: 'Jane',
+      //     data: [1, 3, 4, 3, 3, 5, 4]
+      // }
+      ]
+  });
+
 });
