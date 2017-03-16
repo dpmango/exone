@@ -161,44 +161,46 @@ html
                     .form-group
                       label Со счета:
                       input(type="text" placeholder="введите счет")#incomingAccount.form-control.bold
-
-              // BLOCK
-              .counter__block
-                .counter__block__heading Получаете ↓
-                .row
-                  .col-sm-7.col-xl-8
-                    .ui-select
-                      .ui-select__visible#selectedOutgoingDirection
-                        i.ico.ico-select
-                        span.currency__name Выберите валюту
-                      .ui-select__dropdown#outgoingDirections
-                        // populated with ajax
-
-
-                  .col-sm-5.col-xl-4
-                    .ui-input
-                      span Сумма:
-                      input(type="text" value="5000")#outgoingValue.form-control.form-control--short
-
-                // row
-                .row.mt15
-                  .col-sm-7.col-xl-8
-                    .counter__help-text С учетом комиссии платежной системы QIWI RUB (0.15 %) к списания с вашего счета
-                  .col-sm-5.col-xl-4
-                    .ui-input
-                      span Сумма:
-                      input(type="text" value="5126,00" disabled).form-control.form-control--short
-                // row
-                .row
-                  .col-sm-7.col-xl-8
-                    .form-group
-                      label На счет:
-                      input(type="text" placeholder="введите счет")#outgoingAccount.form-control.bold
-                  .col-sm-5.col-xl-4.mt35
-                    a(href="#")#firstStep.btn.btn-primary.btn-block Дальше
-
+              
+              #pasteCopyPasteBlock
             .col-sm-10.offset-sm-1.col-md-8.offset-md-2.col-lg-6.offset-lg-0
-              .counter__block
+              // BLOCK
+              #copyPasteBlock
+                .counter__block
+                  .counter__block__heading Получаете ↓
+                  .row
+                    .col-sm-7.col-xl-8
+                      .ui-select
+                        .ui-select__visible#selectedOutgoingDirection
+                          i.ico.ico-select
+                          span.currency__name Выберите валюту
+                        .ui-select__dropdown#outgoingDirections
+                          // populated with ajax
+
+
+                    .col-sm-5.col-xl-4
+                      .ui-input
+                        span Сумма:
+                        input(type="text" value="5000")#outgoingValue.form-control.form-control--short
+
+                  // row
+                  .row.mt15
+                    .col-sm-7.col-xl-8
+                      .counter__help-text С учетом комиссии платежной системы QIWI RUB (0.15 %) к списания с вашего счета
+                    .col-sm-5.col-xl-4
+                      .ui-input
+                        span Сумма:
+                        input(type="text" value="5126,00" disabled).form-control.form-control--short
+                  // row
+                  .row
+                    .col-sm-7.col-xl-8
+                      .form-group
+                        label На счет:
+                        input(type="text" placeholder="введите счет")#outgoingAccount.form-control.bold
+                    .col-sm-5.col-xl-4.mt35
+                      a(href="#")#firstStep.btn.btn-primary.btn-block Дальше
+                    
+              .counter__block#personalData
                 .counter__block__heading Персональные данные
                 form(action="").counter__contacts-collector
                   .row

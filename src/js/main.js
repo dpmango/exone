@@ -235,6 +235,8 @@ $(document).ready(function(){
     }
   }
 
+  $('#personalData').hide();
+
   $('#firstStep').on('click', function(){
     paymentData = {
       "incomingCurrency" : selectedIncomingCurrencyID,
@@ -250,7 +252,13 @@ $(document).ready(function(){
 
     // if valid show next step
     if (firstStepValid == true){
-      // do somethings
+      var store = $('#copyPasteBlock').html(); // store block
+      $('#copyPasteBlock').html(''); // erase contents
+
+      $('#pasteCopyPasteBlock').html(store); // paste in nearby col
+      // show form then
+      $('#personalData').fadeIn();
+
     }
   });
 
