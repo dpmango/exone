@@ -12,15 +12,20 @@ html
       .profile
         .container
           .row
-            .col-sm-4
+            .col-lg-4
               .profile__sidebar
                 .profile__sidebar__head
-                  .profile__sidebar__avatar
-                    .profile__sidebar__avatar__wrapper
-                      img(src='images/avatarProfile.png')
-                    .profile__sidebar__avatar__circle 12%
-                  .profile__sidebar__name <span>Константин</span> Константинопольский
-
+                  .profile__sidebar__left
+                    .profile__sidebar__avatar
+                      .profile__sidebar__avatar__wrapper
+                        img(src='images/avatarProfile.png')
+                      .profile__sidebar__avatar__circle 12%
+                    .profile__sidebar__name <span>Константин</span> Константинопольский
+                  button.hamburger.hamburger--stand.hidden-lg-up(type='button')#profileHamb
+                    span.hamburger-box
+                      span.hamburger-inner
+                    span.hamburger-title Меню
+                        
                 .profile__sidebar__menu
                   a(href='#')
                     i.ico.ico-menu.ico-menu-lock
@@ -68,7 +73,7 @@ html
                     i.ico.ico-menu.ico-menu-invest
                     span Инвесторам
 
-            .col-sm-8
+            .col-lg-8
               .profile__content
                 .profile__content__title Кабинет инвестора
                 .profile__content__filters

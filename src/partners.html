@@ -27,7 +27,7 @@
         <div class="container">
           <div class="row align-items-sm-center">
             <div class="col-6 col-sm-6 col-md-4 col-lg-6 col-xl-5 flex flex--center">
-              <button class="hamburger hamburger--stand hidden-lg-up" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button><a href="#"><i class="ico ico-logo"></i></a>
+              <button class="hamburger hamburger--stand hidden-lg-up" type="button" id="showSidebar"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button><a href="#"><i class="ico ico-logo"></i></a>
               <div class="header__metrics hidden-md-down">
                 <div class="header__metric">Выплаченные дивиденды:<span> 1 000 000 $</span></div>
                 <div class="header__metric">Прибыль в год:<span> 4%</span></div>
@@ -69,19 +69,22 @@
       <div class="profile">
         <div class="container">
           <div class="row">
-            <div class="col-sm-4">
+            <div class="col-md-12 col-lg-4">
               <div class="profile__sidebar">
                 <div class="profile__sidebar__head">
-                  <div class="profile__sidebar__avatar">
-                    <div class="profile__sidebar__avatar__wrapper"><img src="images/avatarProfile.png"></div>
-                    <div class="profile__sidebar__avatar__circle">12%</div>
+                  <div class="profile__sidebar__left">
+                    <div class="profile__sidebar__avatar">
+                      <div class="profile__sidebar__avatar__wrapper"><img src="images/avatarProfile.png"></div>
+                      <div class="profile__sidebar__avatar__circle">12%</div>
+                    </div>
+                    <div class="profile__sidebar__name"><span>Константин</span> Константинопольский</div>
                   </div>
-                  <div class="profile__sidebar__name"><span>Константин</span> Константинопольский</div>
+                  <button class="hamburger hamburger--stand hidden-lg-up" type="button" id="profileHamb"><span class="hamburger-box"><span class="hamburger-inner"></span></span><span class="hamburger-title">Меню</span></button>
                 </div>
                 <div class="profile__sidebar__menu"><a href="#"><i class="ico ico-menu ico-menu-lock"></i><span>Настройки безопасности</span></a><a href="#"><i class="ico ico-menu ico-menu-wallet"></i><span>Ваши счета</span></a><a class="active" href="#"><i class="ico ico-menu ico-menu-calc"></i><span>Внутренний счет</span></a><a href="#"><i class="ico ico-menu ico-menu-card"></i><span>Ваши операции</span></a><a href="#"><i class="ico ico-menu ico-menu-xml"></i><span>XML - файл курсов</span></a><a href="#"><i class="ico ico-menu ico-menu-txt"></i><span>TXT - файл курсов</span></a><a href="#"><i class="ico ico-menu ico-menu-user"></i><span>Партнёрский аккаунт</span></a><a href="#"><i class="ico ico-menu ico-menu-store"></i><span>Рекламные материалы</span></a><a href="#"><i class="ico ico-menu ico-menu-stats"></i><span>Партнёрские переходы</span></a><a href="#"><i class="ico ico-menu ico-menu-briefcase"></i><span>Партнёрские обмены</span></a><a href="#"><i class="ico ico-menu ico-menu-paystock"></i><span>Рефералы</span></a><a href="#"><i class="ico ico-menu ico-menu-download"></i><span>Вывод партнёрских средств</span></a><a href="#"><i class="ico ico-menu ico-menu-faq"></i><span>Партнёрский FAQ</span></a><a href="#"><i class="ico ico-menu ico-menu-draft"></i><span>Условия Партнерской программы</span></a><a href="#"><i class="ico ico-menu ico-menu-invest"></i><span>Инвесторам</span></a></div>
               </div>
             </div>
-            <div class="col-sm-8">
+            <div class="col-lg-8">
               <div class="profile__content">
                 <div class="profile__content__title">Партнёрский аккаунт</div>
                 <div class="profile__content__highlighted profile__content__highlighted--purple">
@@ -163,6 +166,7 @@
       <script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
       <script src="components/rangeslider.js/dist/rangeslider.min.js"></script>
       <script src="components/highcharts/js/highcharts.js"></script>
+      <script src="js/libs/stacktable.js"></script>
       <script src="js/main.js"></script>
       <!--endbuild-->
     </div>

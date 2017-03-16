@@ -31,7 +31,7 @@ $(document).ready(function(){
   });
 
   // hamburger
-  $('.hamburger').on('click', function(){
+  $('#showSidebar').on('click', function(){
     $(this).toggleClass('is-active');
     $('.mobile-menu').toggleClass('is-active');
     $('.pusher').toggleClass('is-active');
@@ -43,7 +43,7 @@ $(document).ready(function(){
 
     $.each(container, function(key, value) {
         if (!$(value).is(e.target) && $(value).has(e.target).length === 0) {
-          $('.hamburger').removeClass('is-active');
+          $('#showSidebar').removeClass('is-active');
           $('.mobile-menu').removeClass('is-active');
           $('.pusher').removeClass('is-active');
         }
@@ -332,5 +332,14 @@ $(document).ready(function(){
     }
     , 1500);
   });
+
+  // Profile hamburger
+  $('#profileHamb').on('click', function(){
+    $(this).toggleClass('is-active');
+    $('.profile__sidebar__menu').slideToggle();
+  });
+
+  // stacktable
+  $('.table').stacktable();
 
 });

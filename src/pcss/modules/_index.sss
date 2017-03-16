@@ -705,6 +705,9 @@
       max-width: 100px !important
   &--120px
     width: 120px
+    text-align: center
+    @media(width <= 1100px)
+      width: 100px
   &:focus
     background: #f0f4f3
     border-color: #657384
@@ -905,11 +908,59 @@
     &__head
       padding-top: 35px
       padding-bottom: 30px
+      @media($desktop)
+        padding-top: 20px
+        padding-bottom: 25px
+        display: flex
+        justify-content: center
+        justify-content: space-between
+      @media($mobile)
+        flex-wrap: wrap
+        justify-content: center
+    &__left
+      @media($desktop)
+        display: flex
+        align-items: center
+      @media($mobile)
+        flex-wrap: wrap
+        justify-content: center
+    .hamburger
+      display: flex
+      justify-content: flex-end
+      align-items: center
+      margin-left: auto
+      @media($mobile)
+        margin-left: auto
+        margin-right: auto
+        margin-top: 30px
+      .hamburger-inner
+        background: $fontColor
+        &::before, &::after
+          background: $fontColor
+      &.is-active
+        pointer-events: all
+        .hamburger-inner
+          background: transparent
+          &::before, &::after
+            background: $fontColor
+
+      .hamburger-title
+        font-weight: 600
+        margin-left: 5px
+        margin-right: 20px
+        @media($mobile)
+          margin-right: 0
     &__avatar
       size: 180px
       margin-left: auto
       margin-right: auto
       position: relative
+      @media($desktop)
+        size: 140px
+        margin-left: 30px
+        margin-right: 15px
+      @media($tablet)
+        size: 120px
       &__wrapper
         border: 4px solid #bdcdd6
         border-radius: 50%
@@ -929,12 +980,26 @@
         font-size: 20px
         font-weight: 600
         text-align: center
+        @media($desktop)
+          size: 50px
+          bottom: -15px
+          padding-top: 10px
 
     &__name
       margin-top: 30px
       font-size: 20px
       font-weight: 600
       text-align: center
+      @media($desktop)
+        text-align: left
+        margin-top: 0
+      @media($tablet)
+        font-size: 16px
+      @media($mobile)
+        margin-right: auto
+        margin-left: auto
+        text-align: center
+        margin-top: 20px
       span
         display: block
         font-weight: 400
@@ -943,6 +1008,8 @@
       border-top: 1px solid #dfe6f0
       background: #fbfbfd
       padding: 20px 0
+      @media($desktop)
+        display: none
       a
         display: block
         font-size: 18px
@@ -951,6 +1018,14 @@
         transition: all .3s ease
         @media($wide)
           font-size: 16px
+        @media($mobile)
+          display: -webkit-flex
+          display: -ms-flex
+          display: flex
+          padding-left: 25px
+          padding-top: 12px
+          padding-bottom: 12px
+          font-size: 14px
         &:hover, &.active
           background: #556472
           color: white
@@ -959,24 +1034,35 @@
             text-decoration: none
         span
           border-bottom: 1px solid color($colorBlue a(35%))
+          @media($mobile)
+            border-bottom: 0
 
   &__content
     background: white
     border-radius: 8px
     margin-top: 25px
     padding: 30px
+    @media($mobile)
+      padding: 20px
     &__title
       font-family: 'Droid Serif', serif
       font-size: 27px
       margin-bottom: 20px
       margin-left: 15px
+      @media($tablet)
+        font-size: 23px
+      @media($mobile)
+        font-size: 20px
+        margin-left: 0
       &--smaller
         font-size: 22px
+        @media($mobile)
+          font-size: 18px
     &__filters
       display: -webkit-flex
       display: -ms-flex
       display: flex
-      justify-content: space-between
+      justify-content: center
       flex-wrap: wrap
       a
         display: inline-block
@@ -987,6 +1073,7 @@
         background-size: 10px 5px
         transition: all .4s ease
         margin-bottom: 10px
+        margin-right: 8px
         &:last-child
           margin-right: 0
 
@@ -1004,27 +1091,51 @@
       margin-bottom: 40px
       font-size: 14px
       color: #444953
+      @media($mobile)
+        padding: 15px
+        font-size: 13px
       p
         margin-bottom: 5px
     &__invest-row
       margin-left: 15px
+      @media($tablet)
+        justify-content: flex-start
+        flex-wrap: wrap
+        .btn
+          margin-top: 15px
+      @media($mobile)
+        justify-content: center
+
       .ico-long-arrow
         margin-left: 20px
         margin-right: 20px
         flex: 1 1 auto
+        @media($tablet)
+          margin-top: 15px
+        @media($mobile)
+          display: none
     &__slider
       margin-top: 30px
       &__title
         font-weight: 600
         font-size: 17px
         margin-left: 15px
+        @media($mobile)
+          margin-left: 0
       &__inputs
         margin-top: 30px
         margin-left: 15px
         display: flex
         justify-content: space-between
+        @media(width <= 1100px)
+          justify-content: center
+          flex-wrap: wrap
+        @media($mobile)
+          margin-left: 0
         .ui-input
           flex: 0 1 auto
+          @media(width <= 1100px)
+            margin-bottom: 10px
         .form-control--short
           width: 50px
           text-align: center
@@ -1057,6 +1168,8 @@
     tbody
       font-size: 15px
       color: #515974
+      @media($mobile)
+        font-size: 13px
       tr
         td
           vertical-align: middle
@@ -1080,6 +1193,11 @@
       padding: 20px
       padding-bottom: 15px
       border-radius: 8px
+      @media($tablet)
+        font-size: 15px
+      @media($mobile)
+        padding: 15px
+
       &--purple
         background: #eff5fd
         border: 1px solid #ced6e0
@@ -1092,7 +1210,7 @@
         @media($desktop)
           width: 75%
         @media($tablet)
-          width: 75%
+          width: 100%
       &__row
         display: -webkit-flex
         display: -ms-flex
@@ -1135,6 +1253,9 @@
         width: 100%
         padding: 18px 20px
         transition: all .3s ease
+        @media($tablet)
+          font-size: 15px
+
         &:focus
           outline: none
           background: #f0f4f3
@@ -1181,3 +1302,16 @@
     opacity: 1
   100%
     opacity: 0
+
+
+.small-only
+  display: none
+  @media($mobile)
+    display: table
+
+.st-head-row-main
+  display: none
+
+.large-only
+  @media($mobile)
+    display: none
