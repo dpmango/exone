@@ -34,4 +34,4 @@ __Production__
 - Masked input
 - CSS Hamburgers
 
-gulp build && git add . && git commit -m "moving blocks on step 2" && git push && git subtree push --prefix dist origin gh-pages
+gulp build && git add . && git commit -m "smaller fonts" && git push && git subtree push --prefix dist origin gh-pages
