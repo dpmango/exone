@@ -209,49 +209,52 @@
                   </div>
                 </div>
               </div>
+              <div id="pasteCopyPasteBlock"></div>
+            </div>
+            <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-0">
               <!-- BLOCK-->
-              <div class="counter__block">
-                <div class="counter__block__heading">Получаете ↓</div>
-                <div class="row">
-                  <div class="col-sm-7 col-xl-8">
-                    <div class="ui-select">
-                      <div class="ui-select__visible" id="selectedOutgoingDirection"><i class="ico ico-select"></i><span class="currency__name">Выберите валюту</span></div>
-                      <div class="ui-select__dropdown" id="outgoingDirections">
-                        <!-- populated with ajax-->
+              <div id="copyPasteBlock">
+                <div class="counter__block">
+                  <div class="counter__block__heading">Получаете ↓</div>
+                  <div class="row">
+                    <div class="col-sm-7 col-xl-8">
+                      <div class="ui-select">
+                        <div class="ui-select__visible" id="selectedOutgoingDirection"><i class="ico ico-select"></i><span class="currency__name">Выберите валюту</span></div>
+                        <div class="ui-select__dropdown" id="outgoingDirections">
+                          <!-- populated with ajax-->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-5 col-xl-4">
+                      <div class="ui-input"><span>Сумма:</span>
+                        <input class="form-control form-control--short" type="text" value="5000" id="outgoingValue">
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-5 col-xl-4">
-                    <div class="ui-input"><span>Сумма:</span>
-                      <input class="form-control form-control--short" type="text" value="5000" id="outgoingValue">
+                  <!-- row-->
+                  <div class="row mt15">
+                    <div class="col-sm-7 col-xl-8">
+                      <div class="counter__help-text">С учетом комиссии платежной системы QIWI RUB (0.15 %) к списания с вашего счета</div>
+                    </div>
+                    <div class="col-sm-5 col-xl-4">
+                      <div class="ui-input"><span>Сумма:</span>
+                        <input class="form-control form-control--short" type="text" value="5126,00" disabled>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <!-- row-->
-                <div class="row mt15">
-                  <div class="col-sm-7 col-xl-8">
-                    <div class="counter__help-text">С учетом комиссии платежной системы QIWI RUB (0.15 %) к списания с вашего счета</div>
-                  </div>
-                  <div class="col-sm-5 col-xl-4">
-                    <div class="ui-input"><span>Сумма:</span>
-                      <input class="form-control form-control--short" type="text" value="5126,00" disabled>
+                  <!-- row-->
+                  <div class="row">
+                    <div class="col-sm-7 col-xl-8">
+                      <div class="form-group">
+                        <label>На счет:</label>
+                        <input class="form-control bold" type="text" placeholder="введите счет" id="outgoingAccount">
+                      </div>
                     </div>
+                    <div class="col-sm-5 col-xl-4 mt35"><a class="btn btn-primary btn-block" href="#" id="firstStep">Дальше</a></div>
                   </div>
-                </div>
-                <!-- row-->
-                <div class="row">
-                  <div class="col-sm-7 col-xl-8">
-                    <div class="form-group">
-                      <label>На счет:</label>
-                      <input class="form-control bold" type="text" placeholder="введите счет" id="outgoingAccount">
-                    </div>
-                  </div>
-                  <div class="col-sm-5 col-xl-4 mt35"><a class="btn btn-primary btn-block" href="#" id="firstStep">Дальше</a></div>
                 </div>
               </div>
-            </div>
-            <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-0">
-              <div class="counter__block">
+              <div class="counter__block" id="personalData">
                 <div class="counter__block__heading">Персональные данные</div>
                 <form class="counter__contacts-collector" action="">
                   <div class="row">
