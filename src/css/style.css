@@ -223,6 +223,93 @@ body, html {
 .ico-currency--alpha {
     background-image: url('../images/money/alpha.png');
 }
+.ico-currency--pmoney {
+    background-image: url('../images/money/perfect-money.png');
+}
+.ico-currency--russtandart {
+    background-image: url('../images/money/rus-standart.png');
+}
+.ico-currency--visa-master {
+    background-image: url('../images/money/visa-master.png');
+}
+.ico-currency--vtb24 {
+    background-image: url('../images/money/vtb24.png');
+}
+.ico-currency--okpay {
+    background-image: url('../images/money/okpay.png');
+}
+.ico-currency--eur {
+    background-image: url('../images/money/eur.png');
+}
+.ico-currency--payeer {
+    background-image: url('../images/money/payeer.png');
+}
+.ico-currency--avangard {
+    background-image: url('../images/money/avangard.png');
+}
+.ico-currency--exmo {
+    background-image: url('../images/money/exmo.png');
+}
+.ico-currency--wu {
+    background-image: url('../images/money/wu.png');
+}
+.ico-currency--dash {
+    background-image: url('../images/money/dash.png');
+}
+.ico-currency--acash {
+    background-image: url('../images/money/acash.png');
+}
+.ico-currency--monero {
+    background-image: url('../images/money/monero.png');
+}
+.ico-currency--contact {
+    background-image: url('../images/money/contact.png');
+}
+.ico-currency--webmoney {
+    background-image: url('../images/money/webmoney.png');
+}
+.ico-currency--cryptocheck {
+    background-image: url('../images/money/cryptocheck.png');
+}
+.ico-currency--rayfizen {
+    background-image: url('../images/money/rayfizen.png');
+}
+.ico-currency--corona {
+    background-image: url('../images/money/corona.png');
+}
+.ico-currency--privat24 {
+    background-image: url('../images/money/privat24.png');
+}
+.ico-currency--oshad {
+    background-image: url('../images/money/oshad.png');
+}
+.ico-currency--promsvaz {
+    background-image: url('../images/money/promsvaz.png');
+}
+.ico-currency--moneygram {
+    background-image: url('../images/money/moneygram.png');
+}
+.ico-currency--pumb {
+    background-image: url('../images/money/pumb.png');
+}
+.ico-currency--otkritie {
+    background-image: url('../images/money/otkritie.png');
+}
+.ico-currency--kazcommerce {
+    background-image: url('../images/money/kazcommerce.png');
+}
+.ico-currency--paxum {
+    background-image: url('../images/money/paxum.png');
+}
+.ico-currency--epese {
+    background-image: url('../images/money/epese.png');
+}
+.ico-currency--international {
+    background-image: url('../images/money/international.png');
+}
+.ico-currency--banks-rf {
+    background-image: url('../images/money/banks-rf.png');
+}
 .ico-menu {
     margin-right: 7px;
     width: 16px;
