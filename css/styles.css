@@ -7852,7 +7852,6 @@ body, html {
     -webkit-box-flex: 1;
 }
 .testimonials__textarea {
-    position: fixed;
     overflow: hidden;
     border-radius: 10px;
     background: white;
@@ -7869,11 +7868,6 @@ body, html {
 .testimonials__textarea textarea:focus {
     border-color: none;
     background: white;
-}
-@media(max-width: 992px) {
-    .testimonials__textarea {
-        position: relative;
-    }
 }
 .testimonials__textarea__bottom {
     padding: 20px;
