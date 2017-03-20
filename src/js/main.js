@@ -351,4 +351,7 @@ $(document).ready(function(){
   // stacktable
   $('.table').stacktable();
 
+  // sticky sidebar
+  $(".testimonials__textarea").sticky({topSpacing:0});
+
 });
