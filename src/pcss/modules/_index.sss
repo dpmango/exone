@@ -176,6 +176,8 @@
     margin-bottom: 20px
     @media($mobile)
       padding: 20px 25px
+    .ui-input, .ui-select
+      max-width: 100%
     &--exchange
       padding: 30px
       margin-bottom: 0
@@ -600,9 +602,12 @@
 
   &__textarea
     background: white
+    position: fixed
     border-radius: 10px
     overflow: hidden
     box-shadow: 0 0 16px color(black a(25%))
+    @media($desktop)
+      position: relative
     textarea
       height: 205px
       background: white

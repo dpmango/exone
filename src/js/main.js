@@ -37,7 +37,7 @@ $(document).ready(function(){
     $('.pusher').toggleClass('is-active');
   });
 
-  $(document).mouseup(function (e) {
+  $(document).bind("mouseup touchend",function (e) {
     var container = new Array();
     container.push($('.mobile-menu'));
 
@@ -82,6 +82,7 @@ $(document).ready(function(){
 
   });
 
+  $('.counter').hide();
   $('.exchange').on('click', '.btn-primary', function(){
     $('.exchange').fadeOut();
     $('.counter').fadeIn();
