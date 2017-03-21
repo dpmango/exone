@@ -1,0 +1,85 @@
+doctype html
+html
+  include shared/head.pug
+
+  body
+    include shared/mobile-menu.pug
+
+    .pusher
+      include shared/header.pug
+
+      // NEWS
+      .news.news--inner
+        .container
+          .row
+            .col-md-8
+              .news__wrapper
+                .news__title Два пьяных поляка на 40 минут остановили завод BMW в Мюнхене
+                .news__card__metrics
+                  .news__card__metric
+                    i.ico.ico-time
+                    span 20.08.2016
+                  .news__card__metric
+                    i.ico.ico-chat
+                    span 17
+                  .news__card__metric
+                    i.ico.ico-like
+                    span 240
+                  .news__card__metric
+                    i.ico.ico-dislike
+                    span 38
+                  
+                img(src='images/news.png')
+                .news__text
+                  p МОСКВА, 20 мар — РИА Новости. Автомобильный конвейер на заводе концерна BMW в немецком Мюнхене остановился на 40 минут из-за двух сборщиков, находившихся на работе в состоянии алкогольного и наркотического опьянения. Ущерб может составлять до миллиона евро, сообщает таблоид Bild.
+                  p Коллеги обнаружили рабочих без сознания и вызвали скорую помощь. Экспертиза показала, что в крови одного из них был алкоголь, другой принял амфетамин. Кроме того, оба сборщика употребили синтетическую курительную смесь.
+                  p Как сообщил изданию представитель автоконцерна, убытки в результате вынужденной остановки конвейера равны "сумме с пятью нулями".
+                  p Подобный инцидент произошел впервые в истории BMW. Рабочие, парализовавшие работу завода, являются выходцами из Польши, отмечает Bild.
+                .news__actions
+                  a(href="#").news__actions__btn.news__actions__btn--green
+                    i.ico.ico-like
+                    span 240
+                  a(href="#").news__actions__btn.news__actions__btn--red
+                    i.ico.ico-dislike
+                    span 38
+                  a(href="#").news__actions__btn
+                    i.ico.ico-chat
+                    span Комментировать
+                  
+            .col-md-4
+              .row.mt-30--tablet
+                // news card
+                .col-sm-6.col-md-12
+                  .news__card
+                    .news__card__image
+                      img(src="images/newsImage.png")
+                    .news__card__content
+                      a(href="#").news__item__name Как создать свою операционную систему с нуля?
+                      .news__item__short Открыты новые направления для вывода электронных валют: Contact, Unistream, MoneyGram и другие системы денежных переводов.
+                      .news__card__metrics
+                        .news__card__metric
+                          i.ico.ico-time
+                          span 20.08.2016
+                        .news__card__metric
+                          i.ico.ico-chat
+                          span 17
+                // news card
+                .col-sm-6.col-md-12
+                  .news__card
+                    .news__card__image
+                      img(src="images/newsImage.png")
+                    .news__card__content
+                      a(href="#").news__item__name Как создать свою операционную систему с нуля?
+                      .news__item__short Открыты новые направления для вывода электронных валют: Contact, Unistream, MoneyGram и другие системы денежных переводов.
+                      .news__card__metrics
+                        .news__card__metric
+                          i.ico.ico-time
+                          span 20.08.2016
+                        .news__card__metric
+                          i.ico.ico-chat
+                          span 17
+
+
+
+
+      include shared/footer.pug
