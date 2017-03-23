@@ -2419,6 +2419,93 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   margin-bottom: 2px;
   margin-bottom: 0.125rem; }
 
+.pagination {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+  border-radius: 0.25rem;
+  list-style: none; }
+
+.page-item:first-child .page-link {
+  margin-left: 0;
+  border-top-left-radius: 4px;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 0.25rem; }
+
+.page-item:last-child .page-link {
+  border-top-right-radius: 4px;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 0.25rem; }
+
+.page-item.active .page-link {
+  z-index: 2;
+  border-color: #0275d8;
+  background-color: #0275d8;
+  color: #fff; }
+
+.page-item.disabled .page-link {
+  border-color: #ddd;
+  background-color: #fff;
+  color: #636c72;
+  cursor: not-allowed;
+  pointer-events: none; }
+
+.page-link {
+  position: relative;
+  display: block;
+  margin-left: -1px;
+  padding: 8px 12px;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  color: #0275d8;
+  line-height: 1.25; }
+  .page-link:focus, .page-link:hover {
+    border-color: #ddd;
+    background-color: #eceeef;
+    color: #014c8c;
+    text-decoration: none; }
+
+.pagination-lg .page-link {
+  padding: 12px 24px;
+  padding: 0.75rem 1.5rem;
+  font-size: 20px;
+  font-size: 1.25rem; }
+
+.pagination-lg .page-item:first-child .page-link {
+  border-top-left-radius: 4.8px;
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 4.8px;
+  border-bottom-left-radius: 0.3rem; }
+
+.pagination-lg .page-item:last-child .page-link {
+  border-top-right-radius: 4.8px;
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 4.8px;
+  border-bottom-right-radius: 0.3rem; }
+
+.pagination-sm .page-link {
+  padding: 4px 8px;
+  padding: 0.25rem 0.5rem;
+  font-size: 14px;
+  font-size: 0.875rem; }
+
+.pagination-sm .page-item:first-child .page-link {
+  border-top-left-radius: 3.2px;
+  border-top-left-radius: 0.2rem;
+  border-bottom-left-radius: 3.2px;
+  border-bottom-left-radius: 0.2rem; }
+
+.pagination-sm .page-item:last-child .page-link {
+  border-top-right-radius: 3.2px;
+  border-top-right-radius: 0.2rem;
+  border-bottom-right-radius: 3.2px;
+  border-bottom-right-radius: 0.2rem; }
+
 .tooltip {
   position: absolute;
   z-index: 1070;

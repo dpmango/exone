@@ -68,6 +68,9 @@ body, html {
     -webkit-box-shadow: none;
             box-shadow: none;
 }
+.img-responsive {
+    max-width: 100%;
+}
 
 /* 2. Elements */
 /* ICONS */
