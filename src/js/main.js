@@ -334,10 +334,10 @@ $(document).ready(function(){
   $(".profile__content__clipboard__copy").on('click', function(){
     $(this).parent().find("textarea").select();
     document.execCommand('copy');
-    $('.modal').addClass('blink');
+    $('.custom-modal').addClass('blink');
     setTimeout(
       function(){
-      $('.modal').removeClass('blink');
+      $('.custom-modal').removeClass('blink');
     }
     , 1500);
   });

@@ -2909,7 +2909,7 @@ body, html {
         font-size: 15px;
     }
 }
-.modal {
+.custom-modal {
     position: fixed;
     top: 0;
     right: 0;
@@ -2921,7 +2921,7 @@ body, html {
     opacity: 0;
     pointer-events: none;
 }
-.modal.blink {
+.custom-modal.blink {
     -webkit-animation-name: blink;
             animation-name: blink;
     -webkit-animation-duration: 1.5s;
@@ -2929,11 +2929,11 @@ body, html {
     -webkit-animation-timing-function: ease-in-out;
             animation-timing-function: ease-in-out;
 }
-.modal__wrapper {
+.custom-modal__wrapper {
     position: relative;
     height: 100%;
 }
-.modal__content {
+.custom-modal__content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -2952,7 +2952,7 @@ body, html {
             transform: translate(-50%, -50%);
 }
 @media(max-width: 568px) {
-    .modal__content {
+    .custom-modal__content {
         width: 100%;
     }
 }
