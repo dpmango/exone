@@ -1051,7 +1051,12 @@ body, html {
     -webkit-box-flex: 1;
 }
 .counter__block--exchange .counter__block__heading {
+    -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    margin-right: 30px;
     margin-bottom: 0;
+    -webkit-box-flex: 0;
 }
 @media(max-width: 1200px) {
     .counter__block--exchange {
@@ -1107,6 +1112,12 @@ body, html {
 }
 .counter__block__filters {
     display: inline-block;
+    text-align: right;
+}
+@media(max-width: 568px) {
+    .counter__block__filters {
+        text-align: left;
+    }
 }
 .counter__block__filters--second .counter__block__filter.active {
     border-color: #51c15c;
@@ -1115,6 +1126,7 @@ body, html {
 .counter__block__filter {
     display: inline-block;
     margin-right: 10px;
+    margin-bottom: 8px;
     padding: 3px 8px 2px 8px;
     border: 1px solid #a5a6bb;
     border-radius: 25px;
@@ -1222,7 +1234,7 @@ body, html {
     -webkit-box-direction: normal;
 }
 .exchange-list {
-    margin-top: 30px;
+    margin-top: 20px;
     height: auto;
 }
 .exchange-list__item {

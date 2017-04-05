@@ -192,6 +192,8 @@
         padding: 20px
       .counter__block__heading
         margin-bottom: 0
+        flex: 0 0 auto
+        margin-right: 30px
     &__heading
       font-family: 'Droid Serif', serif
       font-size: 26px
@@ -209,6 +211,9 @@
         flex-wrap: wrap
     &__filters
       display: inline-block
+      text-align: right
+      @media($mobile)
+        text-align: left
       &--second
         .counter__block__filter.active
           background: $colorGreen
@@ -222,6 +227,7 @@
       border-radius: 25px
       cursor: pointer
       transition: all .4s ease
+      margin-bottom: 8px
       @media($wide)
         font-size: 13px
         margin-right: 5px
@@ -283,7 +289,7 @@
     flex-direction: column
   &-list
     height: auto
-    margin-top: 30px
+    margin-top: 20px
     &__item
       overflow: visible
       cursor: pointer

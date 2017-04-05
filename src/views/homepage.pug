@@ -17,11 +17,30 @@ html
                 .counter__block__exchange
                   .counter__block__heading Отдаёте  →
                   .counter__block__filters
-                    .counter__block__filter.active(data-filter="btc") <span>฿</span> BTC
-                    .counter__block__filter(data-filter="rur") <span>₽</span> RUR
-                    .counter__block__filter(data-filter="usd") <span>$</span> USD
-                    .counter__block__filter(data-filter="eur") <span>€</span> EUR
-
+                    .counter__block__filter(data-filter='')
+                      span Все
+                    .counter__block__filter.active(data-filter='RUB')
+                      span ₽
+                      |  RUB
+                    .counter__block__filter(data-filter='USD')
+                      span $
+                      |  USD
+                    .counter__block__filter(data-filter='BTC')
+                      span ฿
+                      |  BTC
+                    .counter__block__filter(data-filter='DASH')
+                      span D
+                      |  DASH
+                    .counter__block__filter(data-filter='ETH')
+                      span E
+                      |  ETH
+                    .counter__block__filter(data-filter='LTC')
+                      span Ł
+                      |  LTC
+                    .counter__block__filter(data-filter='UAH')
+                      span ₴
+                      |  UAH
+                      
                 .exchange-list
                   .exchange-list__item(data-currency="btc").active
                     .exchange-list__item__inner
