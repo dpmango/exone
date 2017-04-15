@@ -34,4 +34,4 @@ __Production__
 - Masked input
 - CSS Hamburgers
 
-gulp build && git add . && git commit -m "new page and sizing " && git push && git subtree push --prefix dist origin gh-pages
+gulp build && git add . && git commit -m "confirmation change in introtext" && git push && git subtree push --prefix dist origin gh-pages

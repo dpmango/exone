@@ -46,13 +46,21 @@
     color: white
     text-transform: uppercase
   &--blue
-    margin-top: -7px
+    border-bottom-left-radius: 0px
+    border-bottom-right-radius: 0px
+    border-top-left-radius: 14px
+    border-top-right-radius: 14px
+    margin-top: 0px
     background: #447d9a
     color: white
     margin-right: 30px
     @media($tablet)
       margin-right: 0
-
+  &--ok
+    margin-right: 30px
+    color: color($fontColor a(75%))
+    @media($tablet)
+      margin-right: 0
 
 .mt15
   margin-top: 15px

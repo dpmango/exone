@@ -6980,13 +6980,27 @@ body, html {
     text-transform: uppercase;
 }
 .block__muted-bottom--blue {
-    margin-top: -7px;
+    margin-top: 0px;
     margin-right: 30px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
     background: #447d9a;
     color: white;
 }
 @media(max-width: 768px) {
     .block__muted-bottom--blue {
+        margin-right: 0;
+    }
+}
+.block__muted-bottom--ok {
+    margin-right: 30px;
+    color: #3d3c42;
+    color: rgba(61, 60, 66, 0.75);
+}
+@media(max-width: 768px) {
+    .block__muted-bottom--ok {
         margin-right: 0;
     }
 }
@@ -7343,6 +7357,7 @@ body, html {
     margin-right: 30px;
     padding-right: 70px;
     padding-left: 70px;
+    border-radius: 0;
 }
 @media(max-width: 1200px) {
     .counter__block--ok {
