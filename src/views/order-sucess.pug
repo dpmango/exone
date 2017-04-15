@@ -1,0 +1,211 @@
+doctype html
+html
+  include shared/head.pug
+
+  body
+    include shared/mobile-menu.pug
+
+    .pusher
+      include shared/header.pug
+      
+      // УСПЕШНЫЙ ЗАКАЗ
+      .order-ok
+        .container
+          .row
+            .col-sm-12.col-lg-8
+              .block-heading заявка № 4521
+              // block
+              .counter__block.counter__block--exchange.counter__block--ok
+                .order-ok__heading
+                  .order-ok__heading__left
+                    i.ico.ico-time
+                    span <span>Время создания:</span> 02.04.2017 16:13:10
+                  .order-ok__heading__right
+                    a(href='#')
+                      i.ico.ico-delete
+                    a(href='#')
+                      i.ico.ico-share
+                    
+                    
+                .row
+                  .col-sm-6
+                    .form-group
+                      label Отдаете:
+                      .order-ok__currency
+                        i.ico.ico-currency.ico-currency--acash
+                        .order-ok__currency__name Advanced cash <span>RUB</span>
+                        i.ico-dir-down
+                      .order-ok__credential Со счёта: <span>5235235</span>
+                    
+                  .col-sm-6
+                    .form-group
+                      label Сумма:
+                      .ui-input
+                        input(type="text" value="5000" disabled).form-control.form-control--short
+                // hr
+                hr.hr
+                // row
+                .row
+                  .col-sm-6
+                    .form-group
+                      label Получаете:
+                      .order-ok__currency
+                        i.ico.ico-currency.ico-currency--bitcoin-yellow
+                        .order-ok__currency__name Bitcoin <span>BTC</span>
+                        i.ico-dir-up
+                      .order-ok__credential Со счёта: <a href="#">16yJ2uUwhco1vQcLWZH1JEHSicHb8gMxCg</a>
+                  .col-sm-6
+                    .form-group
+                      label Сумма:
+                      .ui-input
+                        input(type="text" value="5000" disabled).form-control.form-control--short
+                
+                // hr
+                hr.hr   
+                .row.buttons-ok-row
+                  .col-sm-4
+                    a(href='#').btn.btn-ghost Отменить заявку
+                  .col-sm-4
+                    a(href='#').btn.btn-green.btn-green--round Перейти к оплате
+                  .col-sm-4
+                    a(href='#').btn.btn-primary Проверить оплату
+                   
+                      
+              .block__muted-bottom.block__muted-bottom--blue
+                span Данная операция производится оператором в ручном режиме и занимает <br> от 5 до 30 минут в рабочее время (см. статус оператора).
+
+            .col-sm-6.offset-sm-3.col-lg-4.offset-lg-0.mt-30--dekstop
+              .block-heading Статус заявки
+              .last-exchange
+                .last-exchange__wrapper
+                  .last-exchange__item
+                    i.ico.ico-currency.ico-currency--sberbank
+                    .last-exchange__name 178 392 <span>RUR</span>
+                  .last-exchange__item
+                    .last-exchange__next →
+                  .last-exchange__item
+                    i.ico.ico-currency.ico-currency--yandex
+                    .last-exchange__name 78 392 <span>RUR</span>
+
+              .block__muted-bottom.block__muted-bottom--green
+                span выполнено
+
+
+      // COUNTER::START
+      .counter
+        .container
+          .row
+            .col-sm-10.offset-sm-1.col-md-8.offset-md-2.col-sm-8.col-lg-6.offset-lg-0
+              // block
+              .counter__block
+                .counter__block__heading Отдаёте ↓
+                .row
+                  .col-sm-7.col-xl-8
+                    .ui-select
+                      .ui-select__visible#selectedIncomingDirection
+                        i.ico.ico-select
+                        span.currency__name Выберите валюту
+                      .ui-select__dropdown#incomingDirections
+                        // populated with ajax
+
+                  .col-sm-5.col-xl-4
+                    .ui-input
+                      span Сумма:
+                      input(type="text" value="5000")#incomingValue.form-control.form-control--short
+
+                // row
+                .row.mt15
+                  .col-sm-7.col-xl-8
+                    .counter__help-text С учетом комиссии платежной системы QIWI RUB (0.15 %) к списания с вашего счета
+                  .col-sm-5.col-xl-4
+                    .ui-input
+                      span Сумма:
+                      input(type="text" value="5126,00" disabled).form-control.form-control--short
+                // row
+                .row
+                  .col-sm-7.col-xl-8
+                    .form-group
+                      label Со счета:
+                      input(type="text" placeholder="введите счет")#incomingAccount.form-control.bold
+              
+              #pasteCopyPasteBlock
+            .col-sm-10.offset-sm-1.col-md-8.offset-md-2.col-lg-6.offset-lg-0
+              // BLOCK
+              #copyPasteBlock
+                .counter__block
+                  .counter__block__heading Получаете ↓
+                  .row
+                    .col-sm-7.col-xl-8
+                      .ui-select
+                        .ui-select__visible#selectedOutgoingDirection
+                          i.ico.ico-select
+                          span.currency__name Выберите валюту
+                        .ui-select__dropdown#outgoingDirections
+                          // populated with ajax
+
+
+                    .col-sm-5.col-xl-4
+                      .ui-input
+                        span Сумма:
+                        input(type="text" value="5000")#outgoingValue.form-control.form-control--short
+
+                  // row
+                  .row.mt15
+                    .col-sm-7.col-xl-8
+                      .counter__help-text С учетом комиссии платежной системы QIWI RUB (0.15 %) к списания с вашего счета
+                    .col-sm-5.col-xl-4
+                      .ui-input
+                        span Сумма:
+                        input(type="text" value="5126,00" disabled).form-control.form-control--short
+                  // row
+                  .row
+                    .col-sm-7.col-xl-8
+                      .form-group
+                        label На счет:
+                        input(type="text" placeholder="введите счет")#outgoingAccount.form-control.bold
+                    .col-sm-5.col-xl-4.mt35
+                      a(href="#")#firstStep.btn.btn-primary.btn-block Дальше
+                    
+              .counter__block#personalData
+                .counter__block__heading Персональные данные
+                form(action="").counter__contacts-collector
+                  .row
+                    .col-sm-8
+                      .form-group
+                        input(type="text" placeholder="Фамилия").form-control
+                    .col-sm-4
+                      .counter__input-helper
+                        i.ico.ico-checkmark
+                        span Данные из профиля
+                    .col-sm-8
+                      .form-group
+                        input(type="text" placeholder="Имя").form-control
+                    .col-sm-4
+                    .col-sm-8
+                      .form-group
+                        input(type="text" placeholder="Отчество").form-control
+                    .col-sm-4
+                    .col-sm-8
+                      .form-group
+                        input(type="email" placeholder="Email").form-control.not-valid
+                    .col-sm-4
+                      .counter__input-helper.counter__input-helper--validation
+                        span Ошибка! <br> Необходимо ввести Email
+                    .col-sm-8
+                      .form-group
+                        input(type="tel" placeholder="Телефон").form-control
+                    .col-sm-4
+                    .col-sm-8
+                      .captcha
+                        input(type="text" value="3" disabled).form-control
+                        span +
+                        input(type="text" value="6" disabled).form-control
+                        span =
+                        input(type="text" value="").form-control
+                        i.ico.ico-refresh
+
+                    .col-sm-12.text-center.mt35
+                      a(href='#').btn.btn-primary.btn-green Продолжить
+
+
+      include shared/footer.pug
